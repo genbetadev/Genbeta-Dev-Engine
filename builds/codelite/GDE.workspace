@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="GDE" Database="">
+  <Project Name="GDE" Path="GDE/GDE.project" Active="No"/>
+  <Project Name="Test" Path="Test/Test.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug-linux" Selected="yes">
+      <Project Name="Test" ConfigName="Debug"/>
+      <Project Name="GDE" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release-linux" Selected="yes">
+      <Project Name="GDE" ConfigName="Release"/>
+      <Project Name="Test" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
