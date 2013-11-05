@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GDE", "GDE\GDE.vcxproj", "{ED7F46E6-1063-44E3-8D32-06367A31EE45}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{B4D220CC-4517-4CB1-95C9-B49B0E876171}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ED7F46E6-1063-44E3-8D32-06367A31EE45} = {ED7F46E6-1063-44E3-8D32-06367A31EE45}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED7F46E6-1063-44E3-8D32-06367A31EE45}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ED7F46E6-1063-44E3-8D32-06367A31EE45}.Debug|Win32.Build.0 = Debug|Win32
+		{ED7F46E6-1063-44E3-8D32-06367A31EE45}.Release|Win32.ActiveCfg = Release|Win32
+		{ED7F46E6-1063-44E3-8D32-06367A31EE45}.Release|Win32.Build.0 = Release|Win32
+		{B4D220CC-4517-4CB1-95C9-B49B0E876171}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B4D220CC-4517-4CB1-95C9-B49B0E876171}.Debug|Win32.Build.0 = Debug|Win32
+		{B4D220CC-4517-4CB1-95C9-B49B0E876171}.Release|Win32.ActiveCfg = Release|Win32
+		{B4D220CC-4517-4CB1-95C9-B49B0E876171}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
