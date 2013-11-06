@@ -1,6 +1,9 @@
 #include <GDE/Core/ConfigReader.hpp>
 #include <GDE/Core/StringsUtil.hpp>
 
+#include <cstdio>
+#include <cstring>
+
 namespace GDE
 {
 

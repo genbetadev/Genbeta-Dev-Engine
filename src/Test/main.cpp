@@ -6,7 +6,7 @@ int main(int argc, char** argv)
 	GDE::ConfigReader conf;
 	conf.loadFromFile("window.cfg");
 
-	std::cout << conf.GetUint32("window", "width", 0);
+	std::cout << conf.GetUint32("window", "width", 0) << std::endl;
 
 	GDE::App anApp;
 	
