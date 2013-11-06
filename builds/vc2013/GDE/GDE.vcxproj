@@ -11,6 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\include\GDE\Config.hpp" />
+    <ClInclude Include="..\..\..\include\GDE\Core.hpp" />
     <ClInclude Include="..\..\..\include\GDE\Core\App.hpp" />
   </ItemGroup>
   <ItemGroup>
