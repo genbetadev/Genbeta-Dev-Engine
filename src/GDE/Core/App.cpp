@@ -1,5 +1,8 @@
 #include <GDE/Core/App.hpp>
 
+#include <string>
+#include <map>
+
 namespace GDE
 {
 
@@ -19,8 +22,10 @@ void App::run()
 		sf::Event event;
 		while(mWindow.pollEvent(event))
 		{
-			if(event.type == sf::Event::Closed)
+			if (event.type == sf::Event::Closed)
+			{
 				mWindow.close();
+			}
 		}
 		
 		mWindow.clear(sf::Color(180, 200, 255));
