@@ -11,6 +11,8 @@
 *.lai
 *.la
 *.a
+*.lib
+*.dll
 
 # Codelite
 .codelite/
@@ -157,3 +159,5 @@ App_Data/*.ldf
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+
+extlibs/headers/SFML/
