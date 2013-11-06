@@ -16,7 +16,7 @@ public:
 	void run();
 	
 private:
-	sf::RenderWindow mWindow;
+	sf::RenderWindow window;
 }; // class App
 	
 } // namespace GDE
