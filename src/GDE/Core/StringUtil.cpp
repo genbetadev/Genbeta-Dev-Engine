@@ -7,10 +7,10 @@ namespace GDE
 
 std::string convertBool(const bool theBoolean)
 {
-	// Use StringStream class to convert theBoolean to a string
+	// Usamos la clase StringStream para convertir theBoolean a string
 	std::stringstream anResult;
 
-	// Add theBoolean to the stringstream
+	// Añadimos theBoolean al stringstream
 	if (theBoolean)
 	{
 		anResult << "true";
@@ -20,224 +20,224 @@ std::string convertBool(const bool theBoolean)
 		anResult << "false";
 	}
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertColor(const sf::Color theColor)
 {
-	// Use StringStream class to convert theColor to a string
+	// Usamos la clase StringStream para convertir theColor a string
 	std::stringstream anResult;
 
-	// Add theColor to the stringstream
+	// Añadimos theColor al stringstream
 	anResult << theColor.r << ", ";
 	anResult << theColor.g << ", ";
 	anResult << theColor.b << ", ";
 	anResult << theColor.a;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertDouble(const double theDouble)
 {
-	// Use StringStream class to convert theDouble to a string
+	// Usamos la clase StringStream para convertir theDouble a string
 	std::stringstream anResult;
 
-	// Add theDouble to the stringstream
+	// Añadimos theDouble al stringstream
 	anResult << theDouble;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertFloat(const float theFloat)
 {
-	// Use StringStream class to convert theFloat to a string
+	// Usamos la clase StringStream para convertir theFloat a string
 	std::stringstream anResult;
 
-	// Add theFloat to the stringstream
+	// Añadimos theFloat al stringstream
 	anResult << theFloat;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertInt8(const sf::Int8 theNumber)
 {
-	// Use StringStream class to convert theNumber to a string
+	// Usamos la clase StringStream para convertir theNumber a string
 	std::stringstream anResult;
 
-	// Add theNumber to the stringstream
+	// Añadimos theNumber al stringstream
 	anResult << theNumber;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertInt16(const sf::Int16 theNumber)
 {
-	// Use StringStream class to convert theNumber to a string
+	// Usamos la clase StringStream para convertir theNumber a string
 	std::stringstream anResult;
 
-	// Add theNumber to the stringstream
+	// Añadimos theNumber al stringstream
 	anResult << theNumber;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertInt32(const sf::Int32 theNumber)
 {
-	// Use StringStream class to convert theNumber to a string
+	// Usamos la clase StringStream para convertir theNumber a string
 	std::stringstream anResult;
 
-	// Add theNumber to the stringstream
+	// Añadimos theNumber al stringstream
 	anResult << theNumber;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertInt64(const sf::Int64 theNumber)
 {
-	// Use StringStream class to convert theNumber to a string
+	// Usamos la clase StringStream para convertir theNumber a string
 	std::stringstream anResult;
 
-	// Add theNumber to the stringstream
+	// Añadimos theNumber al stringstream
 	anResult << theNumber;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertIntRect(const sf::IntRect theRect)
 {
-	// Use StringStream class to convert theRect to a string
+	// Usamos la clase StringStream para convertir theRect a string
 	std::stringstream anResult;
 
-	// Add theRect to the stringstream
+	// Añadimos theRect al stringstream
 	anResult << theRect.top << ", ";
 	anResult << theRect.left << ", ";
 	anResult << theRect.width << ", ";
 	anResult << theRect.height;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertUint8(const sf::Uint8 theNumber)
 {
-	// Use StringStream class to convert theNumber to a string
+	// Usamos la clase StringStream para convertir theNumber a string
 	std::stringstream anResult;
 
-	// Add theNumber to the stringstream
+	// Añadimos theNumber al stringstream
 	anResult << theNumber;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertUint16(const sf::Uint16 theNumber)
 {
-	// Use StringStream class to convert theNumber to a string
+	// Usamos la clase StringStream para convertir theNumber a string
 	std::stringstream anResult;
 
-	// Add theNumber to the stringstream
+	// Añadimos theNumber al stringstream
 	anResult << theNumber;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertUint32(const sf::Uint32 theNumber)
 {
-	// Use StringStream class to convert theNumber to a string
+	// Usamos la clase StringStream para convertir theNumber a string
 	std::stringstream anResult;
 
-	// Add theNumber to the stringstream
+	// Añadimos theNumber al stringstream
 	anResult << theNumber;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertUint64(const sf::Uint64 theNumber)
 {
-	// Use StringStream class to convert theNumber to a string
+	// Usamos la clase StringStream para convertir theNumber a string
 	std::stringstream anResult;
 
-	// Add theNumber to the stringstream
+	// Añadimos theNumber al stringstream
 	anResult << theNumber;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertVector2f(const sf::Vector2f theVector)
 {
-	// Use StringStream class to convert theVector to a string
+	// Usamos la clase StringStream para convertir theVector a string
 	std::stringstream anResult;
 
-	// Add theVector to the stringstream
+	// Añadimos theVector al stringstream
 	anResult << theVector.x << ", ";
 	anResult << theVector.y;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertVector2i(const sf::Vector2i theVector)
 {
-	// Use StringStream class to convert theVector to a string
+	// Usamos la clase StringStream para convertir theVector a string
 	std::stringstream anResult;
 
-	// Add theVector to the stringstream
+	// Añadimos theVector al stringstream
 	anResult << theVector.x << ", ";
 	anResult << theVector.y;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertVector2u(const sf::Vector2u theVector)
 {
-	// Use StringStream class to convert theVector to a string
+	// Usamos la clase StringStream para convertir theVector a string
 	std::stringstream anResult;
 
-	// Add theVector to the stringstream
+	// Añadimos theVector al stringstream
 	anResult << theVector.x << ", ";
 	anResult << theVector.y;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertVector3f(const sf::Vector3f theVector)
 {
-	// Use StringStream class to convert theVector to a string
+	// Usamos la clase StringStream para convertir theVector a string
 	std::stringstream anResult;
 
-	// Add theVector to the stringstream
+	// Añadimos theVector al stringstream
 	anResult << theVector.x << ", ";
 	anResult << theVector.y << ", ";
 	anResult << theVector.z;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
 std::string convertVector3i(const sf::Vector3i theVector)
 {
-	// Use StringStream class to convert theVector to a string
+	// Usamos la clase StringStream para convertir theVector a string
 	std::stringstream anResult;
 
-	// Add theVector to the stringstream
+	// Añadimos theVector al stringstream
 	anResult << theVector.x << ", ";
 	anResult << theVector.y << ", ";
 	anResult << theVector.z;
 
-	// Return the string result created by stringstream
+	// Devolvemos el string resultante creado por stringstream
 	return anResult.str();
 }
 
@@ -245,22 +245,22 @@ bool parseBool(std::string theValue, const bool theDefault)
 {
 	bool anResult = theDefault;
 
-	// First convert theValue provided into lower case
+	// Primero convertimos theValue a minusculas
 	std::transform(theValue.begin(), theValue.end(), theValue.begin(), tolower);
 
-	// Look for true/1/on results
+	// Buscamos true/1/on
 	if (theValue == "true" || theValue == "1" || theValue == "on")
 	{
 		anResult = true;
 	}
 
-	// Look for false results
+	// Buscamos false/0/off
 	if (theValue == "false" || theValue == "0" || theValue == "off")
 	{
 		anResult = false;
 	}
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -268,18 +268,18 @@ sf::Color parseColor(const std::string theValue, const sf::Color theDefault)
 {
 	sf::Color anResult = theDefault;
 
-	// Try to find the first comma
+	// Buscamos la primera coma
 	size_t anComma1Offset = theValue.find_first_of(',');
 	if (anComma1Offset != std::string::npos)
 	{
 		sf::Uint8 anRed = parseUint8(theValue.substr(0, anComma1Offset), theDefault.r);
-		// Try to find the next comma
+		// Buscamos la siguiente coma
 		size_t anComma2Offset = theValue.find_first_of(',', anComma1Offset + 1);
 		if (anComma2Offset != std::string::npos)
 		{
 			sf::Uint8 anGreen = parseUint8(
 				theValue.substr(anComma1Offset + 1, anComma2Offset), theDefault.g);
-			// Try to find the next comma
+			// Buscamos la siguiente coma
 			size_t anComma3Offset = theValue.find_first_of(',', anComma2Offset + 1);
 			if (anComma3Offset != std::string::npos)
 			{
@@ -288,7 +288,7 @@ sf::Color parseColor(const std::string theValue, const sf::Color theDefault)
 				sf::Uint8 anAlpha = parseUint8(
 					theValue.substr(anComma3Offset + 1), theDefault.a);
 
-				// Now that all 4 values have been parsed, return the color found
+				// Tenemos los 4 valores parseados, devolvemos el color que hemos encontrado
 				anResult.r = anRed;
 				anResult.g = anGreen;
 				anResult.b = anBlue;
@@ -297,7 +297,7 @@ sf::Color parseColor(const std::string theValue, const sf::Color theDefault)
 		}
 	}
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -306,10 +306,10 @@ double parseDouble(const std::string theValue, const double theDefault)
 	double anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to a double floating point number
+	// Convertimos el string a double
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -318,10 +318,10 @@ float parseFloat(const std::string theValue, const float theDefault)
 	float anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to a floating point number
+	// Convertimos el string a float
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -330,10 +330,10 @@ sf::Int8 parseInt8(const std::string theValue, const sf::Int8 theDefault)
 	sf::Int8 anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to a signed 8 bit integer
+	// Convertimos el string a sf::Int8
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -342,10 +342,10 @@ sf::Int16 parseInt16(const std::string theValue, const sf::Int16 theDefault)
 	sf::Int16 anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to a signed 16 bit integer
+	// Convertimos el string a sf::Int16
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -354,10 +354,10 @@ sf::Int32 parseInt32(const std::string theValue, const sf::Int32 theDefault)
 	sf::Int32 anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to a signed 32 bit integer
+	// Convertimos el string a sf::Int32
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -366,10 +366,10 @@ sf::Int64 parseInt64(const std::string theValue, const sf::Int64 theDefault)
 	sf::Int64 anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to a signed 64 bit integer
+	// Convertimos el string a sf::Int64
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -377,17 +377,17 @@ sf::IntRect parseIntRect(const std::string theValue, const sf::IntRect theDefaul
 {
 	sf::IntRect anResult = theDefault;
 
-	// Try to find the first comma
+	// Buscamos la primera coma
 	size_t anComma1Offset = theValue.find_first_of(',');
 	if (anComma1Offset != std::string::npos)
 	{
 		sf::Int32 anLeft = parseInt32(theValue.substr(0, anComma1Offset), theDefault.left);
-		// Try to find the next comma
+		// Buscamos la siguiente coma
 		size_t anComma2Offset = theValue.find_first_of(',', anComma1Offset + 1);
 		if (anComma2Offset != std::string::npos)
 		{
 			sf::Int32 anTop = parseInt32(theValue.substr(anComma1Offset + 1, anComma2Offset), theDefault.top);
-			// Try to find the next comma
+			// Buscamos la siguiente coma
 			size_t anComma3Offset = theValue.find_first_of(',', anComma2Offset + 1);
 			if (anComma3Offset != std::string::npos)
 			{
@@ -404,7 +404,7 @@ sf::IntRect parseIntRect(const std::string theValue, const sf::IntRect theDefaul
 		}
 	}
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -413,10 +413,10 @@ sf::Uint8 parseUint8(const std::string theValue, const sf::Uint8 theDefault)
 	sf::Uint8 anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to an unsigned 8 bit integer
+	// Convertimos el string a sf::Uint8
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -425,10 +425,10 @@ sf::Uint16 parseUint16(const std::string theValue, const sf::Uint16 theDefault)
 	sf::Uint16 anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to an unsigned 16 bit integer
+	// Convertimos el string a sf::Uint16
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -437,10 +437,10 @@ sf::Uint32 parseUint32(const std::string theValue, const sf::Uint32 theDefault)
 	sf::Uint32 anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to an unsigned 32 bit integer
+	// Convertimos el string a sf::Uint32
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -449,10 +449,10 @@ sf::Uint64 parseUint64(const std::string theValue, const sf::Uint64 theDefault)
 	sf::Uint64 anResult = theDefault;
 	std::istringstream iss(theValue);
 
-	// convert the string to an unsigned 64 bit integer
+	// Convertimos el string a sf::Uint64
 	iss >> anResult;
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -460,19 +460,19 @@ sf::Vector2f parseVector2f(const std::string theValue, const sf::Vector2f theDef
 {
 	sf::Vector2f anResult = theDefault;
 
-	// Try to find the first comma
+	// Buscamos la primera coma
 	size_t anCommaOffset = theValue.find_first_of(',');
 	if (anCommaOffset != std::string::npos)
 	{
 		float anX = parseFloat(theValue.substr(0, anCommaOffset), theDefault.x);
 		float anY = parseFloat(theValue.substr(anCommaOffset + 1), theDefault.y);
 
-		// Now that both values have been parsed, return the vector found
+		// Ahora que los 2 valores han sido parseados, devolvemos el vector encontrado
 		anResult.x = anX;
 		anResult.y = anY;
 	}
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -480,19 +480,19 @@ sf::Vector2i parseVector2i(const std::string theValue, const sf::Vector2i theDef
 {
 	sf::Vector2i anResult = theDefault;
 
-	// Try to find the first comma
+	// Buscamos la primera coma
 	size_t anCommaOffset = theValue.find_first_of(',');
 	if (anCommaOffset != std::string::npos)
 	{
 		sf::Int32 anX = parseInt32(theValue.substr(0, anCommaOffset), theDefault.x);
 		sf::Int32 anY = parseInt32(theValue.substr(anCommaOffset + 1), theDefault.y);
 
-		// Now that both values have been parsed, return the vector found
+		// Ahora que los 2 valores han sido parseados, devolvemos el vector encontrado
 		anResult.x = anX;
 		anResult.y = anY;
 	}
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -500,19 +500,19 @@ sf::Vector2u parseVector2u(const std::string theValue, const sf::Vector2u theDef
 {
 	sf::Vector2u anResult = theDefault;
 
-	// Try to find the first comma
+	// Buscamos la primera coma
 	size_t anCommaOffset = theValue.find_first_of(',');
 	if (anCommaOffset != std::string::npos)
 	{
 		sf::Uint32 anX = parseUint32(theValue.substr(0, anCommaOffset), theDefault.x);
 		sf::Uint32 anY = parseUint32(theValue.substr(anCommaOffset + 1), theDefault.y);
 
-		// Now that both values have been parsed, return the vector found
+		// Ahora que los 2 valores han sido parseados, devolvemos el vector encontrado
 		anResult.x = anX;
 		anResult.y = anY;
 	}
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -520,27 +520,27 @@ sf::Vector3f parseVector3f(const std::string theValue, const sf::Vector3f theDef
 {
 	sf::Vector3f anResult = theDefault;
 
-	// Try to find the first comma
+	// Buscamos la primera coma
 	size_t anComma1Offset = theValue.find_first_of(',', 0);
 	if (anComma1Offset != std::string::npos)
 	{
 		float anX = parseFloat(theValue.substr(0, anComma1Offset), theDefault.x);
 
-		// Try to find the next comma
+		// Buscamos la siguiente coma
 		size_t anComma2Offset = theValue.find_first_of(',', anComma1Offset + 1);
 		if (anComma2Offset != std::string::npos)
 		{
 			float anY = parseFloat(theValue.substr(anComma1Offset + 1, anComma2Offset), theDefault.y);
 			float anZ = parseFloat(theValue.substr(anComma2Offset + 1), theDefault.z);
 
-			// Now that all 3 values have been parsed, return the Vector3f found
+			// Ahora que los 3 valores han sido parseados, devolvemos el vector encontrado
 			anResult.x = anX;
 			anResult.y = anY;
 			anResult.z = anZ;
 		}
 	}
 
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
@@ -548,26 +548,26 @@ sf::Vector3i parseVector3i(const std::string theValue, const sf::Vector3i theDef
 {
 	sf::Vector3i anResult = theDefault;
 
-	// Try to find the first comma
+	// Buscamos la primera coma
 	size_t anComma1Offset = theValue.find_first_of(',', 0);
 	if (anComma1Offset != std::string::npos)
 	{
 		sf::Int32 anX = parseInt32(theValue.substr(0, anComma1Offset), theDefault.x);
 
-		// Try to find the next comma
+		// Buscamos la siguiente coma
 		size_t anComma2Offset = theValue.find_first_of(',', anComma1Offset + 1);
 		if (anComma2Offset != std::string::npos)
 		{
 			sf::Int32 anY = parseInt32(theValue.substr(anComma1Offset + 1, anComma2Offset), theDefault.y);
 			sf::Int32 anZ = parseInt32(theValue.substr(anComma2Offset + 1), theDefault.z);
 
-			// Now that all 3 values have been parsed, return the Vector3f found
+			// Ahora que los 3 valores han sido parseados, devolvemos el vector encontrado
 			anResult.x = anX;
 			anResult.y = anY;
 			anResult.z = anZ;
 		}
 	}
-	// Return the result found or theDefault assigned above
+	// Devolvemos el resultado que hemos encontrado o el valor theDefault que se nos ha proporcionado
 	return anResult;
 }
 
