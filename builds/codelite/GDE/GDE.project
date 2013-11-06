@@ -8,10 +8,16 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
-    <File Name="../../../src/GDE/Core/App.cpp"/>
+    <VirtualDirectory Name="Core">
+      <File Name="../../../src/GDE/Core/App.cpp"/>
+    </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="include">
-    <File Name="../../../include/GDE/Core/App.hpp"/>
+    <VirtualDirectory Name="Core">
+      <File Name="../../../include/GDE/Core/App.hpp"/>
+    </VirtualDirectory>
+    <File Name="../../../include/GDE/Config.hpp"/>
+    <File Name="../../../include/GDE/Core.hpp"/>
   </VirtualDirectory>
   <Settings Type="Static Library">
     <GlobalSettings>
