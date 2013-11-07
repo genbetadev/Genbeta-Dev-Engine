@@ -7,13 +7,25 @@ bool Log::initialized = false;
 time_t Log::rawtime;
 std::string Log::logFileName;
 
-    void Log::init(){
+    void Log::init(std::string logFileName){
         if(!initialized)
 		{
-            logFileName = "log.txt";
+            Log::logFileName = logFileName;
             initialized = true;
             std::cout << "Sistema de Log inicializado" << std::endl;
-            Log::info("init", "Sistema de Log inicializado");
+            std::ofstream logFile(Log::logFileName.c_str(), std::ofstream::app);
+			time (&rawtime);
+			char buffer[20];
+			struct tm * timeinfo;
+			timeinfo = localtime(&rawtime);
+			strftime(buffer, 20, "%d/%m/%y %X ", timeinfo);
+			logFile << std::endl;
+			logFile << "=====================================================================";
+            logFile << std::endl;
+			logFile << buffer << "SISTEMA DE LOG INICIALIZADO" << std::endl;
+			logFile << "=====================================================================";
+			logFile << std::endl;
+			logFile.close();
         }
     }
 
@@ -41,7 +53,7 @@ std::string Log::logFileName;
             std::cout << "El sistema de log no ha sido inicializado, por favor, inicielo mediante GDE::Log::init()" << std::endl;
             return;
         }
-        std::ofstream logFile(logFileName.c_str(), std::ofstream::app);
+        std::ofstream logFile(Log::logFileName.c_str(), std::ofstream::app);
         time (&rawtime);
         char buffer [20];
         struct tm * timeinfo;
@@ -58,7 +70,7 @@ std::string Log::logFileName;
             std::cout << "El sistema de log no ha sido inicializado, por favor, inicielo mediante GDE::Log::init()" << std::endl;
             return;
         }
-        std::ofstream logFile(logFileName.c_str(), std::ofstream::app);
+        std::ofstream logFile(Log::logFileName.c_str(), std::ofstream::app);
         time (&rawtime);
         char buffer [20];
         struct tm * timeinfo;
