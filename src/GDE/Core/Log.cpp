@@ -62,7 +62,7 @@ std::string Log::logFileName;
         char buffer [20];
         struct tm * timeinfo;
         timeinfo = localtime (&rawtime);
-        strftime (buffer,20,"%D %T",timeinfo);
+        strftime (buffer,20,"%D %T ",timeinfo);
         logFile << buffer << "ERROR: " << tag << ": " << text << std::endl;
         logFile.close();
     }
