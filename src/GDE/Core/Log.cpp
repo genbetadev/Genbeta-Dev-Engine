@@ -8,7 +8,8 @@ time_t Log::rawtime;
 std::string Log::logFileName;
 
     void Log::init(){
-        if(!initialized){
+        if(!initialized)
+		{
             logFileName = "log.txt";
             initialized = true;
             std::cout << "Sistema de Log inicializado" << std::endl;
