@@ -7,9 +7,10 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug-windows">
-				<Option output="bin/Debug/GDE" prefix_auto="1" extension_auto="1" />
+				<Option output="../../../lib/GDE" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../../../lib" />
 				<Option object_output="obj/Debug/" />
-				<Option type="1" />
+				<Option type="3" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
@@ -30,9 +31,28 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="../../../../Downloads/SFML-2.1/include" />
 			<Add directory="../../../include" />
 		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="../../../../Downloads/SFML-2.1/lib" />
+		</Linker>
+		<Unit filename="../../../include/GDE/Config.hpp" />
+		<Unit filename="../../../include/GDE/Core.hpp" />
+		<Unit filename="../../../include/GDE/Core/App.hpp" />
+		<Unit filename="../../../include/GDE/Core/ConfigCreate.hpp" />
+		<Unit filename="../../../include/GDE/Core/ConfigReader.hpp" />
+		<Unit filename="../../../include/GDE/Core/CoreTypes.hpp" />
+		<Unit filename="../../../include/GDE/Core/Log.hpp" />
+		<Unit filename="../../../include/GDE/Core/StringsUtil.hpp" />
 		<Unit filename="../../../src/GDE/Core/App.cpp" />
+		<Unit filename="../../../src/GDE/Core/ConfigCreate.cpp" />
+		<Unit filename="../../../src/GDE/Core/ConfigReader.cpp" />
+		<Unit filename="../../../src/GDE/Core/Log.cpp" />
+		<Unit filename="../../../src/GDE/Core/StringUtil.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
