@@ -25,10 +25,10 @@ std::string Log::logFileName;
         }
         std::ofstream logFile(logFileName.c_str(), std::ofstream::app);
         time (&rawtime);
-        char buffer [20];
+        char buffer[20];
         struct tm * timeinfo;
-        timeinfo = localtime (&rawtime);
-        strftime (buffer,20,"%D %T ",timeinfo);
+        timeinfo = localtime(&rawtime);
+        strftime(buffer, 20, "%d/%m/%y %X ", timeinfo);
         logFile << buffer << "INFO: " << tag << ": " << text << std::endl;
         logFile.close();
     }
@@ -45,7 +45,7 @@ std::string Log::logFileName;
         char buffer [20];
         struct tm * timeinfo;
         timeinfo = localtime (&rawtime);
-        strftime (buffer,20,"%D %T ",timeinfo);
+        strftime (buffer,20,"%d/%m/%y %X ",timeinfo);
         logFile << buffer << "DEBUG: " << tag << ": " << text << std::endl;
         logFile.close();
     }
@@ -62,7 +62,7 @@ std::string Log::logFileName;
         char buffer [20];
         struct tm * timeinfo;
         timeinfo = localtime (&rawtime);
-        strftime (buffer,20,"%D %T ",timeinfo);
+        strftime (buffer,20,"%d/%m/%y %X ",timeinfo);
         logFile << buffer << "ERROR: " << tag << ": " << text << std::endl;
         logFile.close();
     }
