@@ -3,6 +3,7 @@
 
 #include <GDE/Config.hpp>
 #include <GDE/Core/CoreTypes.hpp>
+#include <GDE/Core/Log.hpp>
 #include <GDE/Core/StringsUtil.hpp>
 #include <GDE/Core/ConfigReader.hpp>
 #include <GDE/Core/App.hpp>
