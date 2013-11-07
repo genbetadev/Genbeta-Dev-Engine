@@ -2,11 +2,12 @@
 #define GDE_CORE_APP_HPP
 
 #include <SFML/Graphics.hpp>
+#include <GDE/Config.hpp>
 
 namespace GDE
 {
 	
-class App
+class GDE_API App
 {
 public:
 	App();
@@ -15,7 +16,7 @@ public:
 	void run();
 	
 private:
-	sf::RenderWindow mWindow;
+	sf::RenderWindow window;
 }; // class App
 	
 } // namespace GDE

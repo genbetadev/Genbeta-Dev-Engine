@@ -11,10 +11,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\include\GDE\Config.hpp" />
+    <ClInclude Include="..\..\..\include\GDE\Core.hpp" />
     <ClInclude Include="..\..\..\include\GDE\Core\App.hpp" />
+    <ClInclude Include="..\..\..\include\GDE\Core\ConfigReader.hpp" />
+    <ClInclude Include="..\..\..\include\GDE\Core\CoreTypes.hpp" />
+    <ClInclude Include="..\..\..\include\GDE\Core\StringsUtil.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\GDE\Core\App.cpp" />
+    <ClCompile Include="..\..\..\src\GDE\Core\ConfigReader.cpp" />
+    <ClCompile Include="..\..\..\src\GDE\Core\StringUtil.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{ED7F46E6-1063-44E3-8D32-06367A31EE45}</ProjectGuid>

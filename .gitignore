@@ -11,6 +11,11 @@
 *.lai
 *.la
 *.a
+*.lib
+*.dll
+
+*.exe
+*.exp
 
 # Codelite
 .codelite/
@@ -29,7 +34,6 @@
 [Rr]elease/
 x64/
 build/
-[Bb]in/
 [Oo]bj/
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
@@ -157,3 +161,5 @@ App_Data/*.ldf
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
+
+extlibs/headers/SFML/
