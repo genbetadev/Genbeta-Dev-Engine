@@ -5,17 +5,17 @@ int main(int argc, char** argv)
 {
 	GDE::ConfigCreate f;
 
-	f.Open("prueba.cfg");
-	f.PutSection("window");
-	f.PutValue("width", "640");
-	f.PutValue("height", "480");
-	f.PutValue("bpp", "32");
-	f.PutBlankLine();
-	f.PutSection("other");
-	f.PutValue("ecece", "kjefi");
-	f.PutValue("hhyy", "daasaf");
-	f.PutValue("efefe", "scjys");
-	f.Close();
+	f.open("prueba.cfg");
+	f.putSection("window");
+	f.putValue("width", "640");
+	f.putValue("height", "480");
+	f.putValue("bpp", "32");
+	f.putBlankLine();
+	f.putSection("other");
+	f.putValue("ecece", "kjefi");
+	f.putValue("hhyy", "daasaf");
+	f.putValue("efefe", "scjys");
+	f.close();
 
 	GDE::ConfigReader conf;
 	conf.loadFromFile("window.cfg");
