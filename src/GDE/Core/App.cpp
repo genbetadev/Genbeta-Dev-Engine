@@ -1,18 +1,21 @@
 #include <GDE/Core/App.hpp>
-
-#include <string>
-#include <map>
+#include <GDE/Core/Log.hpp>
 
 namespace GDE
 {
 
 App::App()
 	: window(sf::VideoMode(800, 480, 32), "Genbeta Dev Engine")
-{	
+{
+	// Se inicializa el sistema de loggin
+	GDE::Log::init();
+	
+	GDE::Log::info("App::App()", "Constructor llamado");
 }
 
 App::~App()
 {
+	GDE::Log::info("App::~App()", "Destructor llamado");
 }
 
 void App::run()

@@ -12,6 +12,7 @@
       <File Name="../../../src/GDE/Core/App.cpp"/>
       <File Name="../../../src/GDE/Core/ConfigReader.cpp"/>
       <File Name="../../../src/GDE/Core/StringUtil.cpp"/>
+      <File Name="../../../src/GDE/Core/Log.cpp"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="include">
@@ -20,6 +21,7 @@
       <File Name="../../../include/GDE/Core/ConfigReader.hpp"/>
       <File Name="../../../include/GDE/Core/CoreTypes.hpp"/>
       <File Name="../../../include/GDE/Core/StringsUtil.hpp"/>
+      <File Name="../../../include/GDE/Core/Log.hpp"/>
     </VirtualDirectory>
     <File Name="../../../include/GDE/Config.hpp"/>
     <File Name="../../../include/GDE/Core.hpp"/>
