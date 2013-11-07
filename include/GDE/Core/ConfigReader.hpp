@@ -25,13 +25,13 @@ public:
 
 	bool isSectionEmpty(const std::string theSection) const;
 
-	bool GetBool(const std::string theSection, const std::string theName, const bool theDefault = false) const;
+	bool getBool(const std::string theSection, const std::string theName, const bool theDefault = false) const;
 
-	float GetFloat(const std::string theSection, const std::string theName, const float theDefault = 0.f) const;
+	float getFloat(const std::string theSection, const std::string theName, const float theDefault = 0.f) const;
 
-	std::string GetString(const std::string theSection, const std::string theName, const std::string theDefault = "") const;
+	std::string getString(const std::string theSection, const std::string theName, const std::string theDefault = "") const;
 
-	sf::Uint32 GetUint32(const std::string theSection, const std::string theName, const sf::Uint32 theDefault = 0) const;
+	sf::Uint32 getUint32(const std::string theSection, const std::string theName, const sf::Uint32 theDefault = 0) const;
 
 private:
 	// CONSTANTES
