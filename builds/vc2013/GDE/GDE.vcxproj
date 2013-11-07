@@ -16,11 +16,13 @@
     <ClInclude Include="..\..\..\include\GDE\Core\App.hpp" />
     <ClInclude Include="..\..\..\include\GDE\Core\ConfigReader.hpp" />
     <ClInclude Include="..\..\..\include\GDE\Core\CoreTypes.hpp" />
+    <ClInclude Include="..\..\..\include\GDE\Core\Log.hpp" />
     <ClInclude Include="..\..\..\include\GDE\Core\StringsUtil.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\GDE\Core\App.cpp" />
     <ClCompile Include="..\..\..\src\GDE\Core\ConfigReader.cpp" />
+    <ClCompile Include="..\..\..\src\GDE\Core\Log.cpp" />
     <ClCompile Include="..\..\..\src\GDE\Core\StringUtil.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

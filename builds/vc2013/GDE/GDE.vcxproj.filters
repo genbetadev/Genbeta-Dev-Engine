@@ -39,6 +39,9 @@
     <ClInclude Include="..\..\..\include\GDE\Core\StringsUtil.hpp">
       <Filter>Archivos de encabezado\Core</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\GDE\Core\Log.hpp">
+      <Filter>Archivos de encabezado\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\GDE\Core\App.cpp">
@@ -47,8 +50,11 @@
     <ClCompile Include="..\..\..\src\GDE\Core\ConfigReader.cpp">
       <Filter>Archivos de código fuente\Core</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\src\GDE\Core\Log.cpp">
+      <Filter>Archivos de código fuente\Core</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\src\GDE\Core\StringUtil.cpp">
-      <Filter>Archivos de código fuente</Filter>
+      <Filter>Archivos de código fuente\Core</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
