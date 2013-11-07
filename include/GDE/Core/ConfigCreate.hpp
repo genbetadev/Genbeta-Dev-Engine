@@ -16,17 +16,17 @@ public:
 
 	~ConfigCreate();
 
-	void Open(const std::string& theFilename);
+	void open(const std::string& theFilename);
 
-	void Close();
+	void close();
 
-	void PutSection(const std::string& theSection);
+	void putSection(const std::string& theSection);
 
-	void PutValue(const std::string& theKey, const std::string& theValue);
+	void putValue(const std::string& theKey, const std::string& theValue);
 
-	void PutComment(const std::string& theComment);
+	void putComment(const std::string& theComment);
 
-	void PutBlankLine();
+	void putBlankLine();
 
 private:
 	std::ofstream file;
