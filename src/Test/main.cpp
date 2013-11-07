@@ -15,7 +15,7 @@ int main(int argc, char** argv)
 	f.PutValue("ecece", "kjefi");
 	f.PutValue("hhyy", "daasaf");
 	f.PutValue("efefe", "scjys");
-
+	f.Close();
 
 	GDE::ConfigReader conf;
 	conf.loadFromFile("window.cfg");
