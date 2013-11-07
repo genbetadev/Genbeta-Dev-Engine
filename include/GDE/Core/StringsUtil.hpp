@@ -307,14 +307,14 @@ sf::Vector3i GDE_API parseVector3i(const std::string theValue, const sf::Vector3
  * StringToLower convertirá todas las letras de theString a minusculas.
  * @param[in] theString: El String a convertir.
  * @return theString: El String con sus letras en minusculas.
- * **/
+ **/
 std::string GDE_API StringToLowercase(std::string theString);
 
 /**
  * StringToLower convertirá todas las letras de theString a mayúsculas.
  * @param[in] theString: El String a convertir.
  * @return theString: El String con sus letras en mayúsculas.
- * **/
+ **/
 std::string GDE_API StringToUppercase(std::string theString);
 
 } // namespace GDE
