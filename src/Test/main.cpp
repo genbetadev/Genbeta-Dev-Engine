@@ -3,28 +3,11 @@
 
 int main(int argc, char** argv)
 {
-	GDE::ConfigCreate f;
+	int anExitCode;
 
-	f.Open("prueba.cfg");
-	f.PutSection("window");
-	f.PutValue("width", "640");
-	f.PutValue("height", "480");
-	f.PutValue("bpp", "32");
-	f.PutBlankLine();
-	f.PutSection("other");
-	f.PutValue("ecece", "kjefi");
-	f.PutValue("hhyy", "daasaf");
-	f.PutValue("efefe", "scjys");
-	f.Close();
+	GDE::App* anApp = GDE::App::instance();
 
-	GDE::ConfigReader conf;
-	conf.loadFromFile("window.cfg");
+	anExitCode = anApp->run();
 
-	std::cout << conf.GetUint32("window", "width", 0) << std::endl;
-
-	GDE::App anApp;
-	
-	anApp.run();
-	
-	return 0;
+	return anExitCode;
 }

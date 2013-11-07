@@ -52,7 +52,7 @@ bool ConfigReader::isSectionEmpty(const std::string theSection) const
 	return anResult;
 }
 
-bool ConfigReader::GetBool(const std::string theSection,
+bool ConfigReader::getBool(const std::string theSection,
 	const std::string theName, const bool theDefault) const
 {
 	bool anResult = theDefault;
@@ -79,7 +79,7 @@ bool ConfigReader::GetBool(const std::string theSection,
 	return anResult;
 }
 
-float ConfigReader::GetFloat(const std::string theSection,
+float ConfigReader::getFloat(const std::string theSection,
 	const std::string theName, const float theDefault) const
 {
 	float anResult = theDefault;
@@ -106,7 +106,7 @@ float ConfigReader::GetFloat(const std::string theSection,
 	return anResult;
 }
 
-std::string ConfigReader::GetString(const std::string theSection,
+std::string ConfigReader::getString(const std::string theSection,
 	const std::string theName, const std::string theDefault) const
 {
 	std::string anResult = theDefault;
@@ -133,7 +133,7 @@ std::string ConfigReader::GetString(const std::string theSection,
 	return anResult;
 }
 
-sf::Uint32 ConfigReader::GetUint32(const std::string theSection, const std::string theName, const sf::Uint32 theDefault) const
+sf::Uint32 ConfigReader::getUint32(const std::string theSection, const std::string theName, const sf::Uint32 theDefault) const
 {
 	sf::Uint32 anResult = theDefault;
 
