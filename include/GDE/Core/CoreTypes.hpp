@@ -6,9 +6,18 @@
 
 namespace GDE
 {
+	
+// Tipos de Log
+enum LogType
+{
+	infoLevel = 0,
+	debugLevel = 1,
+	errorLevel = 2
+};
 
-/// Enumaración col los posibles valores de retorno de la Aplicación
-enum StatusType {
+/// EnumaraciÃ³n col los posibles valores de retorno de la AplicaciÃ³n
+enum StatusType
+{
 	// Values from -99 to 99 are common Error and Good status responses
 	StatusAppMissingAsset = -4,  ///< Application failed due to missing asset file
 	StatusAppStackEmpty = -3,  ///< Application States stack is empty

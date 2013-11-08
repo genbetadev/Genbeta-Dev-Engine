@@ -31,20 +31,20 @@ std::string Log::logFileName;
 
     void Log::info(std::string tag, std::string text)
     {
-        Log::log(tag, text, INFH);
+        Log::log(tag, text, GDE::infoLevel);
     }
     
     void Log::debug(std::string tag, std::string text)
     {
-        Log::log(tag, text, DBGH);
+        Log::log(tag, text, GDE::debugLevel);
     }
     
     void Log::error(std::string tag, std::string text)
     {
-       Log::log(tag, text, ERRH);
+       Log::log(tag, text, GDE::errorLevel);
     }
     
-    void Log::log(std::string tag, std::string text, std::string logType)
+    void Log::log(std::string tag, std::string text, int logType)
     {
         if (!initialized)
         {
@@ -57,7 +57,20 @@ std::string Log::logFileName;
         struct tm * timeinfo;
         timeinfo = localtime (&rawtime);
         strftime (buffer,20,"%d/%m/%y %X ",timeinfo);
-        logFile << buffer << logType <<": " << tag << ": " << text << std::endl;
+        logFile << buffer;
+		switch(logType)
+		{
+		case GDE::infoLevel:
+			logFile << "INF";
+			break;
+		case GDE::debugLevel:
+			logFile << "DBG";
+			break;
+		case GDE::errorLevel:
+			logFile << "ERR";
+			break;
+		}
+		logFile << ": " << tag << ": " << text << std::endl;
         logFile.close();
       
     }

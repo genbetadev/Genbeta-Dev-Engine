@@ -5,10 +5,7 @@
 #include <ctime>
 #include <fstream>
 #include <iostream>
-
-#define INFH "INFO"
-#define DBGH "DEBUG"
-#define ERRH "ERROR"
+#include <GDE/Core/CoreTypes.hpp>
 
 namespace GDE
 {
@@ -82,7 +79,7 @@ private:
      * @param text texto a escribir.
      * @param logType encabezado del log
      */
-    static void log(std::string tag, std::string text, std::string logType);
+    static void log(std::string tag, std::string text, int logType);
   
     static time_t rawtime;
     static bool initialized;
