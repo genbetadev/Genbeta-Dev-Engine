@@ -1,3 +1,4 @@
+#include <GDE/Config.hpp>
 #include <GDE/Core/Log.hpp>
 
 namespace GDE
@@ -63,9 +64,11 @@ std::string Log::logFileName;
 		case GDE::infoLevel:
 			logFile << "INF";
 			break;
+#ifdef GDE_DEBUG
 		case GDE::debugLevel:
 			logFile << "DBG";
 			break;
+#endif // GDE_DEBUG
 		case GDE::errorLevel:
 			logFile << "ERR";
 			break;
