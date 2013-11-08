@@ -1,0 +1,115 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"C:/MinGW/bin/mingw32-make.exe",
+				"-f",
+				"Makefile",
+				"VERBOSE=1",
+				"all"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "GDE - all",
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"C:/MinGW/bin/mingw32-make.exe",
+				"-f",
+				"Makefile",
+				"VERBOSE=1",
+				"clean"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "GDE - clean",
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"C:/MinGW/bin/mingw32-make.exe",
+				"-f",
+				"Makefile",
+				"VERBOSE=1",
+				"edit_cache"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "GDE - edit_cache",
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"C:/MinGW/bin/mingw32-make.exe",
+				"-f",
+				"Makefile",
+				"VERBOSE=1",
+				"rebuild_cache"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "GDE - rebuild_cache",
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"C:/MinGW/bin/mingw32-make.exe",
+				"-f",
+				"Makefile",
+				"VERBOSE=1",
+				"GDE_LIB"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "GDE - GDE_LIB",
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"C:/MinGW/bin/mingw32-make.exe",
+				"-f",
+				"Makefile",
+				"VERBOSE=1",
+				"GDE_LIB/fast"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "GDE - GDE_LIB/fast",
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"C:/MinGW/bin/mingw32-make.exe",
+				"-f",
+				"Makefile",
+				"VERBOSE=1",
+				"GDE_TEST"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "GDE - GDE_TEST",
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"C:/MinGW/bin/mingw32-make.exe",
+				"-f",
+				"Makefile",
+				"VERBOSE=1",
+				"GDE_TEST/fast"
+			],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"name": "GDE - GDE_TEST/fast",
+			"working_dir": "${project_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine"
+		}
+	]
+}

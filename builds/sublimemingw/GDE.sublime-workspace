@@ -1,0 +1,1739 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gala",
+				"galaxyData"
+			],
+			[
+				"inter",
+				"interfaceActionZoom  (function)"
+			],
+			[
+				"inte",
+				"interfaceAction"
+			],
+			[
+				"han",
+				"handler"
+			],
+			[
+				"zo",
+				"zoomLevel"
+			],
+			[
+				"ele",
+				"createElement  (function)"
+			],
+			[
+				"from",
+				"fromNode"
+			],
+			[
+				"cen",
+				"centerY  (variable)"
+			],
+			[
+				"fro",
+				"fromNode"
+			],
+			[
+				"fr",
+				"fromNode"
+			],
+			[
+				"bind",
+				"bindEvents"
+			],
+			[
+				"toNode",
+				"toNode  (argument)"
+			],
+			[
+				"canvas",
+				"canvasWidth  (variable)"
+			],
+			[
+				"transformRangEa",
+				"transformRangEaseInOut  (function)"
+			],
+			[
+				"fi",
+				"finalZoom"
+			],
+			[
+				"transformRangE",
+				"transformRangEaseInOut  (function)"
+			],
+			[
+				"init",
+				"initialZoom"
+			],
+			[
+				"G",
+				"GALAXY"
+			],
+			[
+				"anima",
+				"animationTimeZoomOut"
+			],
+			[
+				"ani",
+				"animationTimeZoomIn"
+			],
+			[
+				"des",
+				"desplacedX"
+			],
+			[
+				"resi",
+				"resizeOn"
+			],
+			[
+				"Planet",
+				"planetView"
+			],
+			[
+				"un",
+				"unbind"
+			],
+			[
+				"stro",
+				"strokeStyle"
+			],
+			[
+				"reque",
+				"requestStaticFrame  (variable)"
+			],
+			[
+				"we",
+				"wheelZoomOutFactor"
+			],
+			[
+				"whee",
+				"wheelZoomInFactor"
+			],
+			[
+				"positi",
+				"positionY"
+			],
+			[
+				"posi",
+				"positionX"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"get",
+				"getMultitouchIndex"
+			],
+			[
+				"page",
+				"pageX"
+			],
+			[
+				"re",
+				"resize"
+			],
+			[
+				"pointer",
+				"pointerDown"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"mouse",
+				"mousedown  (function)"
+			],
+			[
+				"rand",
+				"randIdentifier"
+			],
+			[
+				"rad",
+				"randIdentifier"
+			],
+			[
+				"func",
+				"funct"
+			],
+			[
+				"pahFin",
+				"pathFindingActualDistance  (variable)"
+			],
+			[
+				"dC",
+				"dCanvasC  (variable)"
+			],
+			[
+				"initial",
+				"initialBackgroundPosition"
+			],
+			[
+				"bac",
+				"positionBackground  (variable)"
+			],
+			[
+				"tem",
+				"tempDesplacedX"
+			],
+			[
+				"dra",
+				"drawSystemCumulus  (function)"
+			],
+			[
+				"ajaxC",
+				"ajaxCall"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"co",
+				"conn"
+			],
+			[
+				"cu",
+				"cumulus"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"ran",
+				"getRandomInt  (function)"
+			],
+			[
+				"eventDa",
+				"eventData"
+			],
+			[
+				"zoo",
+				"zoom_factor"
+			],
+			[
+				"con",
+				"contexto"
+			],
+			[
+				"pha",
+				"phase4Jumps  (function)"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"star",
+				"starGates"
+			],
+			[
+				"xte",
+				"xTemp2"
+			],
+			[
+				"path",
+				"pathFinding"
+			],
+			[
+				"j",
+				"jump"
+			],
+			[
+				"JumpMar",
+				"jumpMarkLink"
+			],
+			[
+				"mark",
+				"marked"
+			],
+			[
+				"cumu",
+				"cumulus"
+			],
+			[
+				"cum",
+				"cumulus"
+			],
+			[
+				"cumul",
+				"cumulus"
+			],
+			[
+				"modi",
+				"modifyNode"
+			],
+			[
+				"pathFi",
+				"pathFindingData"
+			],
+			[
+				"pathF",
+				"pathFindingData"
+			],
+			[
+				"despla",
+				"desplacedX"
+			],
+			[
+				"touc",
+				"touches"
+			],
+			[
+				"touch",
+				"touchmove"
+			],
+			[
+				"tipo_",
+				"tipo_tarifa"
+			],
+			[
+				"inic",
+				"inicio"
+			],
+			[
+				"sl",
+				"split"
+			],
+			[
+				"tipo",
+				"tipo_tarifa"
+			],
+			[
+				"AAAA",
+				"AAAA-MM-DD"
+			],
+			[
+				"texto",
+				"texto_fechas_fin"
+			],
+			[
+				"bot",
+				"boton_add"
+			],
+			[
+				"empre",
+				"empresa_seleccionada2"
+			],
+			[
+				"empresa",
+				"empresa_seleccionada"
+			],
+			[
+				"file",
+				"fileupload"
+			],
+			[
+				"leve",
+				"level_radiosity  (variable)"
+			],
+			[
+				"max",
+				"max_x"
+			],
+			[
+				"bl",
+				"block_data"
+			],
+			[
+				"blo",
+				"block_height"
+			],
+			[
+				"block",
+				"block_width"
+			],
+			[
+				"pro",
+				"proto	Prototype"
+			],
+			[
+				"block_",
+				"block_height"
+			],
+			[
+				"initi",
+				"initial_position"
+			],
+			[
+				"ini",
+				"initial_position"
+			],
+			[
+				"enem",
+				"enemies"
+			],
+			[
+				"venta",
+				"ventana_juego"
+			],
+			[
+				"place",
+				"placeholder"
+			],
+			[
+				"cle",
+				"clear"
+			],
+			[
+				"set",
+				"setTimeout"
+			],
+			[
+				"no",
+				"nombre"
+			],
+			[
+				"vector",
+				"vector_amigos_proyecto"
+			],
+			[
+				"secc",
+				"secciones"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"vector_",
+				"vector_amigos_proyecto"
+			],
+			[
+				"amigos_proyect",
+				"amigos_proyecto"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"super",
+				"super_contenedor"
+			],
+			[
+				"addC",
+				"addClass"
+			],
+			[
+				"pr",
+				"proyectos"
+			],
+			[
+				"edit",
+				"editar_proyecto"
+			],
+			[
+				"edi",
+				"editar_proyecto"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"put",
+				"put_usuario  (function)"
+			],
+			[
+				"jQjo",
+				"jQuery.parseJSON	jQuery.parseJSON"
+			],
+			[
+				"clas",
+				"class=\"clear"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"id_",
+				"id_usuario"
+			],
+			[
+				"fecha",
+				"fecha_creacion"
+			],
+			[
+				"complet",
+				"complete"
+			],
+			[
+				"stop",
+				"stopPropagation"
+			],
+			[
+				"par",
+				"parseJSON"
+			],
+			[
+				"log",
+				"logout"
+			],
+			[
+				"contenedor",
+				"contenedor_usuario  (variable)"
+			],
+			[
+				"borderB",
+				"borderBottomColor"
+			],
+			[
+				"poner_me",
+				"poner_metodos"
+			],
+			[
+				"mes_a",
+				"mes_atras"
+			],
+			[
+				"clear",
+				"clear_dom"
+			],
+			[
+				"poner_d",
+				"poner_dom_fijo"
+			],
+			[
+				"mesa",
+				"mes_atras"
+			],
+			[
+				"registr",
+				"registrarse"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine/Genbeta-Dev-Engine/src/GDE/Core/App.cpp",
+			"settings":
+			{
+				"buffer_size": 5328,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine/Genbeta-Dev-Engine/src/GDE/Core/ConfigReader.cpp",
+			"settings":
+			{
+				"buffer_size": 15013,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "GDE - all",
+	"command_palette":
+	{
+		"height": 255.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sass",
+				"SassBeautify: Convert from SCSS to current type"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ling",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"reove",
+				"Package Control: Remove Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"new",
+				"File: New View into File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"codeinte",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"inte",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"snippet",
+				"Snippet: mousemove"
+			],
+			[
+				"net",
+				"Snippet: slideToggle"
+			],
+			[
+				"server",
+				"SFTP: Browse Server…"
+			],
+			[
+				"remote",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"remo",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"instaa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"brow",
+				"SFTP: Browse Server…"
+			],
+			[
+				"serv",
+				"SFTP: Edit Server…"
+			],
+			[
+				"ser",
+				"SFTP: Browse Server…"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"edit",
+				"SFTP: Edit Server…"
+			],
+			[
+				"edit serv",
+				"SFTP: Edit Server…"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"iden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"int",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"clan",
+				"SublimeClang: Clear cache"
+			],
+			[
+				"intal",
+				"Package Control: Install Package"
+			],
+			[
+				"mote",
+				"Mote"
+			],
+			[
+				"pac",
+				"Package Control: Discover Packages"
+			],
+			[
+				"rem",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"ident",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Function"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"seerver",
+				"SFTP: Browse Server…"
+			],
+			[
+				"remt",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"servr",
+				"SFTP: Edit Server…"
+			],
+			[
+				"bro",
+				"SFTP: Browse Server…"
+			],
+			[
+				"edit se",
+				"SFTP: Edit Server…"
+			],
+			[
+				"about",
+				"About"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"ftp",
+				"SFTP: Setup Server…"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packa ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 522.0
+	},
+	"console":
+	{
+		"height": 200.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine/builds/cmake/Modules/FindSFML.cmake",
+		"/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine/src/GDE/Core/App.cpp",
+		"/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine/src/GDE/Core/ConfigReader.cpp",
+		"/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine/builds/cmake/CMakeLists.txt",
+		"/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine/builds/cmake/Config.cmake",
+		"/C/Users/David/Desktop/PROJECT/GDE.sublime-workspace",
+		"/C/Users/David/Desktop/SFML-Build/Makefile",
+		"/C/MinGW/include/SFML/Config.hpp",
+		"/D/NuevoUSB/SVN/GenbetaEngine/trunk/src/GDE/Core/App.cpp",
+		"/D/NuevoUSB/SVN/GenbetaEngine/trunk/README.md",
+		"/D/NuevoUSB/SVN/naves/trunk/Design/interfaz/Interfaz 5/mousewheel.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/css.scss",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/index.html",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/data.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/eventHandler.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/utils.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/planetView.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/zoomPanel.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/interface.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/planet.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/solarSystem.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/cumulus.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/galaxy.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/handler.js",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/css.css",
+		"/D/NuevoUSB/Trabajo/Proyectos/Minecraft/farm.lua",
+		"/D/Dabo.MON/Joan/date_facet.hpp",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/eventHandler(vieja).js",
+		"/C/Users/David/AppData/Local/Temp/Rar$DIa0.793/pcadk.js",
+		"/C/Users/David/Desktop/Sin título-1.bmp",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/jquery.js",
+		"/D/NuevoUSB/Conocimiento/Uni/CNU/2º/Practica4/spline.m",
+		"/D/NuevoUSB/Conocimiento/Uni/CNU/2º/Practica4/principal.m",
+		"/D/NuevoUSB/Conocimiento/Uni/CNU/2º/Practica4/imprime.m",
+		"/D/Program Files/Minecraft/Unleashed/minecraft/mods/VoxelMods/voxelmap.properties",
+		"/D/NuevoUSB/SVN/naves/trunk/Diseño/interfaz/Interfaz 5/mousewheel.js",
+		"/D/NuevoUSB/SVN/Starriser/simulador4/t1.TODO",
+		"/D/PolyPlay/mapEditorMouse.cpp",
+		"/D/PolyPlay/mapEditorFormCreator.cpp",
+		"/D/PolyPlay/ConcavShape.cpp",
+		"/D/NuevoUSB/Trabajo/Proyectos/EvilWorm/mapEditor/Makefile",
+		"/C/Users/David/AppData/Local/Temp/Rar$DIa0.798/jquery-ui-1.10.3.custom.js",
+		"/C/Users/David/AppData/Local/Temp/Rar$DIa0.557/jquery-ui-1.10.3.custom.js",
+		"/C/Users/David/AppData/Local/Temp/Rar$DIa0.210/jquery-1.9.1.js",
+		"/C/Users/David/AppData/Local/Temp/Rar$DIa0.441/jquery-1.9.1.js",
+		"/D/NuevoUSB/Trabajo/Canvas/StarriserMapEditor/index.html",
+		"/D/NuevoUSB/Trabajo/Canvas/StarriserMapEditor/js.js",
+		"/D/NuevoUSB/Trabajo/Canvas/StarriserMapEditor/subCumulusData.json",
+		"/D/NuevoUSB/Trabajo/Canvas/StarriserMapEditor/cumulosNodes.json",
+		"/D/NuevoUSB/Trabajo/Canvas/StarriserMapEditor/cumulusGraph.json",
+		"/D/NuevoUSB/Trabajo/Canvas/StarriserMapEditor/universeData.txt",
+		"/D/NuevoUSB/Trabajo/Canvas/StarriserMapEditor/lz-string.js",
+		"/D/NuevoUSB/Trabajo/Canvas/StarriserMapEditor/universeData",
+		"/D/NuevoUSB/SVN/OpenGL2.0ProgrammingGuide/Windows/Chapter_2/Hello_Triangle/Hello_Triangle.sln",
+		"/C/Users/David/Desktop/sample/makefile",
+		"/C/Users/David/Desktop/sample/main.cpp",
+		"/C/Users/David/Downloads/Para david starriser mapa vocabulario 02082013.txt",
+		"/D/NuevoUSB/Trabajo/Canvas/StarriserMapEditor/<Unsaved>",
+		"/D/NuevoUSB/Trabajo/Canvas/1/js.js",
+		"/D/NuevoUSB/Trabajo/Proyectos/Onascar/js.php",
+		"/D/NuevoUSB/Trabajo/Proyectos/Onascar/html.php",
+		"/D/NuevoUSB/Trabajo/Proyectos/Onascar/sftp-config.json",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/css.css",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/html.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/404.html",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/js.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/index.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/sftp-config.json",
+		"/D/Nuevo USB/Trabajo/Proyectos/p_onascar.sublime-project",
+		"/C/Users/David/Desktop/cgminer-2.11.4-windows/README.txt",
+		"/C/Users/David/Desktop/cgminer-2.11.4-windows/FPGA-README.txt",
+		"/C/Users/David/Desktop/cgminer-2.11.4-windows/example.conf",
+		"/C/Users/David/Desktop/resumen csv lae.txt",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/condiciones_generales/condiciones_owners.html",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/condiciones_generales/condiciones_sixt.html",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/condiciones_generales/condiciones_cicar2.html",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/condiciones_generales/condiciones_hiper.html",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/condiciones_generales/condiciones_europcar.html",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/.htaccess",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/ajax/reserva_coche.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/index.back1",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/jquery.js",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/css.css",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/login.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/tarifas.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/jquery.js",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/mostrar-tarifa.php",
+		"/C/Users/David/Desktop/jQuery-File-Upload-7.2.1/index.html",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/fileupload.js",
+		"/C/Users/David/Desktop/jquery.fileupload.js",
+		"/C/Users/David/Desktop/jQuery-File-Upload-7.2.1/js/vendor/jquery.ui.widget.js",
+		"/C/Users/David/Desktop/jQuery-File-Upload-7.2.1/js/jquery.fileupload.js",
+		"/C/Users/David/Desktop/jQuery-File-Upload-7.2.1/js/main.js",
+		"/C/Users/David/Desktop/jQuery-File-Upload-7.2.1/js/jquery.fileupload-fp.js",
+		"/C/Users/David/Desktop/jQuery-File-Upload-7.2.1/js/jquery.fileupload-ui.js",
+		"/C/Users/David/Desktop/index.html",
+		"/C/Users/David/Desktop/README.md",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/js.html2",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/logout.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/empresa.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/direcciones.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/direcciones-zona.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/nueva-direccion.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/pesos.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/stopsell.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/vehiculos.php",
+		"/D/Nuevo USB/Trabajo/Proyectos/Onascar/admin/zonas.php",
+		"/C/Users/David/AppData/Roaming/Sublime Text 2/Packages/User/sftp_servers/onascar_es.json",
+		"/D/Nuevo USB/Trabajo/Proyectos/Snake/jquery.js",
+		"/D/Nuevo USB/Trabajo/Proyectos/Snake/css",
+		"/D/Nuevo USB/Trabajo/Proyectos/Snake/contenido/css.css",
+		"/D/Nuevo USB/Trabajo/Proyectos/Snake/css.css",
+		"/C/MinGW/msys/1.0/home/David/SFML_pruebas/source/prueba1.cpp",
+		"/D/Descargas/Torrent/Microsoft Office Professional Plus 2010 Final x64 [PC-DVD- Español][www.trackerx.com.ar]/Medicina/Activar Office/mini-KMS_Activator_v1.1_Office_2010_VL.ENG/mini-KMS Activator v1.1 Office 2010 VL.txt",
+		"/C/IFRToolLog.txt",
+		"/D/Nuevo USB/TXT/Windos serials legales.txt",
+		"/D/Photoshop temp0578954522",
+		"/C/AllShare/Port/UIRAPort",
+		"/C/AllShare/Port/TrayRAPort",
+		"/D/Nuevo USB/Trabajo/Proyectos/Tareas/css.css",
+		"/D/Nuevo USB/Trabajo/Proyectos/Tareas/conf-usuario.js",
+		"/C/Users/David/AppData/Local/Temp/Rar$DIa0.343/readme.txt",
+		"/C/Users/David/Desktop/Nueva carpeta (3)/src/main.cpp",
+		"/C/MinGW/msys/1.0/home/David/SFML_pruebas/sfml-network-d-2.dll",
+		"/C/MinGW/msys/1.0/home/David/SFML_pruebas/sfml-graphics-d-2.dll",
+		"/C/MinGW/msys/1.0/home/David/SFML_pruebas/sfml-network-2.dll",
+		"/C/MinGW/msys/1.0/home/David/SFML_pruebas/sfml-graphics-2.dll",
+		"/C/MinGW/msys/1.0/home/David/SFML_pruebas/sfml-audio-2.dll"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"windows"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console",
+			"PlanetView",
+			"system",
+			"startFollowPlanet",
+			"planetData",
+			"systemData",
+			"functMode",
+			"this.obj.system.startAutoZoom",
+			"this.obj.system",
+			"SYSTEM",
+			"system",
+			"cumulusClick",
+			"Click",
+			"nodeClick",
+			"cumulusClick",
+			"cumulus",
+			"selectZoneData",
+			"from",
+			"cumulusData",
+			"this.galaxyData.nodeSelected",
+			"nodeSle",
+			"nodeSelected",
+			"interfaceAction",
+			"o",
+			"type",
+			"planetSelected",
+			"cumulusSelected",
+			"zoomLevels",
+			"70",
+			"button",
+			"0",
+			"array",
+			"ñ",
+			"%",
+			"linear",
+			"transformRang",
+			"Out",
+			"transformRang",
+			"sixt",
+			"600",
+			"\"linear\"",
+			"\"linear\")",
+			"\"third\"",
+			"transformRang",
+			"transformRangEaseIn",
+			"linear",
+			"transformRang",
+			"linear",
+			"transformRang",
+			"400",
+			"20000",
+			"getPositionAndData",
+			"moveTo",
+			"moveT",
+			"Galaxy",
+			" * data.zoom ",
+			"400",
+			"this.data.canvasWidth/2",
+			"cumulus",
+			"generateNodesIcons",
+			"planetOnZoom",
+			"X",
+			"max",
+			"SolarSystem",
+			"Cumulus",
+			"placed",
+			"this.obj.cumulus",
+			"this.obj.cumulus.nodes[fromNode]",
+			"y",
+			" * this.zoom",
+			" + this.desplacedX",
+			"this.obj.cumulus",
+			"obj.cumulus",
+			"this.",
+			"/ this.obj.cumulus.zoom",
+			"this.mode.zoomMode.",
+			"bind",
+			"finalAlpha",
+			"initialAlpha",
+			"this.data.canvasHeight/2",
+			"(typeof(globalAlpha) === \"undefned\")",
+			"this.animationData.initAutoZoomData.",
+			"finalZoom",
+			"animationCenter",
+			".planets",
+			"planets",
+			"self",
+			"self.nodes",
+			"this.planets",
+			"planets",
+			"node",
+			"this.planets[node]",
+			"-this.planets[node]",
+			"zoomAnimationData",
+			".staticDraw(this.mode.zoneWorkMode);",
+			".staticDraw()",
+			"()",
+			"this.mode.zoneWorkMode",
+			"EaseInOut",
+			"fourth",
+			"generateCumulusIcons",
+			"planet",
+			"planets",
+			"system",
+			"followingPlanetDesX",
+			"followingPlanetdesY",
+			"followingPlanetdesX",
+			"X",
+			"zoom",
+			"Zoom",
+			"duration",
+			"this.canvasHeight/2",
+			"this.canvasWidth/2",
+			"duration",
+			"initPlanetZoomData",
+			"initSystemZoomData",
+			"initCumulusZoomData",
+			"initSystemZoomData",
+			"date",
+			"time",
+			"toNode",
+			"dynamicDraw",
+			"zoomPlanet",
+			"endZoomPlanet",
+			"startZoomPlanet",
+			"endZoom",
+			"autoZoom",
+			"endZoomSystem"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"nodeClick",
+			"$1",
+			"",
+			",",
+			"",
+			"eventsData",
+			"\",\"",
+			"",
+			"markedType",
+			"pathFindingMarkedLinks",
+			"this.drawData.jumpMarkedLinks",
+			"weight",
+			"\"",
+			": ,\\n",
+			"\", \"",
+			"",
+			"Tareas",
+			"\", \"",
+			", ",
+			"width:",
+			"seccion",
+			"success",
+			"i",
+			"estudiante",
+			"prepend",
+			"",
+			"\"",
+			"",
+			"_datos_seleccionado",
+			"self.movimiento_ejecucion",
+			"prevent_default:false",
+			"celeste",
+			"campo_html",
+			",",
+			"|",
+			"matriz_soles_cuadricula",
+			",\\n.",
+			", .",
+			"",
+			" .",
+			"",
+			"datos",
+			",",
+			"",
+			"}",
+			"",
+			"-197px",
+			"active",
+			" -99px ",
+			":hover{",
+			"/condiciones_generales/images/image",
+			"images/image",
+			"/images/image",
+			"interfaz",
+			"univers_sectores_select",
+			"|  |",
+			"",
+			"self.soles_mostrados",
+			"soles_mostrados",
+			"planetas_mostrados",
+			"this.y!=",
+			"this.x!=",
+			"NUM_SOLES_EJE",
+			"mostrar_soles",
+			"mostrar_planetas",
+			"mostrar_sol_sin_planetas",
+			"mostrar_soles_sin_planetas",
+			"radio_intervalo",
+			"col-entrar",
+			"boton_menu_select",
+			"</p><p>",
+			"h3",
+			"=\"++\"&",
+			"</p>\\n\\n<p>",
+			"</h3>\\n\\n<p>",
+			"</p>\\n\\n\\n<h3>",
+			"</p>\\n\\n\\n<p>",
+			".\\n\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine/Genbeta-Dev-Engine/src/GDE/Core/App.cpp",
+					"settings":
+					{
+						"buffer_size": 5328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								356,
+								356
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 28.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/NuevoUSB/SVN/Genbeta-Dev-Engine-MyFork/Genbeta-Dev-Engine/Genbeta-Dev-Engine/src/GDE/Core/ConfigReader.cpp",
+					"settings":
+					{
+						"buffer_size": 15013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6768,
+								6768
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2925.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.clang":
+	{
+		"height": 94.0
+	},
+	"output.csslint_result_view":
+	{
+		"height": 94.0
+	},
+	"output.exec":
+	{
+		"height": 689.0
+	},
+	"output.gjslint_result_view":
+	{
+		"height": 94.0
+	},
+	"output.sftp":
+	{
+		"height": 76.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"int",
+				"Interfaz 4/index.html"
+			],
+			[
+				"funciones",
+				"/D/Nuevo USB/SVN/naves/trunk/Diseño/interfaz/Interfaz 4/funciones.js"
+			],
+			[
+				"fun",
+				"/D/Nuevo USB/SVN/naves/trunk/Diseño/interfaz/Interfaz 4/funciones.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/D/Nuevo USB/Trabajo/Proyectos/p_tareas.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true
+}
