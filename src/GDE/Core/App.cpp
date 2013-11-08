@@ -61,9 +61,9 @@ void App::quit(sf::Int16 theExitCode)
 
 sf::Int16 App::run()
 {
-	// Establecemos running a true para arrancar la aplicaci�n
+	// Establecemos running a true para arrancar la aplicación
 	this->running = true;
-	// Crea la ventana de la aplicaci�n
+	// Crea la ventana de la aplicación
 	this->createWindow();
 	// Arranca todos los subsistemas necesarios
 	this->init();
@@ -71,7 +71,7 @@ sf::Int16 App::run()
 	this->gameLoop();
 	// Se encarga de la limpieza y cerrar todos los subsistemas
 	this->cleanup();
-	// Salimos con el c�digo de salida generado
+	// Salimos con el código de salida generado
 	return this->exitCode;
 }
 
@@ -85,25 +85,25 @@ void App::createWindow()
 	bool fullscreen = false;
 	// Valor inicial del redisionamiento de la ventana
 	bool resize = true;
-	// Activamos la sincronizaci�n vertical por defecto
+	// Activamos la sincronización vertical por defecto
 	bool vsync = true;
 
 	GDE::ConfigReader conf;
-	// Si existe un archivo de configuraci�n lo usamos para cargar los datos
-	if(conf.loadFromFile("window.cfg")) // FIX: Deber� ser argado con el gestor de recursos
+	// Si existe un archivo de configuración lo usamos para cargar los datos
+	if(conf.loadFromFile("window.cfg")) // FIX: Deberá ser argado con el gestor de recursos
 	{
 		// Comprobamos si esta activado el modo fullscreen
 		if (conf.getBool("window", "fullscreen", false))
 		{
 			fullscreen = true;
-			// Si esta en modo fullscreen obtenemos la resoluci�n del escritorio
+			// Si esta en modo fullscreen obtenemos la resolución del escritorio
 			videoMode = sf::VideoMode::getDesktopMode();
 			// Establecemos el estilo de fullScreen
 			style = sf::Style::Fullscreen;
 		}
 		else
 		{
-			// Establecemos la configuraci�n obtenida del archivo
+			// Establecemos la configuración obtenida del archivo
 			videoMode.width = conf.getUint32("window", "width", this->DEFAULT_VIDEO_WIDTH);
 			videoMode.height = conf.getUint32("window", "height", this->DEFAULT_VIDEO_HEIGHT);
 			videoMode.bitsPerPixel = conf.getUint32("window", "bpp", this->DEFAULT_VIDEO_BPP);
@@ -115,16 +115,16 @@ void App::createWindow()
 			}
 		}
 
-		// Comprobamos si vsync est� activado
+		// Comprobamos si vsync está activado
 		vsync = (conf.getBool("m_window", "vsync", true));
 	}
 
 	// Creamos la ventana con los valores resulantes
 	this->window.create(videoMode, "Genbeta Dev Engine", style);
-	// FIX: Hay que dar opci�n tambi�n a usar setFrameLimit
+	// FIX: Hay que dar opción también a usar setFrameLimit
 	this->window.setVerticalSyncEnabled(vsync);
 
-	// Escribimos la configuraci�n en el archivo
+	// Escribimos la configuración en el archivo
 	GDE::ConfigCreate newConf;
 	newConf.open("window.cfg");
 	newConf.putSection("window");
@@ -152,26 +152,26 @@ void App::init()
 
 void App::gameLoop()
 {
-	// Bucle mientras se est� ejecutando y la ventana est� abierta
+	// Bucle mientras se está ejecutando y la ventana está abierta
 	while (this->isRunning() && this->window.isOpen())
 	{
-		// Gestionamos los eventos de la aplicaci�n
+		// Gestionamos los eventos de la aplicación
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
 			switch (event.type)
 			{
 			case sf::Event::Closed:                        // La ventana es cerrada
-				quit(StatusAppOK); // FIX: Dar la opci�n de parar el evento a la escena
+				quit(StatusAppOK); // FIX: Dar la opción de parar el evento a la escena
 				break;
 			case sf::Event::GainedFocus:        // La ventana obtiene el foco
-				// Pasar al m�todo resumeScene()
+				// Pasar al método resumeScene()
 				break;
 			case sf::Event::LostFocus:                // La ventana pierde el foco
-				// Pasar al m�todo pauseScene()
+				// Pasar al método pauseScene()
 				break;
 			default:        // Otros eventos se los pasamos a la ecena activa
-				// pasar el resto de eventos al m�todo event() de la escena
+				// pasar el resto de eventos al método event() de la escena
 				break;
 			} // switch (event.Type)
 		} // while (window.GetEvent(event))
