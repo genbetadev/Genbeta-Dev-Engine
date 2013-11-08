@@ -10,7 +10,6 @@ namespace GDE
 
 ConfigReader::ConfigReader()
 {
-    ////ILOGM("ConfigReader::ctor()");
 }
 
 ConfigReader::ConfigReader(const ConfigReader& theCopy) :
@@ -20,8 +19,6 @@ ConfigReader::ConfigReader(const ConfigReader& theCopy) :
 
 ConfigReader::~ConfigReader()
 {
-    ////ILOGM("ConfigReader::dtor()");
-
     // Borra todos los pares <clave,valor> del mapa
     std::map<const std::string, typeNameValue*>::iterator iter;
     iter = this->sections.begin();
