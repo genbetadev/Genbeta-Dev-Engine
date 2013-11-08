@@ -6,6 +6,10 @@
 #include <fstream>
 #include <iostream>
 
+#define INFH "INFO"
+#define DBGH "DEBUG"
+#define ERRH "ERROR"
+
 namespace GDE
 {
 
@@ -70,6 +74,16 @@ public:
      
     
 private:
+  
+    /**
+     * Función base para escribir en el log
+     * 
+     * @param tag Etiqueta de la línea a escribir.
+     * @param text texto a escribir.
+     * @param logType encabezado del log
+     */
+    static void log(std::string tag, std::string text, std::string logType);
+  
     static time_t rawtime;
     static bool initialized;
     static std::string logFileName;
