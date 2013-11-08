@@ -167,7 +167,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
     unsigned long anCount = 1;
 
 	// Indicamos en el log que estamos cargando un fichero
-    GDE::Log::debug("ConfigReader","Abriendo fichero en loadFromFile");
+    GDE::Log::info("ConfigReader::loadFromFile","Abriendo fichero "+theFilename+".");
 
     // Intentamos abrir el fichero
     FILE* anFile = fopen(theFilename.c_str(), "r");
@@ -184,8 +184,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
                 // Si ocurre un error lo metemos en el log
                 if (!feof(anFile))
                 {
-                    //TODO Usar GDE::Log::error(tag, text);
-                    //ELOG() << "ConfigReader::Read(" << anFile << ") error reading line " << anCount << std::endl;
+                    GDE::Log::error("ConfigReader::Read", "Error leyendo la línea " + anCount);
                 }
                 // Salimos del bucle
                 break;
@@ -208,7 +207,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
     }
     else
     {
-        GDE::Log::error("ConfigReader","Error al leer fichero en loadFromFile");
+        GDE::Log::error("ConfigReader::loadFromFile","Error al leer fichero " + theFilename+".");
     }
 
     // Devuelve true en caso de éxito, false en caso contrario
@@ -285,8 +284,7 @@ std::string ConfigReader::parseLine(const char* theLine,
                 }
                 else
                 {
-                    //TODO Usar GDE::Log::error(tag, text);
-                    //ELOG() << "ConfigReader::ParseLine(" << theCount << ") missing section end marker ']'" << std::endl;
+                    GDE::Log::error("ConfigReader::parseLine", "No se encontró el delimitador de sección ']' en la línea " + theCount);
                 }
             }
             // Leemos el par <clave,valor> de la sección actual.
@@ -358,8 +356,7 @@ std::string ConfigReader::parseLine(const char* theLine,
                 }
                 else
                 {
-                    //TODO Usar GDE::Log::error(tag,text);
-                    //ELOG() << "ConfigReader::ParseLine(" << theCount << ") missing name or value delimiter of '=' or ':'" << std::endl;
+                    GDE::Log::error("ConfigReader::parseLine","No se encontró el delimitador de nombre o valor '=' o ':' en la línea " + theCount);
                 }
             }
         } // if(theLine[anOffset] != '#' && theLine[anOffset] != ';')
@@ -384,8 +381,7 @@ void ConfigReader::storeNameValue(const std::string theSection,
         // Nos aseguramos de que hemos creado el mapa correctamente
         if (NULL != anMap)
         {
-            //TODO: Usar GDE::Log::debug(tag,text);
-            //ILOG() << "ConfigReader::StoreNameValue(" << theSection << ") adding (" << theName << "," << theValue << ")" << std::endl;
+            GDE::Log::info("ConfigReader::StoreNameValue","Añadiendo "+theName+"="+theValue + " a la sección [" + theSection+"].");
 
             // Añadimos el nuevo par <clave,valor> al mapa
             anMap->insert(std::pair<const std::string, const std::string>(theName, theValue));
@@ -395,8 +391,7 @@ void ConfigReader::storeNameValue(const std::string theSection,
         }
         else
         {
-            //TODO: Usar GDE::Log::error(tag,text);
-            //ELOG() << "ConfigReader::StoreNameValue(" << theSection << ") unable to add (" << theName << "," << theValue << ") out of memory!" << std::endl;
+            GDE::Log::error("ConfigReader::StoreNameValue","Imposible añadir "+theName+"="+theValue + " a la sección [" + theSection+"] posible falta de memoria.");
         }
     }
     else
@@ -412,16 +407,13 @@ void ConfigReader::storeNameValue(const std::string theSection,
             iterNameValue = anMap->find(theName);
             if (iterNameValue == anMap->end())
             {
-                //TODO: Usar GDE::Log::debug(tag,text);
-                //ILOG() << "ConfigReader::StoreNameValue(" << theSection << ") adding (" << theName << "," << theValue << ")" << std::endl;
-
+                GDE::Log::info("ConfigReader::StoreNameValue","Añadiendo "+theName+"="+theValue + " a la sección [" + theSection+"].");
                 // Añadimos el nuevo par <clave,valor>
                 anMap->insert(std::pair<const std::string, const std::string>(theName, theValue));
             }
             else
             {
-                //TODO: Usar GDE::Log::error(tag,text);
-                //ELOG() << "ConfigReader::StoreNameValue(" << theSection << ") unable to add (" << theName << "," << theValue << ") already exists!" << std::endl;
+                GDE::Log::error("ConfigReader::StoreNameValue","Imposible añadir "+theName+"="+theValue + " a la sección [" + theSection+"] porque ya existe.");
             }
         }
     } // else(iterSection == mSections.end())
