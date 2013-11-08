@@ -221,7 +221,7 @@ ConfigReader& ConfigReader::operator=(const ConfigReader& theRight)
     ConfigReader temp(theRight);
 
     // Intercambiamos las copias
-    std::swap(this->sections, temp.this->sections);
+    std::swap(this->sections, temp.sections);
 
     // Devolvemos el puntero
     return *this;
