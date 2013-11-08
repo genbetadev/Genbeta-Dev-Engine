@@ -7,6 +7,7 @@ namespace GDE
 bool Log::initialized = false;
 time_t Log::rawtime;
 std::string Log::logFileName;
+std::string Log::header[] = {"INF", "DBG", "ERR"};
 
 void Log::init(std::string logFileName){
 	if(!initialized)
@@ -37,7 +38,9 @@ void Log::info(std::string tag, std::string text)
 
 void Log::debug(std::string tag, std::string text)
 {
-	Log::log(tag, text, GDE::debugLevel);
+#ifdef GDE_DEBUG
+   Log::log(tag, text, GDE::debugLevel);
+#endif // GDE_DEBUG
 }
 
 void Log::error(std::string tag, std::string text)
@@ -58,22 +61,7 @@ void Log::log(std::string tag, std::string text, int logType)
 	struct tm * timeinfo;
 	timeinfo = localtime (&rawtime);
 	strftime (buffer,20,"%d/%m/%y %X ",timeinfo);
-	logFile << buffer;
-	switch(logType)
-	{
-	case GDE::infoLevel:
-		logFile << "INF";
-		break;
-#ifdef GDE_DEBUG
-	case GDE::debugLevel:
-		logFile << "DBG";
-		break;
-#endif // GDE_DEBUG
-	case GDE::errorLevel:
-		logFile << "ERR";
-		break;
-	}
-	logFile << ": " << tag << ": " << text << std::endl;
+	logFile << buffer << header[logType] << ": " << tag << ": " << text << std::endl;
 	logFile.close();
   
 }

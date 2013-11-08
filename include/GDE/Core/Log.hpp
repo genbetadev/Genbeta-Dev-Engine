@@ -84,6 +84,7 @@ private:
     static time_t rawtime;
     static bool initialized;
     static std::string logFileName;
+    static std::string header[];
 };
 }
 
