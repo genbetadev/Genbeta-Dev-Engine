@@ -9,7 +9,8 @@ time_t Log::rawtime;
 std::string Log::logFileName;
 std::string Log::header[] = {"INF", "DBG", "ERR"};
 
-void Log::init(std::string logFileName){
+void Log::init(std::string logFileName)
+{
 	if(!initialized)
 	{
 		Log::logFileName = logFileName;
