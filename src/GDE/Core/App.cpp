@@ -15,7 +15,7 @@ App::App()
 	, running(false)
 {
 	// Se inicializa el sistema de loggin
-	GDE::Log::init();
+	GDE::Log::init("log.txt");
 	
 	GDE::Log::info("App::App()", "Constructor llamado");
 }
@@ -61,9 +61,9 @@ void App::quit(sf::Int16 theExitCode)
 
 sf::Int16 App::run()
 {
-	// Establecemos running a true para arrancar la aplicación
+	// Establecemos running a true para arrancar la aplicaciï¿½n
 	this->running = true;
-	// Crea la ventana de la aplicación
+	// Crea la ventana de la aplicaciï¿½n
 	this->createWindow();
 	// Arranca todos los subsistemas necesarios
 	this->init();
@@ -71,7 +71,7 @@ sf::Int16 App::run()
 	this->gameLoop();
 	// Se encarga de la limpieza y cerrar todos los subsistemas
 	this->cleanup();
-	// Salimos con el código de salida generado
+	// Salimos con el cï¿½digo de salida generado
 	return this->exitCode;
 }
 
@@ -85,25 +85,25 @@ void App::createWindow()
 	bool fullscreen = false;
 	// Valor inicial del redisionamiento de la ventana
 	bool resize = true;
-	// Activamos la sincronización vertical por defecto
+	// Activamos la sincronizaciï¿½n vertical por defecto
 	bool vsync = true;
 
 	GDE::ConfigReader conf;
-	// Si existe un archivo de configuración lo usamos para cargar los datos
-	if(conf.loadFromFile("window.cfg")) // FIX: Deberá ser argado con el gestor de recursos
+	// Si existe un archivo de configuraciï¿½n lo usamos para cargar los datos
+	if(conf.loadFromFile("window.cfg")) // FIX: Deberï¿½ ser argado con el gestor de recursos
 	{
 		// Comprobamos si esta activado el modo fullscreen
 		if (conf.getBool("window", "fullscreen", false))
 		{
 			fullscreen = true;
-			// Si esta en modo fullscreen obtenemos la resolución del escritorio
+			// Si esta en modo fullscreen obtenemos la resoluciï¿½n del escritorio
 			videoMode = sf::VideoMode::getDesktopMode();
 			// Establecemos el estilo de fullScreen
 			style = sf::Style::Fullscreen;
 		}
 		else
 		{
-			// Establecemos la configuración obtenida del archivo
+			// Establecemos la configuraciï¿½n obtenida del archivo
 			videoMode.width = conf.getUint32("window", "width", this->DEFAULT_VIDEO_WIDTH);
 			videoMode.height = conf.getUint32("window", "height", this->DEFAULT_VIDEO_HEIGHT);
 			videoMode.bitsPerPixel = conf.getUint32("window", "bpp", this->DEFAULT_VIDEO_BPP);
@@ -115,16 +115,16 @@ void App::createWindow()
 			}
 		}
 
-		// Comprobamos si vsync está activado
+		// Comprobamos si vsync estï¿½ activado
 		vsync = (conf.getBool("m_window", "vsync", true));
 	}
 
 	// Creamos la ventana con los valores resulantes
 	this->window.create(videoMode, "Genbeta Dev Engine", style);
-	// FIX: Hay que dar opción también a usar setFrameLimit
+	// FIX: Hay que dar opciï¿½n tambiï¿½n a usar setFrameLimit
 	this->window.setVerticalSyncEnabled(vsync);
 
-	// Escribimos la configuración en el archivo
+	// Escribimos la configuraciï¿½n en el archivo
 	GDE::ConfigCreate newConf;
 	newConf.open("window.cfg");
 	newConf.putSection("window");
@@ -152,26 +152,26 @@ void App::init()
 
 void App::gameLoop()
 {
-	// Bucle mientras se esté ejecutando y la ventana esté abierta
+	// Bucle mientras se estï¿½ ejecutando y la ventana estï¿½ abierta
 	while (this->isRunning() && this->window.isOpen())
 	{
-		// Gestionamos los eventos de la aplicación
+		// Gestionamos los eventos de la aplicaciï¿½n
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
 			switch (event.type)
 			{
 			case sf::Event::Closed:                        // La ventana es cerrada
-				quit(StatusAppOK); // FIX: Dar la opción de parar el evento a la escena
+				quit(StatusAppOK); // FIX: Dar la opciï¿½n de parar el evento a la escena
 				break;
 			case sf::Event::GainedFocus:        // La ventana obtiene el foco
-				// Pasar al método resumeScene()
+				// Pasar al mï¿½todo resumeScene()
 				break;
 			case sf::Event::LostFocus:                // La ventana pierde el foco
-				// Pasar al método pauseScene()
+				// Pasar al mï¿½todo pauseScene()
 				break;
 			default:        // Otros eventos se los pasamos a la ecena activa
-				// pasar el resto de eventos al método event() de la escena
+				// pasar el resto de eventos al mï¿½todo event() de la escena
 				break;
 			} // switch (event.Type)
 		} // while (window.GetEvent(event))
