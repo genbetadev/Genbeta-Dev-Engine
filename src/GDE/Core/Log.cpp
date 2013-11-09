@@ -7,7 +7,7 @@ namespace GDE
 bool Log::initialized = false;
 time_t Log::rawtime;
 std::string Log::logFileName;
-std::string Log::header[] = {"INF", "DBG", "ERR"};
+std::string Log::header[] = {"INFO", "DEBUG", "ERROR", "WARNING"};
 
 void Log::init(std::string logFileName)
 {
@@ -47,6 +47,11 @@ void Log::debug(std::string tag, std::string text)
 void Log::error(std::string tag, std::string text)
 {
    Log::log(tag, text, GDE::errorLevel);
+}
+
+void Log::warning(std::string tag, std::string text)
+{
+   Log::log(tag, text, GDE::warningLevel);
 }
 
 void Log::log(std::string tag, std::string text, int logType)

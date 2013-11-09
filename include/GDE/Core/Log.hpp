@@ -68,6 +68,16 @@ public:
      */
      
     static void error(std::string tag, std::string text);
+	
+	/**
+     * Función para escribir en el log advertencias. Para hacer uso
+     * de dicha función hay que inicializar previamente el sistema.
+     * 
+     * @param tag Etiqueta de la línea a escribir.
+     * @param text texto a escribir.
+     */
+     
+    static void warning(std::string tag, std::string text);
      
     
 private:

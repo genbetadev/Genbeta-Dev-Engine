@@ -12,7 +12,8 @@ enum LogType
 {
 	infoLevel = 0,
 	debugLevel = 1,
-	errorLevel = 2
+	errorLevel = 2,
+	warningLevel = 4
 };
 
 /// Enumaración con los posibles valores de retorno de la Aplicación
