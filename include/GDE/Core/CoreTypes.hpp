@@ -15,7 +15,7 @@ enum LogType
 	errorLevel = 2
 };
 
-/// Enumaración col los posibles valores de retorno de la Aplicación
+/// Enumaración con los posibles valores de retorno de la Aplicación
 enum StatusType
 {
 	// Values from -99 to 99 are common Error and Good status responses
