@@ -28,7 +28,7 @@ namespace GDE
 	 * 
 	 */
 	
-class Log{
+class Log {
 public:
 
     /**
@@ -85,10 +85,9 @@ private:
     static bool initialized;
     static std::string logFileName;
     static std::string header[];
-};
-}
+}; // class Log
 
 
-
+} // namespace GDE
 
 #endif // GDE_CORE_LOG_HPP
