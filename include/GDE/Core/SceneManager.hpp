@@ -3,13 +3,14 @@
 
 #include <map>
 #include <SFML/System.hpp>
+#include <GDE/Config.hpp>
 #include <GDE/Core/CoreTypes.hpp>
 #include <GDE/Core/Scene.hpp>
 
 namespace GDE
 {
 
-class SceneManager : sf::NonCopyable
+class GDE_API SceneManager : sf::NonCopyable
 {
 	static SceneManager* uniqueInstance;
 	
@@ -57,7 +58,7 @@ public:
 	 * 
 	 * @return puntero constante a la escena activa
 	 */
-	 const Scene* getActiveScene() const;
+	const Scene* getActiveScene() const;
 	
 private:
 	// Declaramos la clase App friend

@@ -28,7 +28,7 @@ namespace GDE
 	 * 
 	 */
 	
-class Log {
+class GDE_API Log {
 public:
 
     /**
