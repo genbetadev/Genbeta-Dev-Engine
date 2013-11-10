@@ -18,6 +18,8 @@
     <ClInclude Include="..\..\..\include\GDE\Core\ConfigReader.hpp" />
     <ClInclude Include="..\..\..\include\GDE\Core\CoreTypes.hpp" />
     <ClInclude Include="..\..\..\include\GDE\Core\Log.hpp" />
+    <ClInclude Include="..\..\..\include\GDE\Core\Scene.hpp" />
+    <ClInclude Include="..\..\..\include\GDE\Core\SceneManager.hpp" />
     <ClInclude Include="..\..\..\include\GDE\Core\StringsUtil.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -25,6 +27,8 @@
     <ClCompile Include="..\..\..\src\GDE\Core\ConfigCreate.cpp" />
     <ClCompile Include="..\..\..\src\GDE\Core\ConfigReader.cpp" />
     <ClCompile Include="..\..\..\src\GDE\Core\Log.cpp" />
+    <ClCompile Include="..\..\..\src\GDE\Core\Scene.cpp" />
+    <ClCompile Include="..\..\..\src\GDE\Core\SceneManager.cpp" />
     <ClCompile Include="..\..\..\src\GDE\Core\StringUtil.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

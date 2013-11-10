@@ -45,6 +45,12 @@
     <ClInclude Include="..\..\..\include\GDE\Core\ConfigCreate.hpp">
       <Filter>Archivos de encabezado\Core</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\include\GDE\Core\Scene.hpp">
+      <Filter>Archivos de encabezado\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GDE\Core\SceneManager.hpp">
+      <Filter>Archivos de encabezado\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\src\GDE\Core\App.cpp">
@@ -60,6 +66,12 @@
       <Filter>Archivos de código fuente\Core</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\src\GDE\Core\ConfigCreate.cpp">
+      <Filter>Archivos de código fuente\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GDE\Core\Scene.cpp">
+      <Filter>Archivos de código fuente\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GDE\Core\SceneManager.cpp">
       <Filter>Archivos de código fuente\Core</Filter>
     </ClCompile>
   </ItemGroup>
