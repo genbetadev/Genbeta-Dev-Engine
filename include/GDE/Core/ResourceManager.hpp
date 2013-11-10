@@ -40,12 +40,11 @@ public:
     /** 
     * @brief deinicializa el gestor de recursos. 
     **/
-    void deinit() 
+    void cleanUp() 
     {
-        int size = this->resources.size();
-        for( typename std::map< std::string, T* >::iterator it = resources.begin(); it != resources.end(); it++ ) 
+        for( typename std::map< std::string, T* >::iterator it = this->resources.begin(); it != this->resources.end(); it++ ) 
         {
-            deinitResource( (*it).second );
+            this->cleanUpResource( (*it).second );
             delete (*it).second;
         }
         this->resources.clear();
@@ -60,14 +59,14 @@ public:
     {
         T* resource = NULL;
         typename std::map< std::string, T* >::iterator it = this->resources.find( fileName );
-        if ( it != resources.end() ) //Comprobamos si el recurso ya existe
+        if ( it != this->resources.end() ) //Comprobamos si el recurso ya existe
         {
             resource = (*it).second;
         }    
         else  
         {
             resource = new T();
-            bool res = initResource( resource, fileName );  
+            bool res = this->initResource( resource, fileName );  
             this->resources[ fileName ] = resource; 
             if( !res ) 
             { 
@@ -87,7 +86,7 @@ public:
         if ( it != this->resources.end() ) //Comprobamos si el recurso ya existe
         {
             T* resource = (*it).second;
-            deinitResource( resource );
+            this->cleanUpResource( resource );
             delete resource;
             this->resources.erase(it);
         }    
@@ -107,11 +106,14 @@ protected:
     * @brief deinicializa el recurso.
     * @param resource Puntero a la dirección de memória donde reside la estructura del recurso.
     **/
-    virtual void deinitResource( T* resource ) = 0;
+    virtual void cleanUpResource( T* resource ) = 0;
 
 private:
 
-    std::map< std::string, T* >  resources;    /**< @brief Mapa que mapea strings a recursos. */ 
+    /**
+    * @brief Mapa que mapea strings a recursos.
+    **/ 
+    std::map< std::string, T* >  resources;    
 };
 }
 

@@ -248,7 +248,7 @@ void App::cleanup()
 	sceneManager = NULL;
 
 
-	textureManager.deinit();
+	textureManager.cleanUp();
 	GDE::Log::info("App:init", "deinicializado el gestor de texturas.");
 	
 	GDE::Log::info("App::cleanup()", "Completado");

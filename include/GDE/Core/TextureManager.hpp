@@ -22,7 +22,7 @@ protected:
     void operator= ( const TextureManager& tM );
 
     virtual bool initResource( sf::Texture* resource, const std::string& fileName );
-    virtual void deinitResource( sf::Texture* resource );
+    virtual void cleanUpResource( sf::Texture* resource );
 }; 
 
 }

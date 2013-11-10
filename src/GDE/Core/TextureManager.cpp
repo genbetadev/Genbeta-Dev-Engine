@@ -38,7 +38,7 @@ bool TextureManager::initResource( sf::Texture* resource, const std::string& fil
     return resource->loadFromFile( fileName );
 }
 
-void TextureManager::deinitResource( sf::Texture* resource ) 
+void TextureManager::cleanUpResource( sf::Texture* resource ) 
 {
 }
 
