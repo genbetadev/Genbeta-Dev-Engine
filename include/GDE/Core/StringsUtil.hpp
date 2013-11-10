@@ -317,6 +317,16 @@ std::string GDE_API StringToLowercase(std::string theString);
  **/
 std::string GDE_API StringToUppercase(std::string theString);
 
+/**
+ * Permite formatear una std::string como en una llamada a printf, usando una
+ * lista de argumentos variable.
+ *
+ * @param[in] stringToFormat: String con el formato.
+ * @param[in] args: Lista variable de argumentos con los elementos a sustituir
+ * @return std::string: Nueva string formateada con los argumentos pasados
+ **/
+std::string GDE_API StringFormat(const std::string stringToFormat, ...);
+
 } // namespace GDE
 
 #endif // GDE_CORE_STRING_UTIL_HPP
