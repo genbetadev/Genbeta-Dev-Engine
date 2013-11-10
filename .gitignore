@@ -171,3 +171,18 @@ bin/Test-d
 Makefile
 GDE.txt
 builds/codelite/.*
+
+
+# =======
+# OSX 
+# =======
+
+# Finder's cache files
+.DS_Store
+
+# xcuserdata folders are located inside the xcodeproj and xcworkspace folders
+# contains specific user data for xcode
+xcuserdata
+
+# Xcode Version control metadata
+*.xccheckout
