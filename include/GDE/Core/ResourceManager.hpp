@@ -48,7 +48,7 @@ public:
             deinitResource( (*it).second );
             delete (*it).second;
         }
-        resources.clear();
+        this->resources.clear();
     }
 
     /** 
@@ -59,7 +59,7 @@ public:
     const T& getResource( const std::string& fileName )  
     {
         T* resource = NULL;
-        typename std::map< std::string, T* >::iterator it = resources.find( fileName );
+        typename std::map< std::string, T* >::iterator it = this->resources.find( fileName );
         if ( it != resources.end() ) //Comprobamos si el recurso ya existe
         {
             resource = (*it).second;
@@ -68,7 +68,7 @@ public:
         {
             resource = new T();
             bool res = initResource( resource, fileName );  
-            resources[ fileName ] = resource; 
+            this->resources[ fileName ] = resource; 
             if( !res ) 
             { 
                 Log::error("ResourceManager",std::string("Error al cargar el recurso ").append( fileName ));
@@ -83,13 +83,13 @@ public:
     **/
     void freeResource( const std::string& fileName )  
     {
-        typename std::map< std::string, T* >::iterator it = resources.find( fileName );
-        if ( it != resources.end() ) //Comprobamos si el recurso ya existe
+        typename std::map< std::string, T* >::iterator it = this->resources.find( fileName );
+        if ( it != this->resources.end() ) //Comprobamos si el recurso ya existe
         {
             T* resource = (*it).second;
             deinitResource( resource );
             delete resource;
-            resources.erase(it);
+            this->resources.erase(it);
         }    
     }
 
@@ -111,7 +111,7 @@ protected:
 
 private:
 
-    std::map< std::string, T* >  resources;    /**< @brief Mapa que mapea strings a ids. */ 
+    std::map< std::string, T* >  resources;    /**< @brief Mapa que mapea strings a recursos. */ 
 };
 }
 
