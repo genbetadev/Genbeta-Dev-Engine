@@ -9,6 +9,10 @@
   <Dependencies/>
   <VirtualDirectory Name="src">
     <File Name="../../../src/Test/main.cpp"/>
+    <File Name="../../../src/Test/SceneMain.hpp"/>
+    <File Name="../../../src/Test/SceneMain.cpp"/>
+    <File Name="../../../src/Test/SceneGame.cpp"/>
+    <File Name="../../../src/Test/SceneGame.hpp"/>
   </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>

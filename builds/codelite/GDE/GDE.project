@@ -14,6 +14,8 @@
       <File Name="../../../src/GDE/Core/StringUtil.cpp"/>
       <File Name="../../../src/GDE/Core/Log.cpp"/>
       <File Name="../../../src/GDE/Core/ConfigCreate.cpp"/>
+      <File Name="../../../src/GDE/Core/SceneManager.cpp"/>
+      <File Name="../../../src/GDE/Core/Scene.cpp"/>
     </VirtualDirectory>
   </VirtualDirectory>
   <VirtualDirectory Name="include">
@@ -24,6 +26,8 @@
       <File Name="../../../include/GDE/Core/StringsUtil.hpp"/>
       <File Name="../../../include/GDE/Core/Log.hpp"/>
       <File Name="../../../include/GDE/Core/ConfigCreate.hpp"/>
+      <File Name="../../../include/GDE/Core/SceneManager.hpp"/>
+      <File Name="../../../include/GDE/Core/Scene.hpp"/>
     </VirtualDirectory>
     <File Name="../../../include/GDE/Config.hpp"/>
     <File Name="../../../include/GDE/Core.hpp"/>
