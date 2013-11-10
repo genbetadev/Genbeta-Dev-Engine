@@ -4,6 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include <GDE/Config.hpp>
 #include <GDE/Core/CoreTypes.hpp>
+#include <GDE/Core/SceneManager.hpp>
 
 namespace GDE
 {
@@ -29,16 +30,22 @@ public:
 	bool isRunning() const;
 
 	void quit(sf::Int16 theExitCode);
+	
+	void setFirstScene(Scene* scene);
 
 	sf::Int16 run();
 	
 private:
-	/// Ventana principal de la aplicaciÛn
+	/// Ventana principal de la aplicaci√≥n
 	sf::RenderWindow window;
-	/// Verdadero si la aplicaciÛn se est· ejecutando
+	/// Verdadero si la aplicaci√≥n se est√° ejecutando
 	bool running;
-	/// CÛdigo de salida de la aplicaciÛn
+	/// C√≥digo de salida de la aplicaci√≥n
 	sf::Int16 exitCode;
+	/// Puntero al SceneManager
+	SceneManager* sceneManager;
+	/// Escena inicial. Punto de entrada de la aplicaci√≥n
+	Scene* initialScene;
 
 	App();
 

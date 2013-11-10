@@ -13,6 +13,7 @@ App::App()
 	: window()
 	, exitCode(GDE::StatusNoError)
 	, running(false)
+	, initialScene(NULL)
 {
 	// Se inicializa el sistema de loggin
 	GDE::Log::init("log.txt");
@@ -59,6 +60,19 @@ void App::quit(sf::Int16 theExitCode)
 	this->running = false;
 }
 
+void App::setFirstScene(Scene* scene)
+{
+	if (this->initialScene == NULL)
+	{
+		initialScene = scene;
+		GDE::Log::info("App::setFirstScene()", "Establecida escena inicial ID=" + scene->getID());
+	}
+	else
+	{
+		GDE::Log::warning("App::setFirstScene()", "Ya se ha establecido una escena inicial");
+	}
+}
+
 sf::Int16 App::run()
 {
 	// Establecemos running a true para arrancar la aplicación
@@ -73,6 +87,30 @@ sf::Int16 App::run()
 	this->cleanup();
 	// Salimos con el código de salida generado
 	return this->exitCode;
+}
+
+void App::init()
+{
+	// Se crea la instancia única del SceneManager
+	sceneManager = GDE::SceneManager::instance();
+	
+	// Establecemos la escene inicial
+	if (initialScene != 0)
+	{
+		// Añadimos la primera escena
+		this->sceneManager->addScene(this->initialScene);
+		// La establecemos como escena activa
+		this->sceneManager->setActiveScene(this->initialScene->getID());
+		this->sceneManager->changeScene(this->sceneManager->nextScene);
+	}
+	else
+	{
+		GDE::Log::error("App::Init()", "No se ha establecido escena inicial. LLamar a App::SetFirstScene() primero");
+		// Salimos con código -2
+		quit(GDE::StatusAppInitFailed);
+	}
+
+	GDE::Log::info("App::Init()", "Completado");
 }
 
 void App::createWindow()
@@ -116,7 +154,7 @@ void App::createWindow()
 		}
 
 		// Comprobamos si vsync está activado
-		vsync = (conf.getBool("m_window", "vsync", true));
+		vsync = (conf.getBool("this->window", "vsync", true));
 	}
 
 	// Creamos la ventana con los valores resulantes
@@ -145,16 +183,12 @@ void App::createWindow()
 	GDE::Log::info("Fullscreen", GDE::convertBool(fullscreen));
 }
 
-void App::init()
-{
-	// Aqui se han de inicializar todos los subsistemas necesarios
-}
-
 void App::gameLoop()
 {
 	// Bucle mientras se está ejecutando y la ventana está abierta
 	while (this->isRunning() && this->window.isOpen())
 	{
+		
 		// Gestionamos los eventos de la aplicación
 		sf::Event event;
 		while (window.pollEvent(event))
@@ -171,24 +205,41 @@ void App::gameLoop()
 				// Pasar al método pauseScene()
 				break;
 			default:        // Otros eventos se los pasamos a la ecena activa
-				// pasar el resto de eventos al método event() de la escena
-				break;
+				 this->sceneManager->eventScene(event);
 			} // switch (event.Type)
 		} // while (window.GetEvent(event))
-
-		// Fix: Colo provisional de fondo
-		this->window.clear(sf::Color(180, 200, 255));
-
+		
+		// Llamamos al método Update() de la escena activa
+		this->sceneManager->updateScene();
+		
+		// Establecemos el color de fondo de limpieza
+		this->window.clear(sceneManager->getActiveScene()->getBackgroundColor());
+		
+		// Llamamos al método Draw() de la escena activa
+		this->sceneManager->drawScene();
+		
 		// Actualizamos la ventana
 		this->window.display();
-
-		// FIX: PROVISIONAL, falta integrar gestor de escenas
+		
+		// Comprobamos cambios de escena
+		if (this->sceneManager->handleChangeScene())
+		{
+			// Cambiamos el puntero de la escena activa
+			this->sceneManager->changeScene(this->sceneManager->nextScene);
+		}
 	}
 }
 
 void App::cleanup()
 {
-	// Liberar todo lo creado en init
+	// Se elimina todas las escenas
+	sceneManager->removeAllScene();
+	
+	// Eliminamos el SceneManager
+	sceneManager->release();
+	sceneManager = NULL;
+	
+	GDE::Log::info("App::cleanup()", "Completado");
 }
 	
 } // namespace GDE

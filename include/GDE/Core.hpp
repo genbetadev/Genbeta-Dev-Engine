@@ -8,5 +8,7 @@
 #include <GDE/Core/ConfigReader.hpp>
 #include <GDE/Core/ConfigCreate.hpp>
 #include <GDE/Core/App.hpp>
+#include <GDE/Core/Scene.hpp>
+#include <GDE/Core/SceneManager.hpp>
 
 #endif // GDE_CORE_HPP

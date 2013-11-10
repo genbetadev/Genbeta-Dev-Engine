@@ -7,6 +7,13 @@
 namespace GDE
 {
 	
+// Fowards Declarations
+class App;
+class Scene;
+class SceneManager;
+class ConfigReader;
+class ConfigCreate;
+	
 // Tipos de Log
 enum LogType
 {
@@ -32,6 +39,9 @@ enum StatusType
 
 	// Values from +-100 to +-199 are reserved for File status responses
 };
+
+/// Tipo de dato para identidicar las escenas
+typedef std::string sceneID;
 
 
 /// Declare NameValue typedef which is used for config section maps
