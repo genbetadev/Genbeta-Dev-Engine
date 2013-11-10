@@ -32,79 +32,65 @@ public:
 	void setBackgroundColor(const sf::Color& theColor);
 
 	/**
-	 * @brief	Gets background color.
+	 * @brief	Obtiene el color de fonde de la escena.
 	 *
-	 * @return	The background color.
+	 * @return	Color de fondo de la escena.
 	 */
 
 	const sf::Color& getBackgroundColor() const;
 
 	/**
-	 * @fn	virtual void Scene::init() = 0;
-	 *
-	 * @brief	Initialises this object.
+	 * @brief Inicializa la escena, es llamado al añadirse al SceneManager.
 	 */
 
 	virtual void init() = 0;
 
 	/**
-	 * @fn	virtual void Scene::active() = 0;
-	 *
-	 * @brief	Actives this object.
+	 * @brief Activa la escena, es llamado cuando la escena pasa a estar activa.
 	 */
 
 	virtual void active() = 0;
 
 	/**
-	 * @fn	virtual void Scene::desactive() = 0;
-	 *
-	 * @brief	Desactives this object.
+	 * @brief Es llamado cuando deja de ser la escena activa.
 	 */
-
 	virtual void desactive() = 0;
 
 	/**
-	 * @fn	virtual void Scene::update() = 0;
-	 *
-	 * @brief	Updates this object.
+	 * @brief Actualiza la lógica de la escena, se llama una vez por ciclo
+	 * en el game loop.
 	 */
 
 	virtual void update() = 0;
 
 	/**
-	 * @brief	.
+	 * @brief Recibe un evento de la aplicación, es llamado una vez por
+	 * cada evento.
 	 */
 
 	virtual void event(sf::Event theEvent) = 0;
 
 	/**
-	 * @fn	virtual void Scene::resume() = 0;
-	 *
-	 * @brief	Resumes this object.
+	 * @brief	Se llama a este método cuando la ventana recupera el foco.
 	 */
 
 	virtual void resume() = 0;
 
 	/**
-	 * @fn	virtual void Scene::pause() = 0;
-	 *
-	 * @brief	Pauses this object.
+	 * @brief Se llama a este método cuando la ventana pierde el foco.
 	 */
 
 	virtual void pause() = 0;
 
 	/**
-	 * @fn	virtual void Scene::draw() = 0;
-	 *
-	 * @brief	Draws this object.
+	 * @brief	Dibuja la escena, llamado una vez por ciclo en el game loop.
 	 */
 
 	virtual void draw() = 0;
 
 	/**
-	 * @fn	virtual void Scene::cleanup() = 0;
-	 *
-	 * @brief	Cleanups this object.
+	 * @brief Se ejecuta antes de eliminar la escena, acciones de limpieza
+	 * deben ir aquí.
 	 */
 
 	virtual void cleanup() = 0;
@@ -112,11 +98,9 @@ public:
 protected:
 
 	/**
-	 * @fn	Scene::Scene(sceneID theID);
+	 * @brief Constructor de Scene.
 	 *
-	 * @brief	Constructor.
-	 *
-	 * @param	theID	Identifier for the.
+	 * @param theID	Identificador único de la escena.
 	 */
 
 	Scene(sceneID theID);
