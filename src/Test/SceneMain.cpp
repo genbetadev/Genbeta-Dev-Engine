@@ -1,6 +1,8 @@
 #include "SceneMain.hpp"
 #include "SceneGame.hpp"
 
+#include <iostream> // Quitar
+
 SceneMain::SceneMain(GDE::sceneID theID)
 	: Scene(theID)
 	, window(GDE::App::instance()->getWindow())
@@ -51,12 +53,12 @@ void SceneMain::event(sf::Event theEvent)
 
 void SceneMain::resume()
 {
-	
+	std::cout << "Escena reanudada\n";
 }
 
 void SceneMain::pause()
 {
-	
+	std::cout << "Escena pausada\n";
 }
 
 void SceneMain::draw()

@@ -199,10 +199,10 @@ void App::gameLoop()
 				quit(StatusAppOK); // FIX: Dar la opción de parar el evento a la escena
 				break;
 			case sf::Event::GainedFocus:        // La ventana obtiene el foco
-				// Pasar al método resumeScene()
+				this->sceneManager->resumeScene();
 				break;
 			case sf::Event::LostFocus:                // La ventana pierde el foco
-				// Pasar al método pauseScene()
+				this->sceneManager->pauseScene();
 				break;
 			default:        // Otros eventos se los pasamos a la ecena activa
 				 this->sceneManager->eventScene(event);
