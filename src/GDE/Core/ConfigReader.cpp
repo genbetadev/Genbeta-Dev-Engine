@@ -181,7 +181,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
                 // Si ocurre un error lo metemos en el log
                 if (!feof(anFile))
                 {
-                    GDE::Log::error("ConfigReader::Read", "Error leyendo la línea " + anCount);
+                    GDE::Log::error("ConfigReader::Read", StringFormat("Error leyendo la línea %d", anCount));
                 }
                 // Salimos del bucle
                 break;
@@ -204,7 +204,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
     }
     else
     {
-        GDE::Log::error("ConfigReader::loadFromFile","Error al leer fichero " + theFilename+".");
+        GDE::Log::error("ConfigReader::loadFromFile", StringFormat("Error al leer fichero %s .", theFilename.c_str()));
     }
 
     // Devuelve true en caso de éxito, false en caso contrario
@@ -281,7 +281,8 @@ std::string ConfigReader::parseLine(const char* theLine,
                 }
                 else
                 {
-                    GDE::Log::error("ConfigReader::parseLine", "No se encontró el delimitador de sección ']' en la línea " + theCount);
+                    GDE::Log::error("ConfigReader::parseLine",
+									StringFormat("No se encontró el delimitador de sección ']' en la línea %d", theCount));
                 }
             }
             // Leemos el par <clave,valor> de la sección actual.
@@ -353,7 +354,8 @@ std::string ConfigReader::parseLine(const char* theLine,
                 }
                 else
                 {
-                    GDE::Log::error("ConfigReader::parseLine","No se encontró el delimitador de nombre o valor '=' o ':' en la línea " + theCount);
+                    GDE::Log::error("ConfigReader::parseLine",
+									StringFormat("No se encontró el delimitador de nombre o valor '=' o ':' en la línea %d", theCount));
                 }
             }
         } // if(theLine[anOffset] != '#' && theLine[anOffset] != ';')
