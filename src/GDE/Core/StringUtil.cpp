@@ -587,4 +587,43 @@ std::string StringToUppercase(std::string theString)
 	return anLowerString;
 }
 
+std::string GDE_API StringFormat(const std::string stringToFormat, ...) {
+	int streamBufferSize = 100;
+	std::string formattedString;
+
+	va_list argumentParameters;
+
+	formattedString.resize(streamBufferSize);
+
+	va_start(argumentParameters, stringToFormat);
+	// Compute the number of characters the final formatted string will have
+	int numChars = vsnprintf((char *)formattedString.c_str(),
+							 streamBufferSize,
+							 stringToFormat.c_str(),
+							 argumentParameters);
+
+
+	// The formatted string could be stored in the initial buffer size
+	if (numChars > -1 && numChars < streamBufferSize) {
+		formattedString.resize(numChars);
+
+		return formattedString;
+	// The formatted string does not fit in the initial buffer size
+	} else {
+		// Resize the buffer and add space for the null-terminating char
+		streamBufferSize = numChars + 1;
+		formattedString.resize(streamBufferSize);
+
+		// This second call will create the complete formatted string
+		va_start(argumentParameters, stringToFormat);
+		vsnprintf((char *)formattedString.c_str(),
+				  streamBufferSize,
+				  stringToFormat.c_str(),
+				  argumentParameters);
+	}
+
+	va_end(argumentParameters);
+	return formattedString;
+}
+
 } // namespace GDE
