@@ -5,6 +5,7 @@
 #include <GDE/Config.hpp>
 #include <GDE/Core/CoreTypes.hpp>
 #include <GDE/Core/SceneManager.hpp>
+#include <GDE/Core/Resources.hpp>
 
 namespace GDE
 {
@@ -46,6 +47,9 @@ private:
 	SceneManager* sceneManager;
 	/// Escena inicial. Punto de entrada de la aplicación
 	Scene* initialScene;
+
+	/// Gestor de texturas.
+	TextureManager textureManager;
 
 	App();
 
