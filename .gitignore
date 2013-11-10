@@ -164,9 +164,10 @@ ehthumbs.db
 
 extlibs/headers/SFML/
 log.txt
+[Tt]est.txt
 *.mk
-Test
-Test-d
+bin/Test
+bin/Test-d
 Makefile
 GDE.txt
 builds/codelite/.*
