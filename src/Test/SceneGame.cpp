@@ -40,7 +40,8 @@ void SceneGame::update()
 void SceneGame::event(sf::Event theEvent)
 {
 	// Prueba de cambi de escena
-	if (theEvent.type == sf::Event::KeyPressed)
+	if (theEvent.type == sf::Event::KeyPressed && 
+		theEvent.key.code == sf::Keyboard::Space)
 	{
 		// Otra forma de acceder al SceneManager quizás se deban proporcionar otros métodos
 		GDE::SceneManager::instance()->setActiveScene("Main");

@@ -45,7 +45,8 @@ void SceneMain::update()
 void SceneMain::event(sf::Event theEvent)
 {
 	// Prueba de cambi de escena
-	if (theEvent.type == sf::Event::KeyPressed)
+	if (theEvent.type == sf::Event::KeyPressed && 
+		theEvent.key.code == sf::Keyboard::Space)
 	{
 		sm->setActiveScene("Game");
 	}
