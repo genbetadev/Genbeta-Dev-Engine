@@ -11,14 +11,22 @@ if (OS_WINDOWS)
 		endif()
 	elseif(COMPILER_MSVC)
 		if(ARCH_32BITS)
-			set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${GDE_DIR}/extlibs/libs-vc20${MSVC_VERSION}/x86")
+			set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${GDE_DIR}/extlibs/libs-vc${VISUAL_VERSION}/x86")
 		elseif(ARCH_64BITS)
-			set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${GDE_DIR}/extlibs/libs-vc20${MSVC_VERSION}/x64")
+			set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${GDE_DIR}/extlibs/libs-vc${VISUAL_VERSION}/x64")
 		endif()
 	endif()
 elseif(OS_MACOSX)
 	set(CMAKE_INCLUDE_PATH ${CMAKE_INCLUDE_PATH} "${GDE_DIR}/extlibs/headers")
 	set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${GDE_DIR}/extlibs/libs-osx/lib/")
+elseif(OS_LINUX)
+	if(COMPILER_GCC)
+		if(ARCH_32BITS)
+			set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${GDE_DIR}/extlibs/libs-gcc/x86")
+		elseif(ARCH_64BITS)
+			set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${GDE_DIR}/extlibs/libs-gcc/x64")
+		endif()
+	endif()
 endif()
 
 file(GLOB_RECURSE GDE_SOURCE
@@ -37,7 +45,7 @@ file(GLOB_RECURSE GDE_TEST_SOURCE
 set(LIBRARY_OUTPUT_PATH ${GDE_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${GDE_DIR}/bin)
 
-# Crea la libreria GDE
+# Crea la librería GDE
 add_library(GDE_LIB ${GDE_SOURCE} ${GDE_INCLUDES})
 # Crea los tests
 add_executable(GDE_TEST ${GDE_TEST_SOURCE})
@@ -82,8 +90,8 @@ target_link_libraries(GDE_TEST GDE_LIB)
 
 # Instala los include de GDE
 install(DIRECTORY ${GDE_INCLUDE_DIR}
-        DESTINATION .
-        COMPONENT development)
+		DESTINATION .
+		COMPONENT development)
 # Instala la librería GDE
 install(TARGETS GDE_LIB
 		RUNTIME DESTINATION bin

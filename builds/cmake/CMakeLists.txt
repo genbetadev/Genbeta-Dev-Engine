@@ -16,7 +16,7 @@ set(VERSION_MINOR 1)
 set(VERSION_PATCH 0)
 
 set_option(CMAKE_BUILD_TYPE Release STRING "Escoje el tipo de build (Debug o Release)") 
-set_option(BUILD_SHARED_LIBS FALSE BOOL "TRUE para construir GDE como librería compartida, FALSE para construir GDE como librería e" )
+set_option(BUILD_SHARED_LIBS FALSE BOOL "TRUE para construir GDE como librería compartida, FALSE para construir GDE como librería estática" )
 set_option(SFML_STATIC_LIBRARIES FALSE BOOL "TRUE para Linkear SFML estaticamente")
 
 # Carga el archivo de Configuración
