@@ -1,5 +1,6 @@
 #include <sstream>
 #include <algorithm>
+#include <cstdarg>
 #include <GDE/Core/StringsUtil.hpp>
 
 namespace GDE
