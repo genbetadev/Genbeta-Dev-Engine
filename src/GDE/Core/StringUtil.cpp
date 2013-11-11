@@ -587,7 +587,8 @@ std::string StringToUppercase(std::string theString)
 	return anLowerString;
 }
 
-std::string GDE_API StringFormat(const std::string stringToFormat, ...) {
+std::string GDE_API StringFormat(const std::string stringToFormat, ...)
+{
 	int streamBufferSize = 100;
 	std::string formattedString;
 
