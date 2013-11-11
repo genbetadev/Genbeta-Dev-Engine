@@ -7,26 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C58FF7418300EAF00EA099D /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF6D18300EAF00EA099D /* App.cpp */; };
-		9C58FF7518300EAF00EA099D /* ConfigCreate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF6E18300EAF00EA099D /* ConfigCreate.cpp */; };
-		9C58FF7618300EAF00EA099D /* ConfigReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF6F18300EAF00EA099D /* ConfigReader.cpp */; };
-		9C58FF7718300EAF00EA099D /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7018300EAF00EA099D /* Log.cpp */; };
-		9C58FF7818300EAF00EA099D /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7118300EAF00EA099D /* Scene.cpp */; };
-		9C58FF7918300EAF00EA099D /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7218300EAF00EA099D /* SceneManager.cpp */; };
-		9C58FF7A18300EAF00EA099D /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7318300EAF00EA099D /* StringUtil.cpp */; };
+		9CE8703B18316CE300FDC85C /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8703318316CE300FDC85C /* App.cpp */; };
+		9CE8703C18316CE300FDC85C /* ConfigCreate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8703418316CE300FDC85C /* ConfigCreate.cpp */; };
+		9CE8703D18316CE300FDC85C /* ConfigReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8703518316CE300FDC85C /* ConfigReader.cpp */; };
+		9CE8703E18316CE300FDC85C /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8703618316CE300FDC85C /* Log.cpp */; };
+		9CE8703F18316CE300FDC85C /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8703718316CE300FDC85C /* Scene.cpp */; };
+		9CE8704018316CE300FDC85C /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8703818316CE300FDC85C /* SceneManager.cpp */; };
+		9CE8704118316CE300FDC85C /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CE8703918316CE300FDC85C /* StringUtil.cpp */; };
+		9CE870751831966100FDC85C /* include in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CE870721831951000FDC85C /* include */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CE870741831965A00FDC85C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				9CE870751831966100FDC85C /* include in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9C11C132182FF75E00988E31 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = /Library/Frameworks/SFML.framework; sourceTree = "<absolute>"; };
-		9C13D80518300A6200F67BF4 /* GDE */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GDE; path = ../../include/GDE; sourceTree = "<group>"; };
-		9C58FF6D18300EAF00EA099D /* App.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = App.cpp; path = ../../src/GDE/Core/App.cpp; sourceTree = "<group>"; };
-		9C58FF6E18300EAF00EA099D /* ConfigCreate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigCreate.cpp; path = ../../src/GDE/Core/ConfigCreate.cpp; sourceTree = "<group>"; };
-		9C58FF6F18300EAF00EA099D /* ConfigReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigReader.cpp; path = ../../src/GDE/Core/ConfigReader.cpp; sourceTree = "<group>"; };
-		9C58FF7018300EAF00EA099D /* Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Log.cpp; path = ../../src/GDE/Core/Log.cpp; sourceTree = "<group>"; };
-		9C58FF7118300EAF00EA099D /* Scene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Scene.cpp; path = ../../src/GDE/Core/Scene.cpp; sourceTree = "<group>"; };
-		9C58FF7218300EAF00EA099D /* SceneManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = ../../src/GDE/Core/SceneManager.cpp; sourceTree = "<group>"; };
-		9C58FF7318300EAF00EA099D /* StringUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = StringUtil.cpp; path = ../../src/GDE/Core/StringUtil.cpp; sourceTree = "<group>"; };
 		9CD50CC2182FEBB500CFCACB /* libGDE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGDE.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE8703318316CE300FDC85C /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
+		9CE8703418316CE300FDC85C /* ConfigCreate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigCreate.cpp; sourceTree = "<group>"; };
+		9CE8703518316CE300FDC85C /* ConfigReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigReader.cpp; sourceTree = "<group>"; };
+		9CE8703618316CE300FDC85C /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		9CE8703718316CE300FDC85C /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		9CE8703818316CE300FDC85C /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
+		9CE8703918316CE300FDC85C /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cpp; sourceTree = "<group>"; };
+		9CE870721831951000FDC85C /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = ../../include; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,58 +70,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C13D80318300A4500F67BF4 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				9C13D80518300A6200F67BF4 /* GDE */,
-			);
-			name = include;
-			sourceTree = "<group>";
-		};
-		9C13D80418300A4B00F67BF4 /* source */ = {
-			isa = PBXGroup;
-			children = (
-				9C58FF7B18300EBC00EA099D /* Core */,
-			);
-			name = source;
-			sourceTree = "<group>";
-		};
 		9C5867C6182F9B95007AC8CC = {
 			isa = PBXGroup;
 			children = (
-				9C13D80418300A4B00F67BF4 /* source */,
-				9C13D80318300A4500F67BF4 /* include */,
+				9CE870721831951000FDC85C /* include */,
+				9CE8703218316CE300FDC85C /* Core */,
 				9C11C135182FF77A00988E31 /* Frameworks */,
 				9C11C136182FF78100988E31 /* Products */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
 		};
-		9C58FF7B18300EBC00EA099D /* Core */ = {
+		9CE8703218316CE300FDC85C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9C58FF6D18300EAF00EA099D /* App.cpp */,
-				9C58FF6E18300EAF00EA099D /* ConfigCreate.cpp */,
-				9C58FF6F18300EAF00EA099D /* ConfigReader.cpp */,
-				9C58FF7018300EAF00EA099D /* Log.cpp */,
-				9C58FF7118300EAF00EA099D /* Scene.cpp */,
-				9C58FF7218300EAF00EA099D /* SceneManager.cpp */,
-				9C58FF7318300EAF00EA099D /* StringUtil.cpp */,
+				9CE8703318316CE300FDC85C /* App.cpp */,
+				9CE8703418316CE300FDC85C /* ConfigCreate.cpp */,
+				9CE8703518316CE300FDC85C /* ConfigReader.cpp */,
+				9CE8703618316CE300FDC85C /* Log.cpp */,
+				9CE8703718316CE300FDC85C /* Scene.cpp */,
+				9CE8703818316CE300FDC85C /* SceneManager.cpp */,
+				9CE8703918316CE300FDC85C /* StringUtil.cpp */,
 			);
 			name = Core;
+			path = ../../src/GDE/Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		9CD50CBC182FB85C00CFCACB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9CD50CBD182FB85C00CFCACB /* GDE */ = {
@@ -116,7 +105,7 @@
 			buildPhases = (
 				9CD50CBA182FB85C00CFCACB /* Sources */,
 				9CD50CBB182FB85C00CFCACB /* Frameworks */,
-				9CD50CBC182FB85C00CFCACB /* Headers */,
+				9CE870741831965A00FDC85C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -157,13 +146,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C58FF7418300EAF00EA099D /* App.cpp in Sources */,
-				9C58FF7518300EAF00EA099D /* ConfigCreate.cpp in Sources */,
-				9C58FF7618300EAF00EA099D /* ConfigReader.cpp in Sources */,
-				9C58FF7718300EAF00EA099D /* Log.cpp in Sources */,
-				9C58FF7818300EAF00EA099D /* Scene.cpp in Sources */,
-				9C58FF7918300EAF00EA099D /* SceneManager.cpp in Sources */,
-				9C58FF7A18300EAF00EA099D /* StringUtil.cpp in Sources */,
+				9CE8703B18316CE300FDC85C /* App.cpp in Sources */,
+				9CE8703C18316CE300FDC85C /* ConfigCreate.cpp in Sources */,
+				9CE8704018316CE300FDC85C /* SceneManager.cpp in Sources */,
+				9CE8703E18316CE300FDC85C /* Log.cpp in Sources */,
+				9CE8703F18316CE300FDC85C /* Scene.cpp in Sources */,
+				9CE8703D18316CE300FDC85C /* ConfigReader.cpp in Sources */,
+				9CE8704118316CE300FDC85C /* StringUtil.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +162,6 @@
 		9C5867CB182F9B95007AC8CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -219,12 +207,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = build/osx;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = "../../tmp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SYMROOT = ../../bin;
+				SYMROOT = ../../lib;
 				USER_HEADER_SEARCH_PATHS = "../../include/**";
 			};
 			name = Debug;
@@ -260,11 +247,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = build/osx;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = "../../tmp/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SYMROOT = ../../bin;
+				SYMROOT = ../../lib;
 				USER_HEADER_SEARCH_PATHS = "../../include/**";
 			};
 			name = Release;
