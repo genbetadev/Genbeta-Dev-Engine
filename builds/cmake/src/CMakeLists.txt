@@ -48,8 +48,11 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${GDE_DIR}/bin)
 # Crea la librería GDE
 add_library(GDE_LIB ${GDE_SOURCE} ${GDE_INCLUDES})
 # Crea los tests
-add_executable(GDE_TEST ${GDE_TEST_SOURCE})
-
+if(OS_WINDOWS AND BUILD_GUI_TESTS)
+	add_executable(GDE_TEST WIN32 ${GDE_TEST_SOURCE})
+else()
+	add_executable(GDE_TEST ${GDE_TEST_SOURCE})
+endif()
 
 ## Agrega propiedades a cada target
 
@@ -77,9 +80,16 @@ set_target_properties(GDE_TEST PROPERTIES DEBUG_POSTFIX -d)
 
 
 ## Busca las librerías de SFML
-find_package(SFML 2.1 COMPONENTS audio network graphics window system REQUIRED)
+if(OS_WINDOWS)
+	find_package(SFML 2.1 COMPONENTS main audio graphics window system REQUIRED)
+else()
+	find_package(SFML 2.1 COMPONENTS audio graphics window system REQUIRED)
+endif()
 if(SFML_FOUND)
 	include_directories(${SFML_INCLUDE_DIR})
+	if(SFML_STATIC_LIBRARIES)
+		target_link_libraries(GDE_LIB ${SFML_DEPENDENCIES})
+	endif()
 	target_link_libraries(GDE_LIB ${SFML_LIBRARIES})
 endif(SFML_FOUND)
 
