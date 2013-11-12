@@ -85,6 +85,8 @@ sf::Int16 App::run()
 	this->gameLoop();
 	// Se encarga de la limpieza y cerrar todos los subsistemas
 	this->cleanup();
+	// Escribimos en el log el código de salida
+	GDE::Log::debug("Código de salida", GDE::StringFormat("%d", this->exitCode));
 	// Salimos con el código de salida generado
 	return this->exitCode;
 }
