@@ -1,8 +1,6 @@
 # Se define la versión mínima del CMake
 cmake_minimum_required(VERSION 2.8)
 
-project(GDE)
-
 macro(set_option variable default type docstring)
 	if(NOT DEFINED ${variable})
 		set(${variable} ${default})
@@ -10,17 +8,26 @@ macro(set_option variable default type docstring)
 	set(${variable} ${${variable}} CACHE ${type} ${docstring} FORCE)
 endmacro()
 
+# Tiene que definirse el tipo de build antes del nombre del proyecto
+set_option(CMAKE_BUILD_TYPE Release STRING "Escoje el tipo de build (Debug o Release)")
+
+project(GDE)
+
+# Carga el archivo de Configuración
+include(${CMAKE_CURRENT_SOURCE_DIR}/Config.cmake)
+
 # Establece la versión del proyecto
 set(VERSION_MAJOR 0)
 set(VERSION_MINOR 1)
 set(VERSION_PATCH 0)
 
-set_option(CMAKE_BUILD_TYPE Release STRING "Escoje el tipo de build (Debug o Release)") 
 set_option(BUILD_SHARED_LIBS FALSE BOOL "TRUE para construir GDE como librería compartida, FALSE para construir GDE como librería estática" )
 set_option(SFML_STATIC_LIBRARIES FALSE BOOL "TRUE para Linkear SFML estaticamente")
 
-# Carga el archivo de Configuración
-include(${CMAKE_CURRENT_SOURCE_DIR}/Config.cmake)
+if(OS_WINDOWS)
+	set_option(BUILD_GUI_TESTS FALSE BOOL "TRUE para construir los TESTS sin símbolo del sistema (CMD)")
+endif()
+
 # Le dice a CMake donde van a estar los Módulos
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/Modules)
 
