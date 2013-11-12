@@ -164,7 +164,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
     unsigned long anCount = 1;
 
 	// Indicamos en el log que estamos cargando un fichero
-    GDE::Log::info("ConfigReader::loadFromFile","Abriendo fichero "+theFilename+".");
+	GDE_LOG_INFO("ConfigReader::loadFromFile(): abriendo fichero" << theFilename);
 
     // Intentamos abrir el fichero
     FILE* anFile = fopen(theFilename.c_str(), "r");
@@ -181,7 +181,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
                 // Si ocurre un error lo metemos en el log
                 if (!feof(anFile))
                 {
-                    GDE::Log::error("ConfigReader::Read", StringFormat("Error leyendo la línea %d", anCount));
+					GDE_LOG_ERROR("ConfigReader::Read(): error leyendo la línea" << anCount);
                 }
                 // Salimos del bucle
                 break;
@@ -204,7 +204,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
     }
     else
     {
-        GDE::Log::error("ConfigReader::loadFromFile", StringFormat("Error al leer fichero %s .", theFilename.c_str()));
+		GDE_LOG_ERROR("ConfigReader::Read(): error leyendo la línea" << anCount);
     }
 
     // Devuelve true en caso de éxito, false en caso contrario
@@ -281,8 +281,7 @@ std::string ConfigReader::parseLine(const char* theLine,
                 }
                 else
                 {
-                    GDE::Log::error("ConfigReader::parseLine",
-									StringFormat("No se encontró el delimitador de sección ']' en la línea %d", theCount));
+					GDE_LOG_ERROR("No se encontró el delimitador de sección ']' en la línea" << theCount);
                 }
             }
             // Leemos el par <clave,valor> de la sección actual.
@@ -354,8 +353,7 @@ std::string ConfigReader::parseLine(const char* theLine,
                 }
                 else
                 {
-                    GDE::Log::error("ConfigReader::parseLine",
-									StringFormat("No se encontró el delimitador de nombre o valor '=' o ':' en la línea %d", theCount));
+					GDE_LOG_ERROR("No se encontró el delimitador de nombre o valor '=' o ':' en la línea" << theCount);
                 }
             }
         } // if(theLine[anOffset] != '#' && theLine[anOffset] != ';')
@@ -380,8 +378,8 @@ void ConfigReader::storeNameValue(const std::string theSection,
         // Nos aseguramos de que hemos creado el mapa correctamente
         if (NULL != anMap)
         {
-            GDE::Log::info("ConfigReader::StoreNameValue","Añadiendo "+theName+"="+theValue + " a la sección [" + theSection+"].");
-
+			GDE_LOG_INFO("ConfigReader::StoreNameValue(): añadiendo" << theName << "=" << theValue << GDE::Log::nospace
+							<< "a la sección [" << theSection << "]");
             // Añadimos el nuevo par <clave,valor> al mapa
             anMap->insert(std::pair<const std::string, const std::string>(theName, theValue));
 
@@ -390,7 +388,8 @@ void ConfigReader::storeNameValue(const std::string theSection,
         }
         else
         {
-            GDE::Log::error("ConfigReader::StoreNameValue","Imposible añadir "+theName+"="+theValue + " a la sección [" + theSection+"] posible falta de memoria.");
+			GDE_LOG_ERROR("Imposible añadir" << theName << "=" << theValue << GDE::Log::nospace
+							<< "a la sección [" << theSection << "], posible falta de memoria.");
         }
     }
     else
@@ -406,13 +405,15 @@ void ConfigReader::storeNameValue(const std::string theSection,
             iterNameValue = anMap->find(theName);
             if (iterNameValue == anMap->end())
             {
-                GDE::Log::info("ConfigReader::StoreNameValue","Añadiendo "+theName+"="+theValue + " a la sección [" + theSection+"].");
+				GDE_LOG_INFO("ConfigReader::StoreNameValue(): añadiendo" << theName << "=" << theValue <<  GDE::Log::nospace
+								<< "a la sección [" << theSection << "]");
                 // Añadimos el nuevo par <clave,valor>
                 anMap->insert(std::pair<const std::string, const std::string>(theName, theValue));
             }
             else
             {
-                GDE::Log::error("ConfigReader::StoreNameValue","Imposible añadir "+theName+"="+theValue + " a la sección [" + theSection+"] porque ya existe.");
+				GDE_LOG_ERROR("Imposible añadir" << theName << "=" << theValue << GDE::Log::nospace
+								<< "a la sección [" << theSection << "], porque ya existe.");
             }
         }
     } // else(iterSection == mSections.end())
