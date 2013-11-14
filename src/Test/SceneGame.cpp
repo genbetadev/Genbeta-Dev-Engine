@@ -1,8 +1,8 @@
 #include "SceneGame.hpp"
 
-SceneGame::SceneGame(GDE::sceneID theID)
+SceneGame::SceneGame(::GDE::Core::sceneID theID)
 	: Scene(theID)
-	, window(GDE::App::instance()->getWindow())
+	, window(::GDE::Core::App::instance()->getWindow())
 {
 	this->setBackgroundColor(sf::Color(255, 200, 180));
 }
@@ -44,7 +44,7 @@ void SceneGame::event(sf::Event theEvent)
 		theEvent.key.code == sf::Keyboard::Space)
 	{
 		// Otra forma de acceder al SceneManager quizás se deban proporcionar otros métodos
-		GDE::SceneManager::instance()->setActiveScene("Main");
+		::GDE::Core::SceneManager::instance()->setActiveScene("Main");
 	}
 }
 

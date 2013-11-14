@@ -5,11 +5,20 @@
 #include <ctime>
 #include <fstream>
 #include <iostream>
-#include <GDE/Core/CoreTypes.hpp>
+
+#include "config.hpp"
 
 namespace GDE
 {
-
+	// Tipos de Log
+	enum LogType
+	{
+		infoLevel = 0,
+		debugLevel = 1,
+		errorLevel = 2,
+		warningLevel = 3
+	};
+	
 	/**
 	 * Clase que ofrece funcionalidad para almacenar información en un log.
 	 * 

@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:gde-test.xcodeproj">
+      location = "group:GDE.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:GDE.xcodeproj">
+      location = "container:gde-test.xcodeproj">
    </FileRef>
 </Workspace>

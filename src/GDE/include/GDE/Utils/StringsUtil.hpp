@@ -3,9 +3,9 @@
 
 #include <string>
 #include <SFML/Graphics.hpp>
-#include <GDE/Config.hpp>
+#include "../Config.hpp"
 
-namespace GDE
+namespace GDE { namespace Utils
 {
 
 ///////////////////////////////////////////////////////////////////////////
@@ -327,6 +327,6 @@ std::string GDE_API StringToUppercase(std::string theString);
  **/
 std::string GDE_API StringFormat(const std::string stringToFormat, ...);
 
-} // namespace GDE
+} } // namespace GDE::Utils
 
 #endif // GDE_CORE_STRING_UTIL_HPP

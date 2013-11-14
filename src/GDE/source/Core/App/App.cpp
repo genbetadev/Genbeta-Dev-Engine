@@ -1,17 +1,17 @@
-#include <GDE/Core/App.hpp>
-#include <GDE/Core/Log.hpp>
-#include <GDE/Core/StringsUtil.hpp>
-#include <GDE/Core/ConfigReader.hpp>
-#include <GDE/Core/ConfigCreate.hpp>
+#include "App.hpp"
+#include "Log/Log.hpp"
+#include "Config/ConfigReader.hpp"
+#include "Config/ConfigCreate.hpp"
+#include "Utils/StringsUtil.hpp"
 
-namespace GDE
+namespace GDE { namespace Core
 {
 
 App* App::uniqueInstance = 0;
 
 App::App()
 	: window()
-	, exitCode(GDE::StatusNoError)
+	, exitCode(StatusNoError)
 	, running(false)
 	, initialScene(NULL)
 {
@@ -92,7 +92,7 @@ sf::Int16 App::run()
 void App::init()
 {
 	// Se crea la instancia única del SceneManager
-	sceneManager = GDE::SceneManager::instance();
+	sceneManager = SceneManager::instance();
 	
 	// Establecemos la escene inicial
 	if (initialScene != 0)
@@ -107,7 +107,7 @@ void App::init()
 	{
 		GDE::Log::error("App::Init()", "No se ha establecido escena inicial. LLamar a App::SetFirstScene() primero");
 		// Salimos con código -2
-		quit(GDE::StatusAppInitFailed);
+		quit(StatusAppInitFailed);
 	}
 
 	GDE::Log::info("App::Init()", "Completado");
@@ -126,7 +126,7 @@ void App::createWindow()
 	// Activamos la sincronización vertical por defecto
 	bool vsync = true;
 
-	GDE::ConfigReader conf;
+	ConfigReader conf;
 	// Si existe un archivo de configuración lo usamos para cargar los datos
 	if(conf.loadFromFile("window.cfg")) // FIX: Deberá ser argado con el gestor de recursos
 	{
@@ -166,21 +166,21 @@ void App::createWindow()
 	GDE::ConfigCreate newConf;
 	newConf.open("window.cfg");
 	newConf.putSection("window");
-	newConf.putValue("width", GDE::convertInt32(videoMode.width));
-	newConf.putValue("height", GDE::convertInt32(videoMode.height));
-	newConf.putValue("bpp", GDE::convertInt32(videoMode.bitsPerPixel));
-	newConf.putValue("fullscreen", GDE::convertBool(fullscreen));
-	newConf.putValue("resize", GDE::convertBool(resize));
-	newConf.putValue("vsync", GDE::convertBool(vsync));
+	newConf.putValue("width", Utils::convertInt32(videoMode.width));
+	newConf.putValue("height", Utils::convertInt32(videoMode.height));
+	newConf.putValue("bpp", Utils::convertInt32(videoMode.bitsPerPixel));
+	newConf.putValue("fullscreen", Utils::convertBool(fullscreen));
+	newConf.putValue("resize", Utils::convertBool(resize));
+	newConf.putValue("vsync", Utils::convertBool(vsync));
 	newConf.close();
 
 	// Escribimos en el log
 	GDE::Log::info("App::createWindow", "Ventana creada");
-	GDE::Log::info("Modo de Video", GDE::convertInt32(videoMode.width) + 
-		"x" + GDE::convertInt32(videoMode.height) + 
-		"x" + GDE::convertInt32(videoMode.bitsPerPixel));
-	GDE::Log::info("Vsync", GDE::convertBool(vsync));
-	GDE::Log::info("Fullscreen", GDE::convertBool(fullscreen));
+	GDE::Log::info("Modo de Video", Utils::convertInt32(videoMode.width) +
+		"x" + Utils::convertInt32(videoMode.height) +
+		"x" + Utils::convertInt32(videoMode.bitsPerPixel));
+	GDE::Log::info("Vsync", Utils::convertBool(vsync));
+	GDE::Log::info("Fullscreen", Utils::convertBool(fullscreen));
 }
 
 void App::gameLoop()
@@ -242,4 +242,4 @@ void App::cleanup()
 	GDE::Log::info("App::cleanup()", "Completado");
 }
 	
-} // namespace GDE
+} }// namespace GDE::Core

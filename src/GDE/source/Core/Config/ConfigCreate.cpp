@@ -1,4 +1,4 @@
-#include <GDE/Core/ConfigCreate.hpp>
+#include "ConfigCreate.hpp"
 
 namespace GDE
 {

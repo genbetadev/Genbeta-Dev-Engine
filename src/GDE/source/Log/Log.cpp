@@ -1,5 +1,5 @@
-#include <GDE/Config.hpp>
-#include <GDE/Core/Log.hpp>
+//#include <GDE/Config.hpp>
+#include "Log.hpp"
 
 namespace GDE
 {

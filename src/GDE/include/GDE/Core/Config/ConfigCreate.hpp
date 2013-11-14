@@ -4,7 +4,7 @@
 #include <string>
 #include <fstream>
 #include <SFML/System/NonCopyable.hpp>
-#include <GDE/Config.hpp>
+#include "GDE/Config.hpp"
 
 namespace GDE
 {

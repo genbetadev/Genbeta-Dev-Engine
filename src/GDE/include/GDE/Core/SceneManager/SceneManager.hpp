@@ -3,11 +3,11 @@
 
 #include <map>
 #include <SFML/System.hpp>
-#include <GDE/Config.hpp>
-#include <GDE/Core/CoreTypes.hpp>
-#include <GDE/Core/Scene.hpp>
+#include "GDE/Config.hpp"
+// #include "GDE/Core/Types.hpp"
+#include "Scene.hpp"
 
-namespace GDE
+namespace GDE { namespace Core
 {
 
 class GDE_API SceneManager : sf::NonCopyable
@@ -123,6 +123,6 @@ private:
 	
 }; // class SceneManager	
 
-} // namespace GDE
+} } // namespace GDE::Core
 
 #endif // GDE_CORE_SCENE_MANAGER_HPP

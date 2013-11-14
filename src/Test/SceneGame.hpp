@@ -2,12 +2,12 @@
 #define SCENE_GAME_HPP
 
 #include <SFML/Graphics.hpp>
-#include <GDE/Core.hpp>
+#include <GDE/Core/Core.hpp>
 
-class SceneGame : public GDE::Scene
+class SceneGame : public GDE::Core::Scene
 {
 public:
-	SceneGame(GDE::sceneID theID);
+	SceneGame(GDE::Core::sceneID theID);
 	
 	~SceneGame();
 	

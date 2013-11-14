@@ -3,10 +3,10 @@
 
 #include <iostream> // Quitar
 
-SceneMain::SceneMain(GDE::sceneID theID)
+SceneMain::SceneMain(GDE::Core::sceneID theID)
 	: Scene(theID)
-	, window(GDE::App::instance()->getWindow())
-	, sm(GDE::SceneManager::instance())
+	, window(::GDE::Core::App::instance()->getWindow())
+	, sm(::GDE::Core::SceneManager::instance())
 {
 	this->setBackgroundColor(sf::Color(180, 200, 255));
 }

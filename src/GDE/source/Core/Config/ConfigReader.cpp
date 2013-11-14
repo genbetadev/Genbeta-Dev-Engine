@@ -1,11 +1,11 @@
-#include <GDE/Core/ConfigReader.hpp>
-#include <GDE/Core/StringsUtil.hpp>
-#include <GDE/Core/Log.hpp>
-
 #include <cstdio>
 #include <cstring>
 
-namespace GDE
+#include "ConfigReader.hpp"
+#include "Log/Log.hpp"
+#include "Utils/StringsUtil.hpp"
+
+namespace GDE { namespace Core
 {
 
 ConfigReader::ConfigReader()
@@ -68,7 +68,7 @@ bool ConfigReader::getBool(const std::string theSection,
             iterNameValue = anMap->find(theName);
             if (iterNameValue != anMap->end())
             {
-                anResult = parseBool(iterNameValue->second, theDefault);
+                anResult = Utils::parseBool(iterNameValue->second, theDefault);
             }
         }
     }
@@ -95,7 +95,7 @@ float ConfigReader::getFloat(const std::string theSection,
             iterNameValue = anMap->find(theName);
             if (iterNameValue != anMap->end())
             {
-                anResult = parseFloat(iterNameValue->second, theDefault);
+                anResult = Utils::parseFloat(iterNameValue->second, theDefault);
             }
         }
     }
@@ -147,7 +147,7 @@ sf::Uint32 ConfigReader::getUint32(const std::string theSection, const std::stri
             iterNameValue = anMap->find(theName);
             if (iterNameValue != anMap->end())
             {
-                anResult = parseUint32(iterNameValue->second, theDefault);
+                anResult = Utils::parseUint32(iterNameValue->second, theDefault);
             }
         }
     }
@@ -181,7 +181,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
                 // Si ocurre un error lo metemos en el log
                 if (!feof(anFile))
                 {
-                    GDE::Log::error("ConfigReader::Read", StringFormat("Error leyendo la línea %d", anCount));
+                    GDE::Log::error("ConfigReader::Read", Utils::StringFormat("Error leyendo la línea %d", anCount));
                 }
                 // Salimos del bucle
                 break;
@@ -204,7 +204,7 @@ bool ConfigReader::loadFromFile(const std::string& theFilename)
     }
     else
     {
-        GDE::Log::error("ConfigReader::loadFromFile", StringFormat("Error al leer fichero %s .", theFilename.c_str()));
+        GDE::Log::error("ConfigReader::loadFromFile",  Utils::StringFormat("Error al leer fichero %s .", theFilename.c_str()));
     }
 
     // Devuelve true en caso de éxito, false en caso contrario
@@ -282,7 +282,7 @@ std::string ConfigReader::parseLine(const char* theLine,
                 else
                 {
                     GDE::Log::error("ConfigReader::parseLine",
-									StringFormat("No se encontró el delimitador de sección ']' en la línea %d", theCount));
+									 Utils::StringFormat("No se encontró el delimitador de sección ']' en la línea %d", theCount));
                 }
             }
             // Leemos el par <clave,valor> de la sección actual.
@@ -355,7 +355,7 @@ std::string ConfigReader::parseLine(const char* theLine,
                 else
                 {
                     GDE::Log::error("ConfigReader::parseLine",
-									StringFormat("No se encontró el delimitador de nombre o valor '=' o ':' en la línea %d", theCount));
+									 Utils::StringFormat("No se encontró el delimitador de nombre o valor '=' o ':' en la línea %d", theCount));
                 }
             }
         } // if(theLine[anOffset] != '#' && theLine[anOffset] != ';')
@@ -418,4 +418,4 @@ void ConfigReader::storeNameValue(const std::string theSection,
     } // else(iterSection == mSections.end())
 }
 
-} // namespace GDE
+} } // namespace GDE::Core
