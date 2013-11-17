@@ -14,13 +14,13 @@ class SceneManager;
 class ConfigReader;
 class ConfigCreate;
 	
-// Tipos de Log
-enum LogType
+/// Nivel o tipo de Log
+enum LogLevel
 {
-	infoLevel = 0,
-	debugLevel = 1,
-	errorLevel = 2,
-	warningLevel = 3
+	Debug = 0,
+	Info = 1,
+	Warning = 2,
+	Error = 3
 };
 
 /// Enumaración con los posibles valores de retorno de la Aplicación
@@ -49,6 +49,30 @@ typedef std::map<const std::string, const std::string> typeNameValue;
 
 /// Declare NameValueIter typedef which is used for name,value pair maps
 typedef std::map<const std::string, const std::string>::iterator typeNameValueIter;
+
+
+/// Almacena el número de línea, nombre de archivo y nombre de función.
+struct SourceContext
+{
+	SourceContext (const char *file, unsigned int line, const char *function)
+	: file(file)
+	, line(line)
+	, function(function)
+	{ }
+
+	const char *file;
+	const int line;
+	const char *function;
+};
+
+
+typedef void (*LogHandler) (std::ostream &os,
+									 GDE::LogLevel level,
+									 const std::string &message,
+									 const std::string &date,
+									 const std::string &time,
+									 const GDE::SourceContext &context
+									);
 
 } // namespace GDE
 
