@@ -18,8 +18,8 @@ set(DOXYGEN_INPUT_DIR ${GDE_DIR})
 set(DOXYGEN_OUTPUT_DIR ${GDE_DIR}/doc)
 
 # Configura el archivo Doxyfile copiandolo y remplazando todas las @variables@
-set(DOXYGEN_CONFIGURED_INPUT ${DOXYGEN_OUTPUT_DIR}/config)
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.in ${DOXYGEN_CONFIGURED_INPUT} @ONLY)
+set(DOXYGEN_CONFIGURED_INPUT ${DOXYGEN_OUTPUT_DIR}/doxyfile)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/doxyfile.in ${DOXYGEN_CONFIGURED_INPUT} @ONLY)
 
 # Crea el target
 add_custom_target(doc ALL
