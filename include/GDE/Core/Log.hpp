@@ -124,7 +124,7 @@ namespace GDE
 	 * entre los valores, esto se hace automáticamente por defecto. Este comportamiento puede ser
 	 * cambiado usando los manipuladores space y nospace.
 	 *
-	 * La macro GDE_LOG_ERROR imprime además el nombre de archivo, número de línea y nombre de función
+	 * La macro GDE_LOG_ERROR imprime además el nombre de archivo y número de línea
 	 * donde ocurrió el error.
 	 *
 	 *
@@ -180,8 +180,8 @@ namespace GDE
 	 * @e level es uno de los valores: GDE::Debug, GDE::Info, GDE::Warning o GDE::Error. @e message es el
 	 * mensaje que la clase GDE::Log ha formateado. @e date es un texto que almacena la fecha actual y
 	 * @e time es un texto que almacena la hora actual. El parámetro @e context es una estructura que
-	 * contiene los miembros: @e file, @e line, @e function, que representan el nombre de archivo, número
-	 * de línea y nombre de función donde ocurrió la llamada.
+	 * contiene los miembros: @e file y @e line, que representan el nombre de archivo y número
+	 * de línea donde ocurrió la llamada.
 	 *
 	 * Un ejemplo de un controlador de mensajes personalizado podría ser como el siguiente:
 	 *
@@ -205,13 +205,13 @@ namespace GDE
 	 *         break;
 	 *
 	 *     case GDE::Warning:
-	 *         os << time << ": " << context.file << ":" << context.line << ":" << context.function;
+	 *         os << time << ": " << context.file << ":" << context.line << ": ";
 	 *         os << "WARNING: " << message;
 	 *         break;
 	 *
 	 *     case GDE::Error:
-	 *         os << time << ": " << context.file << ":" << context.line << ":" << context.function;
-	 *         os << "ERROR: " << message;
+	 *         os << time << ": " << context.file << ":" << context.line << ": ";
+	 *         os << " ERROR: " << message;
 	 *         break;
      *     }
 	 * }
@@ -426,27 +426,18 @@ Log& Log::operator<< (T t)
 //=======================================================================================
 //                                      Macros
 //=======================================================================================
-#   define CRAB_ASSERT(test) \
-    do \
-    { \
-        if (!(test) && Crab::Core::Private::failAssert(#test, \
-                Crab::Core::Context(__FILE__, __LINE__, __PRETTY_FUNCTION__))) \
-        { \
-            CRAB_HALT(); \
-        } \
-    } while(0)
 
 #define GDE_LOG_INFO(MSG) \
-	do { GDE::Log(GDE::Info, __FILE__, __LINE__, __PRETTY_FUNCTION__).reference() << MSG; } while(0)
+	do { GDE::Log(GDE::Info, __FILE__, __LINE__, 0).reference() << MSG; } while(0)
 
 #define GDE_LOG_DEBUG(MSG) \
-	do { GDE::Log(GDE::Debug, __FILE__, __LINE__, __PRETTY_FUNCTION__).reference() << MSG; } while(0)
+	do { GDE::Log(GDE::Debug, __FILE__, __LINE__, 0).reference() << MSG; } while(0)
 
 #define GDE_LOG_WARNING(MSG) \
-	do { GDE::Log(GDE::Warning, __FILE__, __LINE__, __PRETTY_FUNCTION__).reference() << MSG; } while(0)
+	do { GDE::Log(GDE::Warning, __FILE__, __LINE__, 0).reference() << MSG; } while(0)
 
 #define GDE_LOG_ERROR(MSG) \
-	do { GDE::Log(GDE::Error, __FILE__, __LINE__, __PRETTY_FUNCTION__).reference() << MSG; } while(0)
+	do { GDE::Log(GDE::Error, __FILE__, __LINE__, 0).reference() << MSG; } while(0)
 
 
 

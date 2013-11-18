@@ -19,7 +19,7 @@ static void defaultLogHandler (std::ostream &os,
 	os << time << " " << headerStringList[level] << ": ";
 	if (level == GDE::Error)
 	{
-		os << context.file << ":" << context.line << " en la función: " << context.function << ": ";
+		os << context.file << ":" << context.line << ": ";
 	}
 	os << message;
 }
