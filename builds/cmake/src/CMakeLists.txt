@@ -41,9 +41,8 @@ file(GLOB_RECURSE GDE_TEST_SOURCE
 	"${GDE_TEST_SOURCE_DIR}/*.cpp"
 )
 
-# Define en que lugar se guardan las librerías y ejecutables
+# Define en que lugar se guardan las librerías
 set(LIBRARY_OUTPUT_PATH ${GDE_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${GDE_DIR}/bin)
 
 # Crea la librería GDE
 add_library(GDE_LIB ${GDE_SOURCE} ${GDE_INCLUDES})
@@ -58,11 +57,20 @@ endif()
 
 set_target_properties(GDE_LIB PROPERTIES OUTPUT_NAME "GDE")
 # Opciones para la generación de proyectos en algunos IDEs
-set_target_properties(GDE_LIB PROPERTIES PROJECT_LABEL "GDE")
+set_target_properties(GDE_LIB PROPERTIES PROJECT_LABEL "gde")
 set_target_properties(GDE_LIB PROPERTIES FOLDER "GDE")
 
 if(BUILD_SHARED_LIBS)
 	set_target_properties(GDE_LIB PROPERTIES DEBUG_POSTFIX -d)
+	if(OS_WINDOWS)
+		set_target_properties(GDE_LIB PROPERTIES SUFFIX "-${VERSION_MAJOR}${CMAKE_SHARED_LIBRARY_SUFFIX}")
+	endif()
+	if (OS_WINDOWS AND COMPILER_GCC)
+        # En Windows/gcc elimina el prefijo "lib" para las librerias de tiempo de ejecución (.dll)
+        # y transforma el sufijo ".dll.a" en ".a" las librerias de importación.
+        set_target_properties(GDE_LIB PROPERTIES PREFIX "")
+        set_target_properties(GDE_LIB PROPERTIES IMPORT_SUFFIX ".a")
+    endif()
 else()
 	set_target_properties(GDE_LIB PROPERTIES DEBUG_POSTFIX -s-d)	
 	set_target_properties(GDE_LIB PROPERTIES RELEASE_POSTFIX -s)
@@ -74,7 +82,8 @@ set_target_properties(GDE_LIB PROPERTIES SOVERSION ${VERSION_MAJOR})
 set_target_properties(GDE_LIB PROPERTIES VERSION ${VERSION_MAJOR}.${VERSION_MINOR})
 
 set_target_properties(GDE_TEST PROPERTIES OUTPUT_NAME "Test")
-set_target_properties(GDE_TEST PROPERTIES PROJECT_LABEL "TEST")
+set_target_properties(GDE_TEST PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${GDE_DIR}/bin)
+set_target_properties(GDE_TEST PROPERTIES PROJECT_LABEL "test")
 set_target_properties(GDE_TEST PROPERTIES FOLDER "GDE")
 set_target_properties(GDE_TEST PROPERTIES DEBUG_POSTFIX -d)
 
