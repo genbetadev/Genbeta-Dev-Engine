@@ -1,4 +1,4 @@
-#include "Scene.hpp"
+#include "GDE/Core/Scene.hpp"
 
 namespace GDE { namespace Core
 {

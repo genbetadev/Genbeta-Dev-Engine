@@ -1,5 +1,5 @@
-#include "SceneManager.hpp"
-#include "Log/Log.hpp"
+#include "GDE/Core/SceneManager.hpp"
+#include "GDE/Log/Log.hpp"
 
 namespace GDE { namespace Core
 {

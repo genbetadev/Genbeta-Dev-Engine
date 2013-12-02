@@ -18,20 +18,25 @@
 		9CB89EF418344E230025BFE4 /* SceneGame.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8018300F7D00EA099D /* SceneGame.hpp */; };
 		9CB89EF518344E230025BFE4 /* SceneMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8118300F7D00EA099D /* SceneMain.cpp */; };
 		9CB89EF618344E230025BFE4 /* SceneMain.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8218300F7D00EA099D /* SceneMain.hpp */; };
-		9CDAA8391834548400A11FFD /* libGDE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CDAA8381834548400A11FFD /* libGDE.a */; };
+		9CD54FE8184C7AFE0087E7DD /* libGDE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD54FE5184C7AF70087E7DD /* libGDE.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9CB89EDF18344DB90025BFE4 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
+/* Begin PBXContainerItemProxy section */
+		9CD54FE4184C7AF70087E7DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CE7923F1834EAD700501561;
+			remoteInfo = GDE;
 		};
-/* End PBXCopyFilesBuildPhase section */
+		9CD54FE6184C7AFA0087E7DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CB89EFA1834507C0025BFE4;
+			remoteInfo = GDE;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9C58FF7E18300F7D00EA099D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/Test/main.cpp; sourceTree = "<group>"; };
@@ -39,6 +44,9 @@
 		9C58FF8018300F7D00EA099D /* SceneGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SceneGame.hpp; path = ../../src/Test/SceneGame.hpp; sourceTree = "<group>"; };
 		9C58FF8118300F7D00EA099D /* SceneMain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneMain.cpp; path = ../../src/Test/SceneMain.cpp; sourceTree = "<group>"; };
 		9C58FF8218300F7D00EA099D /* SceneMain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SceneMain.hpp; path = ../../src/Test/SceneMain.hpp; sourceTree = "<group>"; };
+		9C63296A1834C6B100BEA682 /* libGDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDE.a; path = build/Debug/libGDE.a; sourceTree = "<group>"; };
+		9C8F64FB1834F8FA00D411AD /* libGDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDE.a; path = ../../lib/GDE/Debug/libGDE.a; sourceTree = "<group>"; };
+		9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GDE.xcodeproj; sourceTree = "<group>"; };
 		9CA17E801830110F00F82564 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = /Library/Frameworks/SFML.framework; sourceTree = "<absolute>"; };
 		9CA17E88183012CE00F82564 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
 		9CA17E89183012CE00F82564 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
@@ -56,13 +64,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CB89EEA18344DC30025BFE4 /* sfml-audio.framework in Frameworks */,
-				9CB89EEB18344DC30025BFE4 /* sfml-graphics.framework in Frameworks */,
-				9CB89EEC18344DC30025BFE4 /* sfml-network.framework in Frameworks */,
-				9CB89EED18344DC30025BFE4 /* sfml-system.framework in Frameworks */,
-				9CB89EEE18344DC30025BFE4 /* sfml-window.framework in Frameworks */,
+				9CD54FE8184C7AFE0087E7DD /* libGDE.a in Frameworks */,
 				9CB89EEF18344DC30025BFE4 /* SFML.framework in Frameworks */,
-				9CDAA8391834548400A11FFD /* libGDE.a in Frameworks */,
+				9CB89EEE18344DC30025BFE4 /* sfml-window.framework in Frameworks */,
+				9CB89EED18344DC30025BFE4 /* sfml-system.framework in Frameworks */,
+				9CB89EEC18344DC30025BFE4 /* sfml-network.framework in Frameworks */,
+				9CB89EEB18344DC30025BFE4 /* sfml-graphics.framework in Frameworks */,
+				9CB89EEA18344DC30025BFE4 /* sfml-audio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +80,7 @@
 		9C11C114182FEFCA00988E31 = {
 			isa = PBXGroup;
 			children = (
+				9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */,
 				9CA17E9918301DED00F82564 /* data */,
 				9CA17E9A18301DED00F82564 /* window.cfg */,
 				9CA17E82183011E100F82564 /* Frameworks */,
@@ -103,6 +112,8 @@
 		9CA17E82183011E100F82564 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C8F64FB1834F8FA00D411AD /* libGDE.a */,
+				9C63296A1834C6B100BEA682 /* libGDE.a */,
 				9CDAA8381834548400A11FFD /* libGDE.a */,
 				9CA17E88183012CE00F82564 /* sfml-audio.framework */,
 				9CA17E89183012CE00F82564 /* sfml-graphics.framework */,
@@ -114,6 +125,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9CD54FE1184C7AF70087E7DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CD54FE5184C7AF70087E7DD /* libGDE.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,11 +142,11 @@
 			buildPhases = (
 				9CB89EDD18344DB90025BFE4 /* Sources */,
 				9CB89EDE18344DB90025BFE4 /* Frameworks */,
-				9CB89EDF18344DB90025BFE4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9CD54FE7184C7AFA0087E7DD /* PBXTargetDependency */,
 			);
 			name = test;
 			productName = test;
@@ -152,12 +171,28 @@
 			mainGroup = 9C11C114182FEFCA00988E31;
 			productRefGroup = 9C11C11E182FEFCA00988E31 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9CD54FE1184C7AF70087E7DD /* Products */;
+					ProjectRef = 9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9CB89EE018344DB90025BFE4 /* test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9CD54FE5184C7AF70087E7DD /* libGDE.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGDE.a;
+			remoteRef = 9CD54FE4184C7AF70087E7DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CB89EDD18344DB90025BFE4 /* Sources */ = {
@@ -174,13 +209,21 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9CD54FE7184C7AFA0087E7DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDE;
+			targetProxy = 9CD54FE6184C7AFA0087E7DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		9C11C124182FEFCA00988E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -219,8 +262,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -252,7 +295,7 @@
 		9CB89EE818344DB90025BFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -264,22 +307,19 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"../../src/GDE/include/**/**",
+					"$(SRCROOT)/../../lib/include/**",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/ricky/development/tests/Genbeta-Dev-Engine/lib/GDE/Debug",
-					"/Users/ricky/development/tests/Genbeta-Dev-Engine/builds/xcode/DerivedData/Genbeta\\ Dev\\ Engine/Build/Products/Debug",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				SYMROOT = ../../lib/GDE;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
 		9CB89EE918344DB90025BFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -287,15 +327,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"../../src/GDE/include/**/**",
+					"$(SRCROOT)/../../lib/include/**",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"/Users/ricky/development/tests/Genbeta-Dev-Engine/lib/GDE/Debug",
-					"/Users/ricky/development/tests/Genbeta-Dev-Engine/builds/xcode/DerivedData/Genbeta\\ Dev\\ Engine/Build/Products/Debug",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "";
+				SYMROOT = ../../lib/GDE;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

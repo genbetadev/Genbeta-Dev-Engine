@@ -1,8 +1,8 @@
-#include "App.hpp"
-#include "Log/Log.hpp"
-#include "Config/ConfigReader.hpp"
-#include "Config/ConfigCreate.hpp"
-#include "Utils/StringsUtil.hpp"
+#include "GDE/Core/App.hpp"
+#include "GDE/Log/Log.hpp"
+#include "GDE/Core/ConfigReader.hpp"
+#include "GDE/Core/ConfigCreate.hpp"
+#include "GDE/Utils/StringsUtil.hpp"
 
 namespace GDE { namespace Core
 {

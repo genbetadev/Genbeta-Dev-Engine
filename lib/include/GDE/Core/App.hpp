@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include "GDE/Config.hpp"
 
-#include "GDE/Core/SceneManager/SceneManager.hpp"
+#include "SceneManager.hpp"
 
 namespace GDE { namespace Core
 {

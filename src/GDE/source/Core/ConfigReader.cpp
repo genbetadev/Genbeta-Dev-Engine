@@ -1,9 +1,9 @@
 #include <cstdio>
 #include <cstring>
 
-#include "ConfigReader.hpp"
-#include "Log/Log.hpp"
-#include "Utils/StringsUtil.hpp"
+#include "GDE/Core/ConfigReader.hpp"
+#include "GDE/Log/Log.hpp"
+#include "GDE/Utils/StringsUtil.hpp"
 
 namespace GDE { namespace Core
 {

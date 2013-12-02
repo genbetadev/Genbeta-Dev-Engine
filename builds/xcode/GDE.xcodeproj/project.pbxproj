@@ -7,27 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9CDAA8301834530100A11FFD /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D44A918340BA300B1F6AC /* App.cpp */; };
-		9CDAA8311834530100A11FFD /* ConfigCreate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D44AB18340BA300B1F6AC /* ConfigCreate.cpp */; };
-		9CDAA8321834530100A11FFD /* ConfigReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D44AC18340BA300B1F6AC /* ConfigReader.cpp */; };
-		9CDAA8331834530100A11FFD /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D44AE18340BA300B1F6AC /* Scene.cpp */; };
-		9CDAA8341834530100A11FFD /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D44AF18340BA300B1F6AC /* SceneManager.cpp */; };
+		9CC1B61D1836736200449562 /* App.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1B6181836736200449562 /* App.cpp */; };
+		9CC1B61E1836736200449562 /* ConfigCreate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1B6191836736200449562 /* ConfigCreate.cpp */; };
+		9CC1B61F1836736200449562 /* ConfigReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1B61A1836736200449562 /* ConfigReader.cpp */; };
+		9CC1B6201836736200449562 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1B61B1836736200449562 /* Scene.cpp */; };
+		9CC1B6211836736200449562 /* SceneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1B61C1836736200449562 /* SceneManager.cpp */; };
+		9CD54FEA184C7DCE0087E7DD /* include in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9C3D44A518340B9000B1F6AC /* include */; };
+		9CD54FED184C7FEC0087E7DD /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CD54FEC184C7FE80087E7DD /* StringUtil.cpp */; };
 		9CDAA8351834530100A11FFD /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D44B118340BA300B1F6AC /* Log.cpp */; };
-		9CDAA8361834530100A11FFD /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C3D44B318340BA300B1F6AC /* StringUtil.cpp */; };
 		9CDAA8371834539F00A11FFD /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C11C132182FF75E00988E31 /* SFML.framework */; };
+		9CE792371834E9C700501561 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE792321834E9C700501561 /* sfml-window.framework */; };
+		9CE792381834E9C700501561 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE792331834E9C700501561 /* sfml-system.framework */; };
+		9CE792391834E9C700501561 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE792341834E9C700501561 /* sfml-network.framework */; };
+		9CE7923A1834E9C700501561 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE792351834E9C700501561 /* sfml-graphics.framework */; };
+		9CE7923B1834E9C700501561 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE792361834E9C700501561 /* sfml-audio.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C7D20B11834C9ED0054F331 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../..;
+			dstSubfolderSpec = 16;
+			files = (
+				9CD54FEA184C7DCE0087E7DD /* include in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9C11C132182FF75E00988E31 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = /Library/Frameworks/SFML.framework; sourceTree = "<absolute>"; };
 		9C3D44A518340B9000B1F6AC /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = ../../src/GDE/include; sourceTree = "<group>"; };
-		9C3D44A918340BA300B1F6AC /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = App.cpp; path = App/App.cpp; sourceTree = "<group>"; };
-		9C3D44AB18340BA300B1F6AC /* ConfigCreate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigCreate.cpp; path = Config/ConfigCreate.cpp; sourceTree = "<group>"; };
-		9C3D44AC18340BA300B1F6AC /* ConfigReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ConfigReader.cpp; path = Config/ConfigReader.cpp; sourceTree = "<group>"; };
-		9C3D44AE18340BA300B1F6AC /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Scene.cpp; path = SceneManager/Scene.cpp; sourceTree = "<group>"; };
-		9C3D44AF18340BA300B1F6AC /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneManager.cpp; path = SceneManager/SceneManager.cpp; sourceTree = "<group>"; };
 		9C3D44B118340BA300B1F6AC /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
-		9C3D44B318340BA300B1F6AC /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cpp; sourceTree = "<group>"; };
-		9CB89EFB1834507C0025BFE4 /* libGDE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGDE.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CC1B6181836736200449562 /* App.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = App.cpp; sourceTree = "<group>"; };
+		9CC1B6191836736200449562 /* ConfigCreate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigCreate.cpp; sourceTree = "<group>"; };
+		9CC1B61A1836736200449562 /* ConfigReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConfigReader.cpp; sourceTree = "<group>"; };
+		9CC1B61B1836736200449562 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		9CC1B61C1836736200449562 /* SceneManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneManager.cpp; sourceTree = "<group>"; };
+		9CD54FEC184C7FE80087E7DD /* StringUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cpp; sourceTree = "<group>"; };
+		9CE792321834E9C700501561 /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../../../../../../../Library/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		9CE792331834E9C700501561 /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "../../../../../../../Library/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		9CE792341834E9C700501561 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../../../../../../Library/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
+		9CE792351834E9C700501561 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		9CE792361834E9C700501561 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+		9CE7923F1834EAD700501561 /* libGDE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGDE.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +60,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CDAA8371834539F00A11FFD /* SFML.framework in Frameworks */,
+				9CE792371834E9C700501561 /* sfml-window.framework in Frameworks */,
+				9CE792381834E9C700501561 /* sfml-system.framework in Frameworks */,
+				9CE792391834E9C700501561 /* sfml-network.framework in Frameworks */,
+				9CE7923A1834E9C700501561 /* sfml-graphics.framework in Frameworks */,
+				9CE7923B1834E9C700501561 /* sfml-audio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +74,11 @@
 		9C11C135182FF77A00988E31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9CE792321834E9C700501561 /* sfml-window.framework */,
+				9CE792331834E9C700501561 /* sfml-system.framework */,
+				9CE792341834E9C700501561 /* sfml-network.framework */,
+				9CE792351834E9C700501561 /* sfml-graphics.framework */,
+				9CE792361834E9C700501561 /* sfml-audio.framework */,
 				9C11C132182FF75E00988E31 /* SFML.framework */,
 			);
 			name = Frameworks;
@@ -53,22 +87,22 @@
 		9C3D44A618340BA300B1F6AC /* source */ = {
 			isa = PBXGroup;
 			children = (
+				9CD54FEB184C7FE80087E7DD /* Utils */,
 				9C3D44A718340BA300B1F6AC /* Core */,
 				9C3D44B018340BA300B1F6AC /* Log */,
-				9C3D44B218340BA300B1F6AC /* Utils */,
 			);
 			name = source;
 			path = ../../src/GDE/source;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		9C3D44A718340BA300B1F6AC /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9C3D44A918340BA300B1F6AC /* App.cpp */,
-				9C3D44AB18340BA300B1F6AC /* ConfigCreate.cpp */,
-				9C3D44AC18340BA300B1F6AC /* ConfigReader.cpp */,
-				9C3D44AE18340BA300B1F6AC /* Scene.cpp */,
-				9C3D44AF18340BA300B1F6AC /* SceneManager.cpp */,
+				9CC1B6181836736200449562 /* App.cpp */,
+				9CC1B6191836736200449562 /* ConfigCreate.cpp */,
+				9CC1B61A1836736200449562 /* ConfigReader.cpp */,
+				9CC1B61B1836736200449562 /* Scene.cpp */,
+				9CC1B61C1836736200449562 /* SceneManager.cpp */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -81,36 +115,26 @@
 			path = Log;
 			sourceTree = "<group>";
 		};
-		9C3D44B218340BA300B1F6AC /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				9C3D44B318340BA300B1F6AC /* StringUtil.cpp */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		9C5867C6182F9B95007AC8CC = {
 			isa = PBXGroup;
 			children = (
+				9CE7923F1834EAD700501561 /* libGDE.a */,
 				9C3D44A618340BA300B1F6AC /* source */,
 				9C3D44A518340B9000B1F6AC /* include */,
 				9C11C135182FF77A00988E31 /* Frameworks */,
-				9CB89EFB1834507C0025BFE4 /* libGDE.a */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
 		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		9CB89EF91834507C0025BFE4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+		9CD54FEB184C7FE80087E7DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9CD54FEC184C7FE80087E7DD /* StringUtil.cpp */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			path = Utils;
+			sourceTree = "<group>";
 		};
-/* End PBXHeadersBuildPhase section */
+/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		9CB89EFA1834507C0025BFE4 /* GDE */ = {
@@ -119,7 +143,7 @@
 			buildPhases = (
 				9CB89EF71834507C0025BFE4 /* Sources */,
 				9CB89EF81834507C0025BFE4 /* Frameworks */,
-				9CB89EF91834507C0025BFE4 /* Headers */,
+				9C7D20B11834C9ED0054F331 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -127,7 +151,7 @@
 			);
 			name = GDE;
 			productName = GDE;
-			productReference = 9CB89EFB1834507C0025BFE4 /* libGDE.a */;
+			productReference = 9CE7923F1834EAD700501561 /* libGDE.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -160,13 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CDAA8301834530100A11FFD /* App.cpp in Sources */,
-				9CDAA8311834530100A11FFD /* ConfigCreate.cpp in Sources */,
-				9CDAA8321834530100A11FFD /* ConfigReader.cpp in Sources */,
-				9CDAA8331834530100A11FFD /* Scene.cpp in Sources */,
-				9CDAA8341834530100A11FFD /* SceneManager.cpp in Sources */,
+				9CD54FED184C7FEC0087E7DD /* StringUtil.cpp in Sources */,
+				9CC1B6211836736200449562 /* SceneManager.cpp in Sources */,
+				9CC1B6201836736200449562 /* Scene.cpp in Sources */,
+				9CC1B61F1836736200449562 /* ConfigReader.cpp in Sources */,
+				9CC1B61D1836736200449562 /* App.cpp in Sources */,
 				9CDAA8351834530100A11FFD /* Log.cpp in Sources */,
-				9CDAA8361834530100A11FFD /* StringUtil.cpp in Sources */,
+				9CC1B61E1836736200449562 /* ConfigCreate.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,8 +214,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -201,6 +225,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../lib/$(CONFIGURATION)/GDE/$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = NO;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -222,11 +247,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = "../../src/**";
+				LIBRARY_SEARCH_PATHS = (
+					"../../src/**",
+					"/Users/ricky/dev/c++/Genbeta-Dev-Engine/lib/GDE/Debug",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = "$(SRCROOT)/../../tmp/$(CONFIGURATION)/GDE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "../../src/GDE/include/**";
+				SYMROOT = "$(SRCROOT)/../../lib/$(CONFIGURATION)/GDE";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../src/GDE/include";
 			};
 			name = Debug;
 		};
@@ -234,8 +264,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -245,6 +275,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../lib/$(CONFIGURATION)/GDE/$(EFFECTIVE_PLATFORM_NAME)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -261,11 +292,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = "../../src/**";
+				LIBRARY_SEARCH_PATHS = (
+					"../../src/**",
+					"/Users/ricky/dev/c++/Genbeta-Dev-Engine/lib/GDE/Debug",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OBJROOT = "$(SRCROOT)/../../tmp/$(CONFIGURATION)/GDE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "../../src/GDE/include/**";
+				SYMROOT = "$(SRCROOT)/../../lib/$(CONFIGURATION)/GDE";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../src/GDE/include";
 			};
 			name = Release;
 		};
