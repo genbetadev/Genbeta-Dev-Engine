@@ -19,6 +19,7 @@
 		9CB89EF518344E230025BFE4 /* SceneMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8118300F7D00EA099D /* SceneMain.cpp */; };
 		9CB89EF618344E230025BFE4 /* SceneMain.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8218300F7D00EA099D /* SceneMain.hpp */; };
 		9CD54FE8184C7AFE0087E7DD /* libGDE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD54FE5184C7AF70087E7DD /* libGDE.a */; };
+		9CFE35C8184C9DDB0080F185 /* data in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CA17E9918301DED00F82564 /* data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,19 @@
 			remoteInfo = GDE;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CFE35C7184C9DCF0080F185 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				9CFE35C8184C9DDB0080F185 /* data in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9C58FF7E18300F7D00EA099D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/Test/main.cpp; sourceTree = "<group>"; };
@@ -142,6 +156,7 @@
 			buildPhases = (
 				9CB89EDD18344DB90025BFE4 /* Sources */,
 				9CB89EDE18344DB90025BFE4 /* Frameworks */,
+				9CFE35C7184C9DCF0080F185 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -296,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -320,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
