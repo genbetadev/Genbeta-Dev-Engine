@@ -1,13 +1,24 @@
 #ifndef GDE_CORE_LOG_HPP
 #define GDE_CORE_LOG_HPP
 
-#include <GDE/Config.hpp>
-#include <GDE/Core/CoreTypes.hpp>
-#include <sstream>
+#include <string>
 #include <ctime>
+#include <fstream>
+#include <iostream>
+
+#include "GDE/Config.hpp"
 
 namespace GDE
 {
+	// Tipos de Log
+	enum LogType
+	{
+		infoLevel = 0,
+		debugLevel = 1,
+		errorLevel = 2,
+		warningLevel = 3
+	};
+	
 	/**
 	 * @brief Clase que permite almacenar información en un log usando streams.
 	 *

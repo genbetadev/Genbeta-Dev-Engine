@@ -2,15 +2,15 @@
 #define SCENE_MAIN_HPP
 
 #include <SFML/Graphics.hpp>
-#include <GDE/Core.hpp>
+#include <GDE/Core/Core.hpp>
 
-class SceneMain : public GDE::Scene
+class SceneMain : public GDE::Core::Scene
 {
 public:
-	SceneMain(GDE::sceneID theID);
+	SceneMain(GDE::Core::sceneID theID);
 	
 	~SceneMain();
-	
+
 	void init();
 
 	void active();
@@ -33,7 +33,7 @@ private:
 	// Referencia a la ventana
 	sf::RenderWindow& window;
 	// Puntero al SceneManager
-	GDE::SceneManager* sm;
+	GDE::Core::SceneManager* sm;
 	sf::Text text;
 	sf::Font font;
 };

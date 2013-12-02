@@ -1,6 +1,6 @@
-#include <GDE/Core/Scene.hpp>
+#include "GDE/Core/Scene.hpp"
 
-namespace GDE
+namespace GDE { namespace Core
 {
 	
 Scene::Scene(sceneID theID)
@@ -27,4 +27,4 @@ const sf::Color& Scene::getBackgroundColor() const
 	return this->colorBack;
 }
 	
-}  // namespace GDE
+} } // namespace GDE::Core

@@ -2,10 +2,10 @@
 #define GDE_CORE_SCENE_HPP
 
 #include <SFML/Graphics.hpp>
-#include <GDE/Config.hpp>
-#include <GDE/Core/CoreTypes.hpp>
+#include "GDE/Config.hpp"
+#include "GDE/Core/Types.hpp"
 
-namespace GDE
+namespace GDE { namespace Core
 {
 	
 class GDE_API Scene : sf::NonCopyable
@@ -113,6 +113,6 @@ private:
 	
 }; // class Scene
 	
-} // namespace GDE
+} } // namespace GDE::Core
 
 #endif // GDE_CORE_SCENE_HPP

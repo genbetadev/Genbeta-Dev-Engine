@@ -7,45 +7,59 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C58FF8318300F8900EA099D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7E18300F7D00EA099D /* main.cpp */; };
-		9C58FF8418300F8900EA099D /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7F18300F7D00EA099D /* SceneGame.cpp */; };
-		9C58FF8518300F8900EA099D /* SceneGame.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8018300F7D00EA099D /* SceneGame.hpp */; };
-		9C58FF8618300F8900EA099D /* SceneMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8118300F7D00EA099D /* SceneMain.cpp */; };
-		9C58FF8718300F8900EA099D /* SceneMain.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8218300F7D00EA099D /* SceneMain.hpp */; };
-		9CA17E811830110F00F82564 /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E801830110F00F82564 /* SFML.framework */; };
-		9CA17E871830120400F82564 /* libGDE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E861830120400F82564 /* libGDE.a */; };
-		9CA17E8D183012CE00F82564 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E88183012CE00F82564 /* sfml-audio.framework */; };
-		9CA17E8E183012CE00F82564 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E89183012CE00F82564 /* sfml-graphics.framework */; };
-		9CA17E8F183012CE00F82564 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E8A183012CE00F82564 /* sfml-network.framework */; };
-		9CA17E90183012CE00F82564 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E8B183012CE00F82564 /* sfml-system.framework */; };
-		9CA17E91183012CE00F82564 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E8C183012CE00F82564 /* sfml-window.framework */; };
-		9CA17E9B18301DF500F82564 /* data in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CA17E9918301DED00F82564 /* data */; };
-		9CA17E9C18301DF500F82564 /* window.cfg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CA17E9A18301DED00F82564 /* window.cfg */; };
+		9C76712B184CA17A00537FFA /* libGDE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C767128184CA16400537FFA /* libGDE.a */; };
+		9CB89EEA18344DC30025BFE4 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E88183012CE00F82564 /* sfml-audio.framework */; };
+		9CB89EEB18344DC30025BFE4 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E89183012CE00F82564 /* sfml-graphics.framework */; };
+		9CB89EEC18344DC30025BFE4 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E8A183012CE00F82564 /* sfml-network.framework */; };
+		9CB89EED18344DC30025BFE4 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E8B183012CE00F82564 /* sfml-system.framework */; };
+		9CB89EEE18344DC30025BFE4 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E8C183012CE00F82564 /* sfml-window.framework */; };
+		9CB89EEF18344DC30025BFE4 /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E801830110F00F82564 /* SFML.framework */; };
+		9CB89EF218344E230025BFE4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7E18300F7D00EA099D /* main.cpp */; };
+		9CB89EF318344E230025BFE4 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7F18300F7D00EA099D /* SceneGame.cpp */; };
+		9CB89EF518344E230025BFE4 /* SceneMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8118300F7D00EA099D /* SceneMain.cpp */; };
+		9CFE35C8184C9DDB0080F185 /* data in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CA17E9918301DED00F82564 /* data */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9C767127184CA16400537FFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C3A161E184CA154008EF142 /* GDE.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9CE7923F1834EAD700501561;
+			remoteInfo = GDE;
+		};
+		9C767129184CA17400537FFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C3A161E184CA154008EF142 /* GDE.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CB89EFA1834507C0025BFE4;
+			remoteInfo = GDE;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		9C11C11B182FEFCA00988E31 /* CopyFiles */ = {
+		9CFE35C7184C9DCF0080F185 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				9CA17E9B18301DF500F82564 /* data in CopyFiles */,
-				9CA17E9C18301DF500F82564 /* window.cfg in CopyFiles */,
+				9CFE35C8184C9DDB0080F185 /* data in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9C11C11D182FEFCA00988E31 /* gde-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gde-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C3A161E184CA154008EF142 /* GDE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GDE.xcodeproj; sourceTree = "<group>"; };
 		9C58FF7E18300F7D00EA099D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/Test/main.cpp; sourceTree = "<group>"; };
 		9C58FF7F18300F7D00EA099D /* SceneGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneGame.cpp; path = ../../src/Test/SceneGame.cpp; sourceTree = "<group>"; };
 		9C58FF8018300F7D00EA099D /* SceneGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SceneGame.hpp; path = ../../src/Test/SceneGame.hpp; sourceTree = "<group>"; };
 		9C58FF8118300F7D00EA099D /* SceneMain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneMain.cpp; path = ../../src/Test/SceneMain.cpp; sourceTree = "<group>"; };
 		9C58FF8218300F7D00EA099D /* SceneMain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SceneMain.hpp; path = ../../src/Test/SceneMain.hpp; sourceTree = "<group>"; };
+		9C63296A1834C6B100BEA682 /* libGDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDE.a; path = build/Debug/libGDE.a; sourceTree = "<group>"; };
+		9C8F64FB1834F8FA00D411AD /* libGDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDE.a; path = ../../lib/GDE/Debug/libGDE.a; sourceTree = "<group>"; };
 		9CA17E801830110F00F82564 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = /Library/Frameworks/SFML.framework; sourceTree = "<absolute>"; };
-		9CA17E861830120400F82564 /* libGDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDE.a; path = "../../../../../Library/Developer/Xcode/DerivedData/Genbeta_Dev_Engine-bzvomkrxmzaewbgibtylvredwwjh/Build/Products/Debug/libGDE.a"; sourceTree = "<group>"; };
 		9CA17E88183012CE00F82564 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
 		9CA17E89183012CE00F82564 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
 		9CA17E8A183012CE00F82564 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../../../../../../Library/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
@@ -53,20 +67,22 @@
 		9CA17E8C183012CE00F82564 /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../../../../../../../Library/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
 		9CA17E9918301DED00F82564 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = ../../bin/data; sourceTree = "<group>"; };
 		9CA17E9A18301DED00F82564 /* window.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = window.cfg; path = ../../bin/window.cfg; sourceTree = "<group>"; };
+		9CB89EE118344DB90025BFE4 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CDAA8381834548400A11FFD /* libGDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDE.a; path = "DerivedData/Genbeta Dev Engine/Build/Products/Debug/libGDE.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9C11C11A182FEFCA00988E31 /* Frameworks */ = {
+		9CB89EDE18344DB90025BFE4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA17E8D183012CE00F82564 /* sfml-audio.framework in Frameworks */,
-				9CA17E8E183012CE00F82564 /* sfml-graphics.framework in Frameworks */,
-				9CA17E8F183012CE00F82564 /* sfml-network.framework in Frameworks */,
-				9CA17E90183012CE00F82564 /* sfml-system.framework in Frameworks */,
-				9CA17E91183012CE00F82564 /* sfml-window.framework in Frameworks */,
-				9CA17E871830120400F82564 /* libGDE.a in Frameworks */,
-				9CA17E811830110F00F82564 /* SFML.framework in Frameworks */,
+				9C76712B184CA17A00537FFA /* libGDE.a in Frameworks */,
+				9CB89EEF18344DC30025BFE4 /* SFML.framework in Frameworks */,
+				9CB89EEE18344DC30025BFE4 /* sfml-window.framework in Frameworks */,
+				9CB89EED18344DC30025BFE4 /* sfml-system.framework in Frameworks */,
+				9CB89EEC18344DC30025BFE4 /* sfml-network.framework in Frameworks */,
+				9CB89EEB18344DC30025BFE4 /* sfml-graphics.framework in Frameworks */,
+				9CB89EEA18344DC30025BFE4 /* sfml-audio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,7 @@
 		9C11C114182FEFCA00988E31 = {
 			isa = PBXGroup;
 			children = (
+				9C3A161E184CA154008EF142 /* GDE.xcodeproj */,
 				9CA17E9918301DED00F82564 /* data */,
 				9CA17E9A18301DED00F82564 /* window.cfg */,
 				9CA17E82183011E100F82564 /* Frameworks */,
@@ -87,7 +104,7 @@
 		9C11C11E182FEFCA00988E31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C11C11D182FEFCA00988E31 /* gde-test */,
+				9CB89EE118344DB90025BFE4 /* test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,15 +121,25 @@
 			name = Test;
 			sourceTree = "<group>";
 		};
+		9C767124184CA16400537FFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C767128184CA16400537FFA /* libGDE.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9CA17E82183011E100F82564 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C8F64FB1834F8FA00D411AD /* libGDE.a */,
+				9C63296A1834C6B100BEA682 /* libGDE.a */,
+				9CDAA8381834548400A11FFD /* libGDE.a */,
 				9CA17E88183012CE00F82564 /* sfml-audio.framework */,
 				9CA17E89183012CE00F82564 /* sfml-graphics.framework */,
 				9CA17E8A183012CE00F82564 /* sfml-network.framework */,
 				9CA17E8B183012CE00F82564 /* sfml-system.framework */,
 				9CA17E8C183012CE00F82564 /* sfml-window.framework */,
-				9CA17E861830120400F82564 /* libGDE.a */,
 				9CA17E801830110F00F82564 /* SFML.framework */,
 			);
 			name = Frameworks;
@@ -121,21 +148,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C11C11C182FEFCA00988E31 /* gde-test */ = {
+		9CB89EE018344DB90025BFE4 /* test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C11C126182FEFCA00988E31 /* Build configuration list for PBXNativeTarget "gde-test" */;
+			buildConfigurationList = 9CB89EE718344DB90025BFE4 /* Build configuration list for PBXNativeTarget "test" */;
 			buildPhases = (
-				9C11C119182FEFCA00988E31 /* Sources */,
-				9C11C11A182FEFCA00988E31 /* Frameworks */,
-				9C11C11B182FEFCA00988E31 /* CopyFiles */,
+				9CB89EDD18344DB90025BFE4 /* Sources */,
+				9CB89EDE18344DB90025BFE4 /* Frameworks */,
+				9CFE35C7184C9DCF0080F185 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9C76712A184CA17400537FFA /* PBXTargetDependency */,
 			);
-			name = "gde-test";
-			productName = "gde-test";
-			productReference = 9C11C11D182FEFCA00988E31 /* gde-test */;
+			name = test;
+			productName = test;
+			productReference = 9CB89EE118344DB90025BFE4 /* test */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -156,35 +184,57 @@
 			mainGroup = 9C11C114182FEFCA00988E31;
 			productRefGroup = 9C11C11E182FEFCA00988E31 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9C767124184CA16400537FFA /* Products */;
+					ProjectRef = 9C3A161E184CA154008EF142 /* GDE.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				9C11C11C182FEFCA00988E31 /* gde-test */,
+				9CB89EE018344DB90025BFE4 /* test */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		9C767128184CA16400537FFA /* libGDE.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGDE.a;
+			remoteRef = 9C767127184CA16400537FFA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
-		9C11C119182FEFCA00988E31 /* Sources */ = {
+		9CB89EDD18344DB90025BFE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C58FF8318300F8900EA099D /* main.cpp in Sources */,
-				9C58FF8418300F8900EA099D /* SceneGame.cpp in Sources */,
-				9C58FF8518300F8900EA099D /* SceneGame.hpp in Sources */,
-				9C58FF8618300F8900EA099D /* SceneMain.cpp in Sources */,
-				9C58FF8718300F8900EA099D /* SceneMain.hpp in Sources */,
+				9CB89EF218344E230025BFE4 /* main.cpp in Sources */,
+				9CB89EF318344E230025BFE4 /* SceneGame.cpp in Sources */,
+				9CB89EF518344E230025BFE4 /* SceneMain.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C76712A184CA17400537FFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDE;
+			targetProxy = 9C767129184CA17400537FFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9C11C124182FEFCA00988E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -216,7 +266,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SYMROOT = ../../bin;
-				USER_HEADER_SEARCH_PATHS = "../../include/**";
 			};
 			name = Debug;
 		};
@@ -224,8 +273,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++98";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -251,39 +300,52 @@
 				OBJROOT = ../../tmp;
 				SDKROOT = macosx;
 				SYMROOT = ../../bin;
-				USER_HEADER_SEARCH_PATHS = "../../include/**";
 			};
 			name = Release;
 		};
-		9C11C127182FEFCA00988E31 /* Debug */ = {
+		9CB89EE818344DB90025BFE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Genbeta_Dev_Engine-bzvomkrxmzaewbgibtylvredwwjh/Build/Products/Debug",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../lib/include/**",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYMROOT = ../../bin;
+				SYMROOT = ../../lib/GDE;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
-		9C11C128182FEFCA00988E31 /* Release */ = {
+		9CB89EE918344DB90025BFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../../bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Genbeta_Dev_Engine-bzvomkrxmzaewbgibtylvredwwjh/Build/Products/Debug",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../lib/include/**",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SYMROOT = ../../bin;
+				SYMROOT = ../../lib/GDE;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};
@@ -299,11 +361,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C11C126182FEFCA00988E31 /* Build configuration list for PBXNativeTarget "gde-test" */ = {
+		9CB89EE718344DB90025BFE4 /* Build configuration list for PBXNativeTarget "test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C11C127182FEFCA00988E31 /* Debug */,
-				9C11C128182FEFCA00988E31 /* Release */,
+				9CB89EE818344DB90025BFE4 /* Debug */,
+				9CB89EE918344DB90025BFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

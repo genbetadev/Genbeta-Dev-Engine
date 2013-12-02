@@ -3,11 +3,12 @@
 
 #include <string>
 #include <map>
-#include <SFML/Config.hpp>
-#include <GDE/Config.hpp>
-#include <GDE/Core/CoreTypes.hpp>
 
-namespace GDE
+#include <SFML/Config.hpp>
+#include "GDE/Config.hpp"
+#include "GDE/Core/Types.hpp"
+
+namespace GDE { namespace Core
 {
 
 class GDE_API ConfigReader
@@ -116,7 +117,7 @@ private:
 	static const unsigned short MAX_CHARS = 100;
 	// VARIABLES
     // Mapa para almacenar todas las secciones con sus correspondientes pares <clave,valor>
-	std::map<const std::string, GDE::typeNameValue*> sections;
+	std::map<const std::string, GDE::Core::typeNameValue*> sections;
 
 	std::string parseLine(const char* theLine, const unsigned long theCount,const std::string theSection);
 
@@ -124,6 +125,6 @@ private:
 
 }; // clase ConfigReader
 
-} // namespace GDE
+} } // namespace GDE::Core
 
 #endif // GDE_CORE_CONFIG_READER_HPP

@@ -2,9 +2,9 @@
 #include <algorithm>
 #include <cstdio>
 #include <cstdarg>
-#include <GDE/Core/StringsUtil.hpp>
+#include <GDE/Utils/StringsUtil.hpp>
 
-namespace GDE
+namespace GDE { namespace Utils
 {
 
 std::string convertBool(const bool theBoolean)
@@ -629,4 +629,5 @@ std::string GDE_API StringFormat(const std::string stringToFormat, ...)
 	return formattedString;
 }
 
-} // namespace GDE
+
+} } // namespace GDE::Utils

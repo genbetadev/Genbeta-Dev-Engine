@@ -2,12 +2,29 @@
 #define GDE_CORE_APP_HPP
 
 #include <SFML/Graphics.hpp>
-#include <GDE/Config.hpp>
-#include <GDE/Core/CoreTypes.hpp>
-#include <GDE/Core/SceneManager.hpp>
+#include "GDE/Config.hpp"
 
-namespace GDE
+#include "SceneManager.hpp"
+
+namespace GDE { namespace Core
 {
+    
+/// Enumaración con los posibles valores de retorno de la Aplicación
+enum StatusType
+{
+    // Values from -99 to 99 are common Error and Good status responses
+    StatusAppMissingAsset = -4,  ///< Application failed due to missing asset file
+    StatusAppStackEmpty = -3,  ///< Application States stack is empty
+    StatusAppInitFailed = -2,  ///< Application initialization failed
+    StatusError = -1,  ///< General error status response
+    StatusAppOK = 0,  ///< Application quit without error
+    StatusNoError = 0,  ///< General no error status response
+    StatusFalse = 0,  ///< False status response
+    StatusTrue = 1,  ///< True status response
+    StatusOK = 1   ///< OK status response
+    
+    // Values from +-100 to +-199 are reserved for File status responses
+};
 	
 class GDE_API App : sf::NonCopyable
 {
@@ -60,6 +77,6 @@ private:
 	void cleanup();
 }; // class App
 	
-} // namespace GDE
+} } // namespace GDE::Core
 
 #endif // GDE_CORE_APP_HPP

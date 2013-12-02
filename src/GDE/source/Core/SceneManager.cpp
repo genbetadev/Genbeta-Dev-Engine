@@ -1,7 +1,7 @@
-#include <GDE/Core/SceneManager.hpp>
-#include <GDE/Core/Log.hpp>
+#include "GDE/Core/SceneManager.hpp"
+#include "GDE/Log/Log.hpp"
 
-namespace GDE
+namespace GDE { namespace Core
 {
 	
 SceneManager* SceneManager::uniqueInstance = 0;
@@ -183,4 +183,4 @@ bool SceneManager::handleChangeScene()
 	return true;
 }
 	
-} // namespace GDE
+} } // namespace GDE::Core

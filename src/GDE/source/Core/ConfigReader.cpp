@@ -1,11 +1,11 @@
-#include <GDE/Core/ConfigReader.hpp>
-#include <GDE/Core/StringsUtil.hpp>
-#include <GDE/Core/Log.hpp>
-
 #include <cstdio>
 #include <cstring>
 
-namespace GDE
+#include "GDE/Core/ConfigReader.hpp"
+#include "GDE/Log/Log.hpp"
+#include "GDE/Utils/StringsUtil.hpp"
+
+namespace GDE { namespace Core
 {
 
 ConfigReader::ConfigReader()
@@ -68,7 +68,7 @@ bool ConfigReader::getBool(const std::string theSection,
             iterNameValue = anMap->find(theName);
             if (iterNameValue != anMap->end())
             {
-                anResult = parseBool(iterNameValue->second, theDefault);
+                anResult = Utils::parseBool(iterNameValue->second, theDefault);
             }
         }
     }
@@ -95,7 +95,7 @@ float ConfigReader::getFloat(const std::string theSection,
             iterNameValue = anMap->find(theName);
             if (iterNameValue != anMap->end())
             {
-                anResult = parseFloat(iterNameValue->second, theDefault);
+                anResult = Utils::parseFloat(iterNameValue->second, theDefault);
             }
         }
     }
@@ -147,7 +147,7 @@ sf::Uint32 ConfigReader::getUint32(const std::string theSection, const std::stri
             iterNameValue = anMap->find(theName);
             if (iterNameValue != anMap->end())
             {
-                anResult = parseUint32(iterNameValue->second, theDefault);
+                anResult = Utils::parseUint32(iterNameValue->second, theDefault);
             }
         }
     }
@@ -378,7 +378,7 @@ void ConfigReader::storeNameValue(const std::string theSection,
         // Nos aseguramos de que hemos creado el mapa correctamente
         if (NULL != anMap)
         {
-			GDE_LOG_INFO("ConfigReader::StoreNameValue(): añadiendo" << theName << "=" << theValue << GDE::Log::nospace
+			GDE_LOG_INFO("ConfigReader::StoreNameValue(): añadiendo" << theName << "=" << theValue << GDE::Log::Log::nospace
 							<< "a la sección [" << theSection << "]");
             // Añadimos el nuevo par <clave,valor> al mapa
             anMap->insert(std::pair<const std::string, const std::string>(theName, theValue));
@@ -388,7 +388,7 @@ void ConfigReader::storeNameValue(const std::string theSection,
         }
         else
         {
-			GDE_LOG_ERROR("Imposible añadir" << theName << "=" << theValue << GDE::Log::nospace
+			GDE_LOG_ERROR("Imposible añadir" << theName << "=" << theValue << GDE::Log::Log::nospace
 							<< "a la sección [" << theSection << "], posible falta de memoria.");
         }
     }
@@ -405,18 +405,19 @@ void ConfigReader::storeNameValue(const std::string theSection,
             iterNameValue = anMap->find(theName);
             if (iterNameValue == anMap->end())
             {
-				GDE_LOG_INFO("ConfigReader::StoreNameValue(): añadiendo" << theName << "=" << theValue <<  GDE::Log::nospace
+				GDE_LOG_INFO("ConfigReader::StoreNameValue(): añadiendo" << theName << "=" << theValue <<  GDE::Log::Log::nospace
 								<< "a la sección [" << theSection << "]");
                 // Añadimos el nuevo par <clave,valor>
                 anMap->insert(std::pair<const std::string, const std::string>(theName, theValue));
             }
             else
             {
-				GDE_LOG_ERROR("Imposible añadir" << theName << "=" << theValue << GDE::Log::nospace
+				GDE_LOG_ERROR("Imposible añadir" << theName << "=" << theValue << GDE::Log::Log::nospace
 								<< "a la sección [" << theSection << "], porque ya existe.");
             }
         }
     } // else(iterSection == mSections.end())
+
 }
 
-} // namespace GDE
+} } // namespace GDE::Core
