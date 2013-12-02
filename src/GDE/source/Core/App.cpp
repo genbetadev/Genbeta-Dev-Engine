@@ -1,6 +1,6 @@
 #include <GDE/Core/App.hpp>
-#include <GDE/Core/Log.hpp>
-#include <GDE/Core/StringsUtil.hpp>
+#include <GDE/Log/Log.hpp>
+#include <GDE/Utils/StringsUtil.hpp>
 #include <GDE/Core/ConfigReader.hpp>
 #include <GDE/Core/ConfigCreate.hpp>
 #include <fstream>
@@ -22,15 +22,14 @@ App::App()
 	logFile.open("log.txt", std::ios::app);
 
 	// Se inicializa el sistema de loggin con el archivo
-	GDE::Log::init(logFile);
-	
+	GDE::Log::Log::init(logFile);
 	GDE_LOG_INFO("App: constructor llamado");
 }
 
 App::~App()
 {
 	// Termina el sistema de loggin antes de cerrar el archivo
-	GDE::Log::close();
+	GDE::Log::Log::close();
 	GDE_LOG_INFO("App: destructor llamado");
 }
 
@@ -186,7 +185,7 @@ void App::createWindow()
 
 	// Escribimos en el log
 	GDE_LOG_INFO("App::createWindow(): ventana creada");
-	GDE_LOG_INFO("Modo de Video:" << GDE::Log::nospace
+	GDE_LOG_INFO("Modo de Video:" << GDE::Log::Log::nospace
 					<< videoMode.width << "x" << videoMode.height << "x" << videoMode.bitsPerPixel);
 	GDE_LOG_INFO("Vsync:" << vsync);
 	GDE_LOG_INFO("Fullscreen:" << fullscreen);

@@ -246,16 +246,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = (
-					"../../src/**",
-					"/Users/ricky/dev/c++/Genbeta-Dev-Engine/lib/GDE/Debug",
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../src/GDE/include",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OBJROOT = "$(SRCROOT)/../../tmp/$(CONFIGURATION)/GDE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SYMROOT = "$(SRCROOT)/../../lib/$(CONFIGURATION)/GDE";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../src/GDE/include";
 			};
 			name = Debug;
 		};
@@ -290,16 +290,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = (
-					"../../src/**",
-					"/Users/ricky/dev/c++/Genbeta-Dev-Engine/lib/GDE/Debug",
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../src/GDE/include",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OBJROOT = "$(SRCROOT)/../../tmp/$(CONFIGURATION)/GDE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SYMROOT = "$(SRCROOT)/../../lib/$(CONFIGURATION)/GDE";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../src/GDE/include";
 			};
 			name = Release;
 		};

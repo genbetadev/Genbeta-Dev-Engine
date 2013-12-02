@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <cstdio>
 #include <cstdarg>
-#include "GDE/Utils/StringsUtil.hpp"
+#include <GDE/Utils/StringsUtil.hpp>
 
 namespace GDE { namespace Utils
 {

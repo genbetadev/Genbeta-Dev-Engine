@@ -10,22 +10,22 @@ static std::string headerStringList[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 // un mensaje debe ser escrito al flujo. Si no se ha instalado un controlador personalizado
 // se usará este.
 static void defaultLogHandler (std::ostream &os,
-							   GDE::LogLevel level,
+							   GDE::Log::LogLevel level,
 							   const std::string &message,
 							   const std::string &date,
 							   const std::string &time,
-							   const GDE::SourceContext &context
+							   const GDE::Log::SourceContext &context
 							  )
 {
 	os << time << " " << headerStringList[level] << ": ";
-	if (level == GDE::Error)
+	if (level == GDE::Log::Error)
 	{
 		os << context.file << ":" << context.line << ": ";
 	}
 	os << message;
 }
 
-namespace GDE
+namespace GDE { namespace Log
 {
 
 bool Log::initialized = false;
@@ -138,4 +138,4 @@ std::string Log::actualTimeToText()
 	return buffer;
 }
 
-} // namespace GDE
+} } // namespace GDE::Log
