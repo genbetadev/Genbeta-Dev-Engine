@@ -1,8 +1,11 @@
-#include "GDE/Core/App.hpp"
-#include "GDE/Log/Log.hpp"
-#include "GDE/Core/ConfigReader.hpp"
-#include "GDE/Core/ConfigCreate.hpp"
-#include "GDE/Utils/StringsUtil.hpp"
+#include <GDE/Core/App.hpp>
+#include <GDE/Core/Log.hpp>
+#include <GDE/Core/StringsUtil.hpp>
+#include <GDE/Core/ConfigReader.hpp>
+#include <GDE/Core/ConfigCreate.hpp>
+#include <fstream>
+
+static std::ofstream logFile;
 
 namespace GDE { namespace Core
 {
@@ -15,15 +18,20 @@ App::App()
 	, running(false)
 	, initialScene(NULL)
 {
-	// Se inicializa el sistema de loggin
-	GDE::Log::init("log.txt");
+	// Se abre el archivo donde se guardará el loggin
+	logFile.open("log.txt", std::ios::app);
+
+	// Se inicializa el sistema de loggin con el archivo
+	GDE::Log::init(logFile);
 	
-	GDE::Log::info("App::App()", "Constructor llamado");
+	GDE_LOG_INFO("App: constructor llamado");
 }
 
 App::~App()
 {
-	GDE::Log::info("App::~App()", "Destructor llamado");
+	// Termina el sistema de loggin antes de cerrar el archivo
+	GDE::Log::close();
+	GDE_LOG_INFO("App: destructor llamado");
 }
 
 App* App::instance()
@@ -65,11 +73,11 @@ void App::setFirstScene(Scene* scene)
 	if (this->initialScene == NULL)
 	{
 		initialScene = scene;
-		GDE::Log::info("App::setFirstScene()", "Establecida escena inicial ID=" + scene->getID());
+		GDE_LOG_INFO("App::setFirstScene(): establecida escena inicial ID =" << scene->getID());
 	}
 	else
 	{
-		GDE::Log::warning("App::setFirstScene()", "Ya se ha establecido una escena inicial");
+		GDE_LOG_WARNING("App::setFirstScene(): ya se ha establecido una escena inicial");
 	}
 }
 
@@ -85,6 +93,8 @@ sf::Int16 App::run()
 	this->gameLoop();
 	// Se encarga de la limpieza y cerrar todos los subsistemas
 	this->cleanup();
+	// Escribimos en el log el código de salida
+	GDE_LOG_DEBUG("App: Código de salida: " << this->exitCode);
 	// Salimos con el código de salida generado
 	return this->exitCode;
 }
@@ -105,12 +115,12 @@ void App::init()
 	}
 	else
 	{
-		GDE::Log::error("App::Init()", "No se ha establecido escena inicial. LLamar a App::SetFirstScene() primero");
+		GDE_LOG_ERROR("App::init(): no se ha establecido escena inicial. LLamar a App::setFirstScene() primero");
 		// Salimos con código -2
 		quit(StatusAppInitFailed);
 	}
 
-	GDE::Log::info("App::Init()", "Completado");
+	GDE_LOG_DEBUG("App::init(): completado");
 }
 
 void App::createWindow()
@@ -175,12 +185,11 @@ void App::createWindow()
 	newConf.close();
 
 	// Escribimos en el log
-	GDE::Log::info("App::createWindow", "Ventana creada");
-	GDE::Log::info("Modo de Video", Utils::convertInt32(videoMode.width) +
-		"x" + Utils::convertInt32(videoMode.height) +
-		"x" + Utils::convertInt32(videoMode.bitsPerPixel));
-	GDE::Log::info("Vsync", Utils::convertBool(vsync));
-	GDE::Log::info("Fullscreen", Utils::convertBool(fullscreen));
+	GDE_LOG_INFO("App::createWindow(): ventana creada");
+	GDE_LOG_INFO("Modo de Video:" << GDE::Log::nospace
+					<< videoMode.width << "x" << videoMode.height << "x" << videoMode.bitsPerPixel);
+	GDE_LOG_INFO("Vsync:" << vsync);
+	GDE_LOG_INFO("Fullscreen:" << fullscreen);
 }
 
 void App::gameLoop()
@@ -239,7 +248,7 @@ void App::cleanup()
 	sceneManager->release();
 	sceneManager = NULL;
 	
-	GDE::Log::info("App::cleanup()", "Completado");
+	GDE_LOG_DEBUG("App::cleanup(): completado");
 }
 	
 } }// namespace GDE::Core

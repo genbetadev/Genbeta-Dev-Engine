@@ -11,12 +11,12 @@ SceneManager::SceneManager()
 	, inactivesScenes()
 	, nextScene("")
 {
-	GDE::Log::debug("SceneManager", "Constructor llamado");
+	GDE_LOG_DEBUG("SceneManager: Constructor llamado");
 }
 
 SceneManager::~SceneManager()
 {
-	GDE::Log::debug("SceneManager", "Destructor llamado");
+	GDE_LOG_DEBUG("SceneManager: Destructor llamado");
 }
 
 SceneManager* SceneManager::instance()
@@ -44,7 +44,7 @@ void SceneManager::addScene(Scene* theScene)
 	if (it != this->inactivesScenes.end())
 	{
 		// Si ya existe la escena salimos sin cambios
-		GDE::Log::warning("SceneManager::AddScene", "ya existe una escena con ID=" + theScene->getID() + " se omite");
+		GDE_LOG_WARNING("SceneManager::AddScene(): ya existe una cadena con ID =" << theScene->getID() << "se omite");
 		return;
 	}
 
@@ -54,7 +54,7 @@ void SceneManager::addScene(Scene* theScene)
 	// Inicializamos la escena
 	theScene->init();
 	
-	GDE::Log::info("SceneManager::AddScene", "Añadida escena con ID=" + theScene->getID());
+	GDE_LOG_INFO("SceneManager::AddScene(): añadida escena con ID =" << theScene->getID());
 }
 
 void SceneManager::setActiveScene(sceneID thesceneID)
@@ -70,11 +70,11 @@ void SceneManager::setActiveScene(sceneID thesceneID)
 	// Comprobamos si es la escena activa
 	if (thesceneID == this->activeScene->getID())
 	{
-		GDE::Log::info("SceneManager::SetActiveScene()", "la escena con ID=" + thesceneID + "ya esta activa");
+		GDE_LOG_INFO("SceneManager::SetActiveScene(): la escena con ID =" << thesceneID << "ya está activa");
 		return;
 	}
 
-	GDE::Log::warning("SceneManager::SetActiveScene()",  "No existe ninguna escena con ID=" + thesceneID);
+	GDE_LOG_WARNING("SceneManager::SetActiveScene(): no existe ninguna escena con ID =" << thesceneID);
 }
 
 void SceneManager::removeScene(sceneID thesceneID)
@@ -83,7 +83,7 @@ void SceneManager::removeScene(sceneID thesceneID)
 	std::map<sceneID, Scene*>::iterator it = this->inactivesScenes.find(thesceneID);
 	if (it != this->inactivesScenes.end())
 	{
-		GDE::Log::info("SceneManager::RemoveScene()", "Eliminada escena con ID=" + thesceneID);
+		GDE_LOG_INFO("SceneManager::RemoveScene(): eliminada escena con ID =" << thesceneID);
 		it->second->cleanup();
 		delete it->second;
 		this->inactivesScenes.erase(it);
@@ -93,11 +93,11 @@ void SceneManager::removeScene(sceneID thesceneID)
 	// Comprobamos si está intentando eliminar la escena activa
 	if (thesceneID == this->activeScene->getID())
 	{
-		GDE::Log::warning("SceneManager::RemoveScene()", "La escena con ID=" + thesceneID + "esta activa y no se puede eliminar");
+		GDE_LOG_WARNING("SceneManager::RemoveScene(): La escena con ID =" << thesceneID << "está activa y no se puede eliminar");
 		return;
 	}
 
-	GDE::Log::warning("SceneManager::RemoveScene()",  "No existe ninguna escena con ID=" + thesceneID);
+	GDE_LOG_WARNING("SceneManager::RemoveScene(): no existe ninguna escena con ID =" << thesceneID);
 }
 
 void SceneManager::removeAllInactiveScene()
@@ -106,7 +106,7 @@ void SceneManager::removeAllInactiveScene()
 	std::map<sceneID, Scene*>::iterator it = this->inactivesScenes.begin();
 	while(it != this->inactivesScenes.end())
 	{
-		GDE::Log::info("SceneManager::RemoveAllInactiveScene()", "Eliminada escena con ID=" + it->first);
+		GDE_LOG_INFO("SceneManager::RemoveAllInactiveScene(): Eliminada escena con ID =" << it->first);
 		it->second->cleanup();
 		delete it->second;
 		this->inactivesScenes.erase(it++);
@@ -131,7 +131,7 @@ void SceneManager::changeScene(sceneID thesceneID)
 	this->inactivesScenes.erase(thesceneID);
 	this->activeScene->active();
 
-	GDE::Log::info("SceneManager::ChangeScene()", "Activa escena con ID=" + thesceneID);
+	GDE_LOG_INFO("SceneManager::ChangeScene(): activa escena con ID =" << thesceneID);
 }
 
 void SceneManager::removeAllScene()
@@ -142,7 +142,7 @@ void SceneManager::removeAllScene()
 	if (this->activeScene != NULL)
 	{
 		// Eliminamos la escena activa
-		GDE::Log::info("SceneManager::RemoveAllScene()", "Eliminada escena con ID=" + this->activeScene->getID());
+		GDE_LOG_INFO("SceneManager::RemoveAllScene(): eliminada escena con ID=" << this->activeScene->getID());
 		this->activeScene->cleanup();
 		delete this->activeScene;
 		this->activeScene = NULL;
