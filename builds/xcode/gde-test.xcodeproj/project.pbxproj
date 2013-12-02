@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C76712B184CA17A00537FFA /* libGDE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C767128184CA16400537FFA /* libGDE.a */; };
 		9CB89EEA18344DC30025BFE4 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E88183012CE00F82564 /* sfml-audio.framework */; };
 		9CB89EEB18344DC30025BFE4 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E89183012CE00F82564 /* sfml-graphics.framework */; };
 		9CB89EEC18344DC30025BFE4 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E8A183012CE00F82564 /* sfml-network.framework */; };
@@ -15,24 +16,21 @@
 		9CB89EEF18344DC30025BFE4 /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA17E801830110F00F82564 /* SFML.framework */; };
 		9CB89EF218344E230025BFE4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7E18300F7D00EA099D /* main.cpp */; };
 		9CB89EF318344E230025BFE4 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF7F18300F7D00EA099D /* SceneGame.cpp */; };
-		9CB89EF418344E230025BFE4 /* SceneGame.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8018300F7D00EA099D /* SceneGame.hpp */; };
 		9CB89EF518344E230025BFE4 /* SceneMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8118300F7D00EA099D /* SceneMain.cpp */; };
-		9CB89EF618344E230025BFE4 /* SceneMain.hpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C58FF8218300F7D00EA099D /* SceneMain.hpp */; };
-		9CD54FE8184C7AFE0087E7DD /* libGDE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD54FE5184C7AF70087E7DD /* libGDE.a */; };
 		9CFE35C8184C9DDB0080F185 /* data in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9CA17E9918301DED00F82564 /* data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9CD54FE4184C7AF70087E7DD /* PBXContainerItemProxy */ = {
+		9C767127184CA16400537FFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */;
+			containerPortal = 9C3A161E184CA154008EF142 /* GDE.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9CE7923F1834EAD700501561;
 			remoteInfo = GDE;
 		};
-		9CD54FE6184C7AFA0087E7DD /* PBXContainerItemProxy */ = {
+		9C767129184CA17400537FFA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */;
+			containerPortal = 9C3A161E184CA154008EF142 /* GDE.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 9CB89EFA1834507C0025BFE4;
 			remoteInfo = GDE;
@@ -53,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9C3A161E184CA154008EF142 /* GDE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GDE.xcodeproj; sourceTree = "<group>"; };
 		9C58FF7E18300F7D00EA099D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../src/Test/main.cpp; sourceTree = "<group>"; };
 		9C58FF7F18300F7D00EA099D /* SceneGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SceneGame.cpp; path = ../../src/Test/SceneGame.cpp; sourceTree = "<group>"; };
 		9C58FF8018300F7D00EA099D /* SceneGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SceneGame.hpp; path = ../../src/Test/SceneGame.hpp; sourceTree = "<group>"; };
@@ -60,7 +59,6 @@
 		9C58FF8218300F7D00EA099D /* SceneMain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = SceneMain.hpp; path = ../../src/Test/SceneMain.hpp; sourceTree = "<group>"; };
 		9C63296A1834C6B100BEA682 /* libGDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDE.a; path = build/Debug/libGDE.a; sourceTree = "<group>"; };
 		9C8F64FB1834F8FA00D411AD /* libGDE.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDE.a; path = ../../lib/GDE/Debug/libGDE.a; sourceTree = "<group>"; };
-		9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GDE.xcodeproj; sourceTree = "<group>"; };
 		9CA17E801830110F00F82564 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = /Library/Frameworks/SFML.framework; sourceTree = "<absolute>"; };
 		9CA17E88183012CE00F82564 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../../../../../../Library/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
 		9CA17E89183012CE00F82564 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../../../../../../Library/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
@@ -78,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD54FE8184C7AFE0087E7DD /* libGDE.a in Frameworks */,
+				9C76712B184CA17A00537FFA /* libGDE.a in Frameworks */,
 				9CB89EEF18344DC30025BFE4 /* SFML.framework in Frameworks */,
 				9CB89EEE18344DC30025BFE4 /* sfml-window.framework in Frameworks */,
 				9CB89EED18344DC30025BFE4 /* sfml-system.framework in Frameworks */,
@@ -94,7 +92,7 @@
 		9C11C114182FEFCA00988E31 = {
 			isa = PBXGroup;
 			children = (
-				9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */,
+				9C3A161E184CA154008EF142 /* GDE.xcodeproj */,
 				9CA17E9918301DED00F82564 /* data */,
 				9CA17E9A18301DED00F82564 /* window.cfg */,
 				9CA17E82183011E100F82564 /* Frameworks */,
@@ -123,6 +121,14 @@
 			name = Test;
 			sourceTree = "<group>";
 		};
+		9C767124184CA16400537FFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C767128184CA16400537FFA /* libGDE.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9CA17E82183011E100F82564 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,14 +145,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9CD54FE1184C7AF70087E7DD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9CD54FE5184C7AF70087E7DD /* libGDE.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,7 +159,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9CD54FE7184C7AFA0087E7DD /* PBXTargetDependency */,
+				9C76712A184CA17400537FFA /* PBXTargetDependency */,
 			);
 			name = test;
 			productName = test;
@@ -188,8 +186,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9CD54FE1184C7AF70087E7DD /* Products */;
-					ProjectRef = 9C9AE3B6184C7AE400489C82 /* GDE.xcodeproj */;
+					ProductGroup = 9C767124184CA16400537FFA /* Products */;
+					ProjectRef = 9C3A161E184CA154008EF142 /* GDE.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -200,11 +198,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		9CD54FE5184C7AF70087E7DD /* libGDE.a */ = {
+		9C767128184CA16400537FFA /* libGDE.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libGDE.a;
-			remoteRef = 9CD54FE4184C7AF70087E7DD /* PBXContainerItemProxy */;
+			remoteRef = 9C767127184CA16400537FFA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -216,19 +214,17 @@
 			files = (
 				9CB89EF218344E230025BFE4 /* main.cpp in Sources */,
 				9CB89EF318344E230025BFE4 /* SceneGame.cpp in Sources */,
-				9CB89EF418344E230025BFE4 /* SceneGame.hpp in Sources */,
 				9CB89EF518344E230025BFE4 /* SceneMain.cpp in Sources */,
-				9CB89EF618344E230025BFE4 /* SceneMain.hpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9CD54FE7184C7AFA0087E7DD /* PBXTargetDependency */ = {
+		9C76712A184CA17400537FFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GDE;
-			targetProxy = 9CD54FE6184C7AFA0087E7DD /* PBXContainerItemProxy */;
+			targetProxy = 9C767129184CA17400537FFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
