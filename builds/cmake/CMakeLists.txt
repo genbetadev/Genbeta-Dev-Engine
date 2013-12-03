@@ -40,9 +40,9 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/Modules)
 # Directorio base del proyecto
 set(GDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/../..)
 
-set(GDE_SOURCE_DIR ${GDE_DIR}/src/GDE)
+set(GDE_SOURCE_DIR ${GDE_DIR}/src/GDE/source)
 set(GDE_TEST_SOURCE_DIR ${GDE_DIR}/src/Test)
-set(GDE_INCLUDE_DIR ${GDE_DIR}/include)
+set(GDE_INCLUDE_DIR ${GDE_DIR}/src/GDE/include)
 
 # Le dice a CMake donde buscar los Headers
 include_directories(${GDE_INCLUDE_DIR})

@@ -4,9 +4,9 @@
 #include "GDE/Config.hpp"
 
 #include "Types.hpp"
-#include "Config/ConfigReader.hpp"
-#include "Config/ConfigCreate.hpp"
-#include "App/App.hpp"
-#include "SceneManager/SceneManager.hpp"
+#include "ConfigReader.hpp"
+#include "ConfigCreate.hpp"
+#include "App.hpp"
+#include "SceneManager.hpp"
 
 #endif // GDE_CORE_HPP
