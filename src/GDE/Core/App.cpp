@@ -101,6 +101,10 @@ sf::Int16 App::run()
 
 void App::init()
 {
+
+	textureManager.init();
+	GDE::Log::info("App:init", "Inicializado el gestor de texturas.");
+
 	// Se crea la instancia única del SceneManager
 	sceneManager = GDE::SceneManager::instance();
 	
@@ -223,6 +227,10 @@ void App::gameLoop()
 		
 		// Establecemos el color de fondo de limpieza
 		this->window.clear(sceneManager->getActiveScene()->getBackgroundColor());
+
+		sf::Sprite sprite;
+		sprite.setTexture( textureManager.getResource("./logoGDE.png"));
+		this->window.draw(sprite);
 		
 		// Llamamos al método Draw() de la escena activa
 		this->sceneManager->drawScene();
@@ -247,6 +255,10 @@ void App::cleanup()
 	// Eliminamos el SceneManager
 	sceneManager->release();
 	sceneManager = NULL;
+
+
+	textureManager.cleanUp();
+	GDE::Log::info("App:init", "deinicializado el gestor de texturas.");
 	
 	GDE_LOG_DEBUG("App::cleanup(): completado");
 }
